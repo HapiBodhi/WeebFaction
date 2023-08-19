@@ -31,5 +31,6 @@ Some Japonic/Waifu Race Mods will cause those species to spawn alongside Weeaboo
 
 
 Created by Robfal2, updated from 1.2 to 1.4 by Happybodi
+
 Original mod: https://www.steamcommunity.com/sharedfiles/filedetails/?id=2182292067
 
