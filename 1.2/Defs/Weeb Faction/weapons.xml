@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Pillow gun -->
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>bodypillowgun</defName>
+    <label>Scoped Body Pillow</label>
+    <description>Crafted by forbidden and horrible means, this augmented bodypillow fires charges of raw sexual energy at the unfortunate target.</description>
+    <graphicData>
+      <texPath>weeaboo/scopedbodypillow</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <statBases>
+      <WorkToMake>12000</WorkToMake>
+      <Mass>3.5</Mass>
+      <AccuracyTouch>0.75</AccuracyTouch>
+      <AccuracyShort>0.85</AccuracyShort>
+      <AccuracyMedium>0.95</AccuracyMedium>
+      <AccuracyLong>0.85</AccuracyLong>
+      <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+    </statBases>
+	<weaponTags>
+	<li>WeebRanged</li>
+	</weaponTags>
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_bodypillow</defaultProjectile>
+        <warmupTime>1.7</warmupTime>
+        <range>36.9</range>
+        <soundCast>Shot_BoltActionRifle</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_bodypillow</defName>
+    <label>bodypillow bullet</label>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>15</damageAmountBase>
+      <stoppingPower>1.5</stoppingPower>
+      <speed>60</speed>
+    </projectile>
+    <graphicData>
+      <texPath>weeaboo/bodypillow</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+
+  <!-- Pillow melee -->
+  <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+    <defName>bodypillow</defName>
+    <label>Bodypillow</label>
+    <description>A bodypillow with an image of the user's waifu printed onto it. It is exceptionally hard for a pillow.</description>
+    <graphicData>
+      <texPath>weeaboo/bodypillow</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.2</uiIconScale>
+    <techLevel>Industrial</techLevel>
+    <costStuffCount>50</costStuffCount>
+    <statBases>
+      <WorkToMake>6000</WorkToMake>
+      <Mass>1.25</Mass>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <stuffCategories>
+      <li>Fabric</li>
+    </stuffCategories>
+    <weaponTags>
+      <li>WeebMelee</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>pillow</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <!-- Katana -->
+   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>MeleeWeapon_WeebKatana</defName>
+    <label>katana</label>
+    <description>A hollow, fake katana. Light and surprisingly sharp.</description>
+    <graphicData>
+      <texPath>weeaboo/katana2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <weaponTags>
+      <li>AdWeebMelee</li>
+    </weaponTags>
+    <costStuffCount>100</costStuffCount>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+      <WorkToMake>18000</WorkToMake>
+      <Mass>2</Mass>
+    </statBases>
+    <equippedStatOffsets>
+		<MoveSpeed>0.6</MoveSpeed>
+    </equippedStatOffsets>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>23</power>
+        <cooldownTime>2.2</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>23</power>
+        <cooldownTime>2.2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>LongBlades</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+ </Defs>

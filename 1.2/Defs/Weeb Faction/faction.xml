@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  <PawnKindDef Name="WeeabooBase" Abstract="True">
+    <race>Human</race>
+    <defaultFactionType>WeeabooArmy</defaultFactionType>
+    <chemicalAddictionChance>0.12</chemicalAddictionChance>
+    <backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
+    <invNutrition>2.55</invNutrition>
+    <biocodeWeaponChance>0.1</biocodeWeaponChance>
+  </PawnKindDef>
+
+  <!-- Weeaboos drop Milk when downed -->
+  <PawnKindDef ParentName="WeeabooBase">
+    <defName>Weeaboo</defName>
+    <label>weeaboo</label>
+    <combatPower>35</combatPower>
+    <invNutrition>0</invNutrition>
+    <gearHealthRange>0.2~0.6</gearHealthRange>
+    <itemQuality>Poor</itemQuality>
+    <apparelMoney>90~280</apparelMoney>
+    <apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
+    <apparelTags>
+	  <li>WeebClothes</li>
+    </apparelTags>
+    <weaponMoney>96.6~500</weaponMoney>
+    <weaponTags>
+      <li>WeebMelee</li>
+    </weaponTags>
+    <techHediffsMoney>50~50</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <techHediffsChance>0.15</techHediffsChance>
+    <inventoryOptions>
+      <skipChance>0.3</skipChance>
+      <subOptionsChooseOne>
+        <!-- <li>
+          <thingDef>Silver</thingDef>
+          <countRange>40~80</countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>1~1</countRange>
+        </li> -->
+        <li>
+          <thingDef>Milk</thingDef>
+          <countRange>30~70</countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="WeeabooBase">
+    <defName>AdWeeaboo</defName>
+    <label>advanced weeaboo</label>
+    <race>Human</race>
+    <combatPower>65</combatPower>
+    <maxGenerationAge>65</maxGenerationAge>
+    <gearHealthRange>0.7~2.3</gearHealthRange>
+    <apparelMoney>400~1000</apparelMoney>
+    <apparelTags>
+      <li>WeebClothes</li>
+    </apparelTags>
+    <apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
+    <weaponMoney>255~500</weaponMoney>
+    <weaponTags>
+      <li>WeebRanged</li>
+    </weaponTags>
+    <techHediffsChance>0.04</techHediffsChance>
+    <techHediffsMoney>50~800</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+      <li>Simple</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+    <inventoryOptions>
+      <skipChance>0.2</skipChance>
+      <subOptionsChooseOne>
+        <!-- <li>
+          <thingDef>Silver</thingDef>
+          <countRange>40~80</countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>1~1</countRange>
+        </li> -->
+        <li>
+          <thingDef>Milk</thingDef>
+          <countRange>50~100</countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+    <biocodeWeaponChance>0.2</biocodeWeaponChance>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="WeeabooBase">
+    <defName>KWeeaboo</defName>
+    <label>katana weeaboo</label>
+    <race>Human</race>
+    <combatPower>85</combatPower>
+    <maxGenerationAge>65</maxGenerationAge>
+    <gearHealthRange>1.2~2.8</gearHealthRange>
+    <apparelMoney>400~1000</apparelMoney>
+    <apparelTags>
+      <li>WeebClothes</li>
+    </apparelTags>
+    <apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
+    <weaponMoney>255~500</weaponMoney>
+    <weaponTags>
+      <li>AdWeebMelee</li>
+    </weaponTags>
+    <techHediffsChance>0.04</techHediffsChance>
+    <techHediffsMoney>50~800</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+      <li>Simple</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+    <inventoryOptions>
+      <skipChance>0.2</skipChance>
+      <subOptionsChooseOne>
+        <!-- <li>
+          <thingDef>Silver</thingDef>
+          <countRange>40~80</countRange>
+        </li>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>1~1</countRange>
+        </li> -->
+        <li>
+          <thingDef>Milk</thingDef>
+          <countRange>100~200</countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+    <biocodeWeaponChance>0.2</biocodeWeaponChance>
+  </PawnKindDef>
+
+  <RulePackDef>
+    <defName>NamerFactionWeeb</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->The Weeb Army</li>
+      </rulesStrings>
+      <rulesFiles>
+        <li>groupname->Words/Nouns/GroupNames</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+ <FactionDef>
+    <defName>WeeabooArmy</defName>
+    <label>Weeaboo Clan</label>
+    <description>A group of Okatus and Weeaboos that have been isekai'd to the 56th century. They aimlessly roam the lands, solely existing to spread the word of their waifus. However, with no social skills to speak of, they have taken to raiding and pillaging anyone who even remotely disagrees with their faith.
+
+They are too antisocial to be allied with.</description>
+    <pawnSingular>weeaboo</pawnSingular>
+    <pawnsPlural>weeaboos</pawnsPlural>
+    <listOrderPriority>10</listOrderPriority>
+    <settlementGenerationWeight>1</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <maxCountAtGameStart>1</maxCountAtGameStart>
+    <canMakeRandomly>true</canMakeRandomly>
+    <canSiege>false</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <leaderTitle>alpha weeb</leaderTitle>
+    <factionIconPath>weeaboo/degenerate</factionIconPath>
+    <colorSpectrum>
+      <li>(0.45, 0.05, 0.05)</li>
+      <li>(0.80, 0.25, 0.05)</li>
+    </colorSpectrum>
+    <permanentEnemy>true</permanentEnemy>
+    <factionNameMaker>NamerFactionWeeb</factionNameMaker>
+    <settlementNameMaker>NamerSettlementPirate</settlementNameMaker>
+    <techLevel>Spacer</techLevel>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Pirate</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <geneticVariance>0.8</geneticVariance>
+    <hairTags>
+      <li>Punk</li>
+    </hairTags>
+    <allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(700, 100)</li>
+        <li>(1300, 150)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <!-- Normal fights, ranged with melee mix-ins -->
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <Weeaboo>18</Weeaboo>
+          <AdWeeaboo>7</AdWeeaboo>
+		  <KWeeaboo>3</KWeeaboo>
+        </options>
+      </li>
+      <li>
+        <!-- Normal fights, melee-only -->
+        <kindDef>Combat</kindDef>
+        <commonality>30</commonality>
+        <disallowedStrategies>
+          <li>Siege</li>
+        </disallowedStrategies>
+        <options>
+          <Weeaboo>16</Weeaboo>
+		  <KWeeaboo>5</KWeeaboo>
+        </options>
+      </li>
+      <li>
+        <!-- Normal fights, ranged only -->
+        <kindDef>Combat</kindDef>
+        <commonality>20</commonality>
+        <options>
+          <AdWeeaboo>10</AdWeeaboo>
+        </options>
+      </li>
+	  <li>
+        <!-- Base defense, mainly ranged with melee mix-ins -->
+        <kindDef>Settlement</kindDef>
+        <options>
+          <Weeaboo>30</Weeaboo>
+          <AdWeeaboo>10</AdWeeaboo>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+  </FactionDef>
+
+ </Defs>

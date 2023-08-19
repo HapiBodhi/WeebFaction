@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+  <!--Adds the items from Kenshi Armory in the worse way possible. I learnt that PatchOperationSequence existed a few minutes after completion and don't inherently feel stupid, but know this file can be fully rewritten. -Bodi-->
+          <!--Appearl(?) patches--><!--original modder cannot spell-->
+
+<Operation Class="PatchOperationConditional"><!-- Iron Hat -->
+  <xpath>Defs/ThingDef[defName="Kenshi_IronHat"]</xpath>
+  <match Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Kenshi_IronHat"]/apparel/tags</xpath>
+    <value>
+      <li>WeebClothes</li>
+      <li>WeebHat</li>
+      <li>WeebGirl</li>
+    </value>
+  </match>
+</Operation>
+<Operation Class="PatchOperationConditional"><!-- Ninja Mask -->
+  <xpath>Defs/ThingDef[defName="Kenshi_NinjaMask"]</xpath>
+  <match Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Kenshi_NinjaMask"]/apparel/tags</xpath>
+    <value>
+        <li>WeebClothes</li>
+        <li>WeebHat</li>
+        <li>WeebGirl</li>
+    </value>
+  </match>
+</Operation>
+<Operation Class="PatchOperationConditional"><!-- Kusari Zukin -->
+  <xpath>Defs/ThingDef[defName="Kenshi_KusariZukin"]</xpath>
+  <match Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Kenshi_KusariZukin"]/apparel/tags</xpath>
+    <value>
+      <li>WeebClothes</li>
+      <li>WeebHat</li>
+      <li>WeebGirl</li>
+    </value>
+  </match>
+</Operation>
+<Operation Class="PatchOperationConditional"><!-- Armoured Hood -->
+  <xpath>Defs/ThingDef[defName="Kenshi_ArmouredHood"]</xpath>
+  <match Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Kenshi_ArmouredHood"]/apparel/tags</xpath>
+    <value>
+      <li>WeebElite</li>
+      <li>WeebSpecialHat</li>
+    </value>
+  </match>
+</Operation>
+<Operation Class="PatchOperationConditional"><!-- Basket Hat -->
+  <xpath>Defs/ThingDef[defName="Kenshi_BasketHat"]</xpath>
+  <match Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Kenshi_BasketHat"]/apparel/tags</xpath>
+    <value>
+      <li>WeebClothes</li>
+      <li>WeebHat</li>
+      <li>WeebGirl</li>
+      <li>WeebLastResortTag</li><!--btw what is this? -->
+    </value>
+  </match>
+</Operation>
+
+          <!--Armour patches-->
+
+<Operation Class="PatchOperationConditional"><!-- HolyChestPlate -->
+  <xpath>Defs/ThingDef[defName="Kenshi_HolyChestPlate"]</xpath><!--Does this exist?-->
+  <match Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Kenshi_HolyChestPlate"]/apparel/tags</xpath>
+    <value>
+      <li>WeebElite</li>
+      <li>WeebClothes</li>
+    </value>
+  </match>
+</Operation>
+<Operation Class="PatchOperationConditional"><!-- HeavyHachigane -->
+  <xpath>Defs/ThingDef[defName="Kenshi_HeavyHachigane"]</xpath>
+  <match Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Kenshi_HeavyHachigane"]/apparel/tags</xpath>
+    <value>
+      <li>WeebElite</li>
+      <li>WeebSpecialHat</li>
+    </value>
+  </match>
+</Operation>
+<Operation Class="PatchOperationConditional"><!-- HeavyHolyChestPlate -->
+  <xpath>Defs/ThingDef[defName="Kenshi_HeavyHolyChestPlate"]</xpath>
+  <match Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Kenshi_HeavyHolyChestPlate"]/apparel/tags</xpath>
+    <value>
+      <li>WeebElite</li>
+    </value>
+  </match>
+</Operation>
+<Operation Class="PatchOperationConditional"><!-- HeavyPaladinsHelm -->
+  <xpath>Defs/ThingDef[defName="Kenshi_HeavyPaladinsHelm"]</xpath>
+  <match Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Kenshi_HeavyPaladinsHelm"]/apparel/tags</xpath>
+    <value>
+      <li>WeebElite</li>
+      <li>WeebSpecialHat</li>
+    </value>
+  </match>
+</Operation>
+<Operation Class="PatchOperationConditional"><!-- SamuraiPlateArmor -->
+  <xpath>Defs/ThingDef[defName="Kenshi_SamuraiPlateArmor"]</xpath>
+  <match Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Kenshi_SamuraiPlateArmor"]/apparel/tags</xpath>
+    <value>
+      <li>WeebElite</li>
+    </value>
+  </match>
+</Operation>
+<Operation Class="PatchOperationConditional"><!-- SamuraiHelmet -->
+  <xpath>Defs/ThingDef[defName="Kenshi_SamuraiHelmet"]</xpath>
+  <match Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Kenshi_SamuraiHelmet"]/apparel/tags</xpath>
+    <value>
+      <li>WeebElite</li>
+      <li>WeebSpecialHat</li>
+    </value>
+  </match>
+</Operation>
+<Operation Class="PatchOperationConditional"><!-- Unstrained Mercenary Plate -->
+  <xpath>Defs/ThingDef[defName="Kenshi_UnstrainedMercenaryPlate"]</xpath>
+  <match Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Kenshi_UnstrainedMercenaryPlate"]/apparel/tags</xpath>
+    <value>
+      <li>WeebClothes</li>
+      <li>WeebElite</li>
+    </value>
+  </match>
+</Operation>
+<Operation Class="PatchOperationConditional"><!-- Unstrained Tin Can -->
+  <xpath>Defs/ThingDef[defName="Kenshi_UnstrainedTinCan"]</xpath>
+  <match Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Kenshi_UnstrainedTinCan"]/apparel/tags</xpath>
+    <value>
+      <li>WeebSpecialHat</li>
+    </value>
+  </match>
+</Operation>
+
+          <!--FactionArmour-->
+
+<Operation Class="PatchOperationConditional"><!--PaladinsHolyChestPlate -->
+  <xpath>Defs/ThingDef[defName="Kenshi_PaladinsHolyChestPlate"]</xpath>
+  <match Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Kenshi_PaladinsHolyChestPlate"]/apparel/tags</xpath>
+    <value>
+      <li>WeebKenshiPaladin</li>
+    </value>
+  </match>
+</Operation>
+<Operation Class="PatchOperationConditional"><!-- PaladinsHeavyHachigane -->
+  <xpath>Defs/ThingDef[defName="Kenshi_PaladinsHeavyHachigane"]</xpath>
+  <match Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Kenshi_PaladinsHeavyHachigane"]/apparel/tags</xpath>
+    <value>
+      <li>WeebKenshiPaladin</li>
+    </value>
+  </match>
+</Operation>
+<Operation Class="PatchOperationConditional"><!-- PaladinsHeavyPlate -->
+  <xpath>Defs/ThingDef[defName="Kenshi_PaladinsHeavyPlate"]</xpath>
+  <match Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Kenshi_PaladinsHeavyPlate"]/apparel/tags</xpath>
+    <value>
+      <li>WeebElite</li>
+    </value>
+  </match>
+</Operation>
+<Operation Class="PatchOperationConditional"><!-- PaladinsHeavyHelm -->
+  <xpath>Defs/ThingDef[defName="Kenshi_PaladinsHeavyHelm"]</xpath>
+  <match Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Kenshi_PaladinsHeavyHelm"]/apparel/tags</xpath>
+    <value>
+      <li>WeebElite</li>
+      <li>WeebSpecialHat</li>
+    </value>
+  </match>
+</Operation>
+<Operation Class="PatchOperationConditional"><!-- EmpireSamuraiPlateArmor -->
+  <xpath>Defs/ThingDef[defName="Kenshi_EmpireSamuraiPlateArmor"]</xpath>
+  <match Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Kenshi_EmpireSamuraiPlateArmor"]/apparel/tags</xpath>
+    <value>
+      <li>KenshiWeebSamurai</li>
+    </value>
+  </match>
+</Operation>
+<Operation Class="PatchOperationConditional"><!-- EmpireSamuraiHelmet -->
+  <xpath>Defs/ThingDef[defName="Kenshi_EmpireSamuraiHelmet"]</xpath>
+  <match Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Kenshi_EmpireSamuraiHelmet"]/apparel/tags</xpath>
+    <value>
+      <li>KenshiWeebSamurai</li>
+    </value>
+  </match>
+</Operation>
+<Operation Class="PatchOperationConditional"><!-- CrabHelmet -->
+  <xpath>Defs/ThingDef[defName="Kenshi_CrabRaiderHelmet"]</xpath>
+  <match Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Kenshi_CrabRaiderHelmet"]/apparel/tags</xpath>
+    <value>
+      <li>KenshiWeebCrabRaider</li>
+    </value>
+  </match>
+</Operation>
+<Operation Class="PatchOperationConditional"><!-- Crab Armor -->
+  <xpath>Defs/ThingDef[defName="Kenshi_CrabArmor"]</xpath>
+  <match Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Kenshi_CrabArmor"]/apparel/tags</xpath>
+    <value>
+      <li>KenshiWeebCrabRaider</li>
+    </value>
+  </match>
+</Operation>
+<Operation Class="PatchOperationConditional"><!-- Guild Mercenary Plate -->
+  <xpath>Defs/ThingDef[defName="Kenshi_GuildMercenaryPlate"]</xpath>
+  <match Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Kenshi_GuildMercenaryPlate"]/apparel/tags</xpath>
+    <value>
+      <li>WeebClothes</li>
+      <li>WeebElite</li>
+    </value>
+  </match>
+</Operation>
+<Operation Class="PatchOperationConditional"><!-- Tin Can -->
+  <xpath>Defs/ThingDef[defName="Kenshi_TinCan"]</xpath>
+  <match Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Kenshi_TinCan"]/apparel/tags</xpath>
+    <value>
+      <li>WeebKenshi</li>
+    </value>
+  </match>
+</Operation>
+<Operation Class="PatchOperationConditional"><!-- Hack Stopper Jacket -->
+  <xpath>Defs/ThingDef[defName="Kenshi_HackStopperJacket"]</xpath>
+  <match Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Kenshi_HackStopperJacket"]/apparel/tags</xpath>
+    <value>
+      <li>WeebElite</li>
+      <li>WeebSpecialShirt</li>
+    </value>
+  </match>
+</Operation>
+<Operation Class="PatchOperationConditional"><!-- HackStopperHat -->
+  <xpath>Defs/ThingDef[defName="Kenshi_HackStopperHat"]</xpath>
+  <match Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Kenshi_HackStopperHat"]/apparel/tags</xpath>
+    <value>
+      <li>WeebElite</li>
+      <li>WeebSpecialHat</li>
+    </value>
+  </match>
+</Operation>
+
+          <!--Weapon patches-->
+
+<Operation Class="PatchOperationConditional"><!-- PaladinsCross -->
+  <xpath>Defs/ThingDef[defName="Kenshi_PaladinsCross"]</xpath>
+  <match Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Kenshi_PaladinsCross"]/weaponTags</xpath>
+    <value>
+      <li>WeebKenshiPaladinMelee</li>
+    </value>
+  </match>
+</Operation>
+<Operation Class="PatchOperationConditional"><!-- Combat Cleaver -->
+  <xpath>Defs/ThingDef[defName="Kenshi_CombatCleaver"]</xpath>
+  <match Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Kenshi_CombatCleaver"]/weaponTags</xpath>
+    <value>
+      <li>WeebMelee</li>
+      <li>WeebGirlWeaponry</li>
+      <li>WeebMinorGear</li>
+    </value>
+  </match>
+</Operation>
+<Operation Class="PatchOperationConditional"><!-- Katana -->
+  <xpath>Defs/ThingDef[defName="Kenshi_Katana"]</xpath>
+  <match Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Kenshi_Katana"]/weaponTags</xpath>
+    <value>
+      <li>KenshiWeebEmpire</li>
+    </value>
+  </match>
+</Operation>
+<Operation Class="PatchOperationConditional"><!-- GuardlessKatana -->
+  <xpath>Defs/ThingDef[defName="Kenshi_GuardlessKatana"]</xpath>
+  <match Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Kenshi_GuardlessKatana"]/weaponTags</xpath>
+    <value>
+      <li>KenshiWeebEmpire</li>
+    </value>
+  </match>
+</Operation>
+<Operation Class="PatchOperationConditional"><!-- Naginata -->
+  <xpath>Defs/ThingDef[defName="Kenshi_Naginata"]</xpath>
+  <match Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Kenshi_Naginata"]/weaponTags</xpath>
+    <value>
+      <li>KenshiWeebEmpire</li>
+    </value>
+  </match>
+</Operation>
+<Operation Class="PatchOperationConditional"><!-- NaginataKatana -->
+  <xpath>Defs/ThingDef[defName="Kenshi_NaginataKatana"]</xpath>
+  <match Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Kenshi_NaginataKatana"]/weaponTags</xpath>
+    <value>
+      <li>KenshiWeebEmpire</li>
+    </value>
+  </match>
+</Operation>
+<Operation Class="PatchOperationConditional"><!-- Mercenary Club -->
+  <xpath>Defs/ThingDef[defName="Kenshi_MercenaryClub"]</xpath>
+  <match Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Kenshi_MercenaryClub"]/weaponTags</xpath>
+    <value>
+      <li>KenshiWeebCrabRaider</li>
+    </value>
+  </match>
+</Operation>
+<Operation Class="PatchOperationConditional"><!-- Jitte -->
+  <xpath>Defs/ThingDef[defName="Kenshi_Jitte"]</xpath>
+  <match Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Kenshi_Jitte"]/weaponTags</xpath>
+    <value>
+      <li>WeebMelee</li>
+      <li>WeebGirlWeaponry</li>
+      <li>WeebMinorGear</li>
+    </value>
+  </match>
+</Operation>
+<Operation Class="PatchOperationConditional"><!-- Falling Sun -->
+  <xpath>Defs/ThingDef[defName="Kenshi_FallingSun"]</xpath>
+  <match Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Kenshi_FallingSun"]/weaponTags</xpath>
+    <value>
+      <li>AdWeebMelee</li>
+    </value>
+  </match>
+</Operation>
+<Operation Class="PatchOperationConditional"><!-- Fragment Axe -->
+  <xpath>Defs/ThingDef[defName="Kenshi_FragmentAxe"]</xpath>
+  <match Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Kenshi_FragmentAxe"]/weaponTags</xpath>
+    <value>
+      <li>AdWeebMelee</li>
+    </value>
+  </match>
+</Operation>
+<Operation Class="PatchOperationConditional"><!-- Ringed Sabre -->
+  <xpath>Defs/ThingDef[defName="Kenshi_RingedSabre"]</xpath>
+  <match Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Kenshi_RingedSabre"]/weaponTags</xpath>
+    <value>
+      <li>AdWeebMelee</li>
+    </value>
+  </match>
+</Operation>
+<Operation Class="PatchOperationConditional"><!-- Foreign Sabre -->
+  <xpath>Defs/ThingDef[defName="Kenshi_ForeignSabre"]</xpath>
+  <match Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Kenshi_ForeignSabre"]/weaponTags</xpath>
+    <value>
+      <li>AdWeebMelee</li>
+    </value>
+  </match>
+</Operation>
+</Patch>

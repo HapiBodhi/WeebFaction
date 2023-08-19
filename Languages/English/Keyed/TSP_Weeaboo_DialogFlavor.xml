@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+	<TSP_WeeabooFlavor_Rejection>Speaking in Japanese, {0} swears profusely at {NEGOTIATOR_labelShort}, calling you a "baka gaijin" and complaining that you interrupted his latest quest.</TSP_WeeabooFlavor_Rejection>
+	<TSP_WeeabooFlavor_WillingToBefriend>Speaking in Japanese, {0} bids you a traditional twenty-first century Japanese greeting. You and your Faction are considered kindred Japanese (or anime-like) spirits by {0_possessive}; however, {0} expects you to prove your worthiness. Therefore, until you make a gesture of goodwill, {0_pronoun} will not do business with you. You can improve relations through a number of activities, like bringing gifts to one of {0_possessive} settlements or releasing {0_possessive} faction's prisoners unharmed.\n\n{0_pronoun} wishes you te.</TSP_WeeabooFlavor_WillingToBefriend>
+	<TSP_WeeabooFlavor_DefaultGreeting>{0} bids you a traditional twenty-first century Japanese greeting.</TSP_WeeabooFlavor_DefaultGreeting>
+	<TSP_WeeabooFlavor_Ally>Speaking in Japanese, {0} wishes ten thousand years unto {NEGOTIATOR_labelShort}, and eagerly awaits dialog with a fellow Japanese (or anime-like) Faction. He begins rambling in Japanese about his favorite animes and tries to impress you with the breadth of his supposed understanding of your culture.</TSP_WeeabooFlavor_Ally>
+</LanguageData>

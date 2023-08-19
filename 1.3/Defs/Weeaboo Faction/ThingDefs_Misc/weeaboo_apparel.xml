@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<!-- Bandana -->
+	<ThingDef ParentName="HatMakeableBase">
+		<defName>weebbandana</defName>
+		<label>tendrilous hachimaki bandana</label>
+		<description>This simple bandana was intended to mirror the Hachimaki, which is a warrior's headband baring the image of the Rising Sun or some sort of inspirational slogan. This "Hachimaki" is tied together with longer strands of its material, giving it based tendrils that wave in the wind when its wearer runs. This effect, coupled with sticking one's arms out, makes the wearer more aerodynamic.</description>
+		<soundInteract>TSP_kakegoe_rhythm_sticks</soundInteract>
+		<graphicData>
+			<texPath>weeaboo/weebbandana</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1.25</uiIconScale>
+		<costStuffCount>25</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<thingCategories>
+			<li>TSP_WeeabooApparel</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>20</MaxHitPoints>
+			<WorkToMake>4000</WorkToMake>
+			<Mass>0.007</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>0.8</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>0.5</MoveSpeed>
+		</equippedStatOffsets>
+		<generateCommonality Inherit="False">1</generateCommonality>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+				<wornGraphicPath>weeaboo/weebbandana</wornGraphicPath>
+				<!-- <hatRenderedFrontOfFace>true</hatRenderedFrontOfFace> -->
+				<layers>
+					<li>Overhead</li>
+				</layers>
+				<tags>
+					<li>WeebClothes</li>
+					<li>WeebHat</li>
+					<li>WeebGirl</li>
+					<li>WeebSpecialHat</li>
+
+					<!-- Mod Support -->
+					<li>HSApparel_RoyaltyClothes</li>
+					<li>OniWear</li>
+					<li>OniHeadWear</li>
+					<li>JeubWear</li>
+					<li>ST_BeetClothing</li>
+					<li>ST_GnomeClothing</li>
+					<li>PoorPirateClothing</li>
+					<li>NormalPirateClothing</li>
+					<li>Pirate</li>
+					<li>Apparel_SamuraiPeasant</li>
+					<li>HSApparel_EdoClanPeasant</li>
+					<li>HSApparel_EdoClanBase</li>
+					<li>samurai</li>
+					<li>anarchiste</li>
+				</tags>
+				<defaultOutfitTags>
+					<li>Worker</li>
+					<li>Soldier</li>
+					<li>WeebClothes</li>
+				</defaultOutfitTags>
+			</apparel>
+        <!-- Mod cross-compatibility for custom Caravans -->
+      	<tradeTags>
+			<li>OniApparel</li>
+	    </tradeTags>
+		<!--
+		<colorGenerator Class="ColorGenerator_Options">
+		  <options>
+			<li>
+			  <weight>10</weight>
+			  <only>(0.33,0.33,0.33,1)</only>
+			</li>
+			<li>
+			  <weight>10</weight>
+			  <only>(0.65,0.65,0.65,1)</only>
+			</li>
+			<li>
+			  <weight>6</weight>
+			  <min>(0.3,0.3,0.3,1)</min>
+			  <max>(0.5,0.5,0.5,1)</max>
+			</li>
+			<li>
+			  <weight>10</weight>
+			  <only>(0.9,0.9,0.9,1)</only>
+			</li>
+		  </options>
+		</colorGenerator>
+		-->
+	</ThingDef>
+
+	<!-- Straw hat -->
+	<ThingDef ParentName="HatMakeableBase">
+		<defName>weebstrawhat</defName>
+		<label>Rice Field Hat</label>
+		<description>An Oriental-style straw hat with a familiar face on it. WELCOME TO THE RICE FIELDS!</description>
+		<graphicData>
+			<texPath>weeaboo/weebstrawhat</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconScale>1.25</uiIconScale>
+		<costStuffCount>25</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+			<li>Metallic</li>
+
+			<!-- Mod Support -->
+			<li MayRequire="Dubwise.Rimefeller">Plastic</li>
+			<li MayRequire="Dubwise.Rimefeller">Composite</li>
+			<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>20</MaxHitPoints>
+			<WorkToMake>7000</WorkToMake>
+			<Mass>0.07</Mass>
+			<StuffEffectMultiplierArmor>0.4</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>1.5</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>0.8</EquipDelay>
+		</statBases>
+		<thingCategories>
+			<li>TSP_WeeabooApparel</li>
+		</thingCategories>
+		<generateCommonality>0.4</generateCommonality>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>weeaboo/weebstrawhat</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>WeebClothes</li>
+				<li>WeebHat</li>
+				<li>WeebSpecialHat</li>
+
+				<!-- Mod Support -->
+				<li>HSApparel_RoyaltyClothes</li>
+				<!--
+				<li>Apparel_SamuraiPeasant</li>
+				<li>Apparel_SamuraiStraw</li>
+				<li>HSApparel_EdoClanPeasant</li>
+				<li>OniWear</li>
+				<li>OniHeadWear</li>
+				<li>TW_Qin_PingMin</li>
+				<li>TW_Tang_PingMin</li>
+				-->
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+				<li>WeebClothes</li>
+			</defaultOutfitTags>
+		</apparel>
+		
+		<!-- Mod cross-compatibility for custom Caravans -->
+		<tradeTags>
+			<li>OniApparel</li>
+		</tradeTags>
+		<!--
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(0.33,0.33,0.33,1)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.65,0.65,0.65,1)</only>
+				</li>
+				<li>
+					<weight>6</weight>
+					<min>(0.3,0.3,0.3,1)</min>
+					<max>(0.5,0.5,0.5,1)</max>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.9,0.9,0.9,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		-->
+		<comps>
+			<li Class="CompProperties_Biocodable"/>
+		</comps>
+	</ThingDef>
+
+	<!-- Wig -->
+	<ThingDef ParentName="HatMakeableBase">
+		<defName>weebwig</defName>
+		<label>Anime wig</label>
+		<description>A colourful wig. It is cheap and it smells like plastic, but it provides obscene resistance to the cold if it is made of textiles. In fact, the cold resistance might make it worth humiliating oneself by wearing it.</description>
+		<soundInteract>TSP_freedomtoons_waifu2</soundInteract>
+		<graphicData>
+			<texPath>weeaboo/weebwig</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1.25</uiIconScale>
+		<costStuffCount>25</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+			<li>Metallic</li>
+
+			<!-- Mod Support -->
+			<li MayRequire="Dubwise.Rimefeller">Plastic</li>
+			<li MayRequire="Dubwise.Rimefeller">Composite</li>
+			<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+			<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+		</stuffCategories>
+		<thingCategories>
+			<li>TSP_WeeabooApparel</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>20</MaxHitPoints>
+			<WorkToMake>7000</WorkToMake>
+			<Mass>0.66</Mass>
+			<StuffEffectMultiplierArmor>0.85</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>1.5</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>-0.05</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>0.8</EquipDelay>
+		</statBases>
+		<generateCommonality>0.5</generateCommonality>
+		<apparel>
+			<gender>Male</gender>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>weeaboo/weebwig</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>WeebClothes</li>
+				<li>WeebElite</li>
+
+				<!-- Mod Support -->
+				<li>HSApparel_RoyaltyClothes</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+				<li>WeebClothes</li>
+			</defaultOutfitTags>
+		</apparel>
+		<!-- Mod cross-compatibility for custom Caravans -->
+		<tradeTags>
+			<li>OniApparel</li>
+		</tradeTags>
+		<!--
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(0.33,0.33,0.33,1)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.65,0.65,0.65,1)</only>
+				</li>
+				<li>
+					<weight>6</weight>
+					<min>(0.3,0.3,0.3,1)</min>
+					<max>(0.5,0.5,0.5,1)</max>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.9,0.9,0.9,1)</only>
+				</li>
+			</options>
+		</colorGenerator>
+		-->
+		<comps>
+			<li Class="CompProperties_Biocodable"/>
+		</comps>
+	</ThingDef>
+
+	<!-- weebshirt -->
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>Apparel_WeebShirt</defName>
+		<label>Weeaboo Shirt</label>
+		<description>A simple T-shirt with the wearer's Waifu- the DEFINITELY NOT FICTIONAL object of his fantasies and romantic obsessions- printed on it.</description>
+		<soundInteract>TSP_freedomtoons_waifu1</soundInteract>
+		<graphicData>
+			<texPath>weeaboo/weebshirt/weebshirt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<costStuffCount>55</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<thingCategories>
+			<li>TSP_WeeabooApparel</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>2000</WorkToMake>
+			<Mass>0.25</Mass>
+			<StuffEffectMultiplierArmor>0.65</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.7</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.6</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<apparel>
+			<!-- <gender>Male</gender> -->
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<wornGraphicPath>weeaboo/weebshirt/weebshirt</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>WeebClothes</li>
+				<li>WeebGirl</li>
+				<li>WeebSpecialShirt</li>
+
+				<!-- Mod Support -->
+				<li>HSApparel_RoyaltyClothes</li>
+				<li>HSApparel_RoyaltyClothes_Hakama</li>
+				<li>OniWear</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+				<li>WeebClothes</li>
+				<li>Slave</li>
+			</defaultOutfitTags>
+		</apparel>
+		<generateCommonality>1</generateCommonality>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+		<comps>
+		<li Class="CompProperties_Biocodable"/>
+		</comps>
+	</ThingDef>
+
+	<!-- weebshirt2 -->
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>Apparel_WeebShirttwo</defName>
+		<label>Weeaboo Shirt</label>
+		<description>A simple T-shirt with the wearer's Waifu- the DEFINITELY NOT FICTIONAL object of his fantasies and romantic obsessions- printed on it.</description>
+		<soundInteract>TSP_freedomtoons_waifu3</soundInteract>
+		<graphicData>
+			<texPath>weeaboo/weebshirt2/weebshirt2</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<costStuffCount>60</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<thingCategories>
+			<li>TSP_WeeabooApparel</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>40</MaxHitPoints>
+			<WorkToMake>2000</WorkToMake>
+			<Mass>0.25</Mass>
+			<StuffEffectMultiplierArmor>0.7</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.7</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.6</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+			</bodyPartGroups>
+			<wornGraphicPath>weeaboo/weebshirt2/weebshirt2</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>WeebClothes</li>
+				<li>WeebElite</li>
+				<li>WeebGirl</li>
+				<li>AnimeProtagonist</li>
+				<li>SeinfeldWaifu</li>
+				<li>Royal</li>
+				<li>RoyalTier1</li>
+				<li>RoyalTier2</li>
+
+				<!-- Mod Support -->
+				<li>HSApparel_RoyaltyClothes</li>
+				<li>HSApparel_RoyaltyClothes_Hakama</li>
+				<li>OniWear</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+				<li>Soldier</li>
+				<li>WeebClothes</li>
+			</defaultOutfitTags>
+		</apparel>
+		<generateCommonality>1</generateCommonality>
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+		<comps>
+			<li Class="CompProperties_Biocodable"/>
+		</comps>
+	</ThingDef>
+</Defs>

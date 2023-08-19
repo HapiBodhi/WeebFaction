@@ -1,0 +1,36 @@
+Use this to patch new stuff into the mod when necessary, adjusting for item type. -Bodi
+Alright, don't use the full operations. There are two things called PatchOperationFindMod and PatchOperation Sequence that make code take up 50% less space. -Bodi
+General
+<Operation Class="PatchOperationConditional">
+  <xpath>Defs/ThingDef[defName=""]</xpath>
+  <match Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName=""]/X</xpath>
+    <value>
+
+    </value>
+  </match>
+</Operation>
+
+Apparel
+<Operation Class="PatchOperationConditional">
+  <xpath>Defs/ThingDef[defName=""]</xpath>
+  <match Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName=""]/apparel/tags</xpath>
+    <value>
+
+    </value>
+  </match>
+</Operation>
+
+Child node Apparel
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName=""]/apparel</xpath>
+  <value>
+  </value>
+</li>
+Child node Weapon
+<li Class="PatchOperationAdd">
+  <xpath>Defs/ThingDef[defName=""]/weaponTags</xpath>
+  <value>
+  </value>
+</li>

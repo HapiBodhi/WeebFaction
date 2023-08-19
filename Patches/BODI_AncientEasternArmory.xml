@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+<Operation Class="PatchOperationFindMod"><!--Checks if Ancient Eastern Armory is installed.-->
+  <mods>
+    <li>Ancient Eastern Armory</li>
+  </mods>
+  <match Class="PatchOperationSequence"><!-- If installed, patch in all apparel and weapons. -->
+    <operations>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Ancient_AsianNobleCloth"]/apparel/tags</xpath>
+        <value>
+          <li>WeebElite</li>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Ancient_AsianNobleHat"]/apparel/tags</xpath>
+        <value>
+          <li>WeebSpecialHat</li>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Ancient_NinjaGi"]/apparel/tags</xpath>
+        <value>
+          <li>WeebElite</li>
+          <li>WeebGirl</li>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Ancient_NinjaMask"]/apparel/tags</xpath>
+        <value>
+          <li>WeebSpecialHat</li>
+          <li>WeebElite</li>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Ancient_SamuraiYoroi"]/apparel/tags</xpath>
+        <value>
+          <li>WeebElite</li>
+          <li>WeebKenshiSamurai</li>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Ancient_SamuraiHelmet"]/apparel/tags</xpath>
+        <value>
+          <li>WeebSpecialHat</li>
+          <li>WeebKenshiSamurai</li>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Ancient_SamuraiCaptainHelmet"]/apparel/tags</xpath>
+        <value>
+          <li>WeebSpecialHat</li>
+          <li>WeebKenshiSamurai</li>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Ancient_AshigaruArmor"]/apparel/tags</xpath>
+        <value>
+        <li>WeebElite</li>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Ancient_AshigaruHelmet"]/apparel/tags</xpath>
+        <value>
+        <li>WeebElite</li>
+        <li>WeebSpecialHat</li>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Ancient_QingLightArmor"]/apparel/tags</xpath>
+        <value>
+          <li>WeebClothes</li>
+          <li>WeebGirl</li>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Ancient_QingLightHelmet"]/apparel/tags</xpath>
+        <value>
+          <li>WeebHat</li>
+          <li>WeebClothes</li>
+          <li>WeebGirl</li>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Ancient_QingHeavyHelm"]/apparel/tags</xpath>
+        <value>
+          <li>WeebElite</li>
+          <li>WeebSpecialHat</li>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Ancient_Brigandine"]/apparel/tags</xpath>
+        <value>
+        <li>WeebElite</li>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Ancient_LeatherBrigandine"]/apparel/tags</xpath>
+        <value>
+          <li>WeebClothes</li>
+          <li>WeebGirl</li>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Ancient_BrigandineHelm"]/apparel/tags</xpath>
+        <value>
+          <li>WeebElite</li>
+          <li>WeebSpecialHat</li>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Ancient_LeatherBrigandineHelm"]/apparel/tags</xpath>
+        <value>
+          <li>WeebHat</li>
+          <li>WeebClothes</li>
+          <li>WeebGirl</li>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Ancient_GunnersHat"]/apparel/tags</xpath>
+        <value>
+          <li>WeebHat</li>
+          <li>WeebClothes</li>
+          <li>WeebGirl</li>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Ancient_TwoHandedFlair"]/weaponTags</xpath>
+        <value>
+          <li>WeebMelee</li>
+          <li>AdWeebMelee</li>
+          <li>WeebGirlWeaponry</li>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Ancient_SamuraiYari"]/weaponTags</xpath>
+        <value>
+          <li>WeebMelee</li>
+          <li>AdWeebMelee</li>
+          <li>WeebGirlWeaponry</li>
+          <li>WeebKenshiSamuraiMelee</li>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="Ancient_GuanDo"]/weaponTags</xpath>
+        <value>
+          <li>WeebMelee</li>
+          <li>WeebGirlWeaponry</li>
+        </value>
+      </li>
+    </operations>
+  </match>
+</Operation>
+</Patch>

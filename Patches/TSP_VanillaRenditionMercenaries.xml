@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- Code shamelessly lifted from the Oni Mod -->
+<!-- https://www.steamcommunity.com/sharedfiles/filedetails/?id=1632244750 -->
+
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>/Defs/FactionDef[defName = "Pirate"]/pawnGroupMakers/li[kindDef="Settlement"]/options</xpath>
+		<value>
+			<TSP_WeeabooSniperForHire>0.003</TSP_WeeabooSniperForHire>
+			<TSP_WeeabooSwordsmanForHire>0.004</TSP_WeeabooSwordsmanForHire> 
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationInsert">
+		<success>Always</success>
+		<xpath>/Defs/FactionDef[defName="Pirate"]/pawnGroupMakers/li[kindDef="Combat"]/options/Mercenary_Gunner</xpath>
+		<value>
+			<TSP_WeeabooSniperForHire>0.015</TSP_WeeabooSniperForHire>
+			<TSP_WeeabooSwordsmanForHire>0.004</TSP_WeeabooSwordsmanForHire> 
+		</value>
+	</Operation>
+	
+<Operation Class="PatchOperationSequence">
+	<success>Always</success>
+	<operations>
+		<li Class="PatchOperationTest">
+			<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[kindDef="Combat"]/options/Mercenary_Gunner</xpath>
+		</li>
+		<li Class="PatchOperationInsert">
+			<success>Always</success>
+			<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[kindDef="Combat"]/options/Mercenary_Gunner</xpath>
+			<value>
+				<TSP_WeeabooSniperForHire>0.03</TSP_WeeabooSniperForHire>
+			</value>
+		</li>
+	</operations>
+</Operation>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[kindDef="Combat"]/options/Mercenary_Slasher</xpath>
+			</li>
+			<li Class="PatchOperationInsert">
+				<success>Always</success>
+				<xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/pawnGroupMakers/li[kindDef="Combat"]/options/Mercenary_Slasher</xpath>
+				<value>
+					<TSP_WeeabooSwordsmanForHire>0.02</TSP_WeeabooSwordsmanForHire>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+
+</Patch>

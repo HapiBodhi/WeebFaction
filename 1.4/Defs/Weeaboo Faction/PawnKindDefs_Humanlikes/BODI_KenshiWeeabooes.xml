@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<PawnKindDef ParentName="WeeabooBase">
+	  <defName>KenshiWeebPaladin</defName>
+	  <label>paladin LARP-er</label>
+	  <race>Human</race>
+	  <isFighter>true</isFighter>
+	  <combatPower>100</combatPower>
+	  <apparelMoney>430~2200</apparelMoney>
+	  <apparelTags Inherit="False">
+		<li>WeebKenshiPaladin</li>
+		<li>WeebKenshi</li>
+		<li>WeebElite</li>
+		<!-- <li>WeebClothes</li> -->
+	  </apparelTags>
+	  <gearHealthRange>1.2~2.8</gearHealthRange>
+	  <weaponMoney>430~2200</weaponMoney>
+	  <weaponTags Inherit="False">
+		<li>WeebKenshiPaladinMelee</li>
+		<!-- <li>WeebKenshiMelee</li> -->
+		<li>AdWeebMelee</li>
+	  </weaponTags>
+	  <techHediffsChance>0.04</techHediffsChance>
+	  <techHediffsMoney>50~1000</techHediffsMoney>
+	  <techHediffsTags>
+		<li>ImplantEmpireCommon</li>
+	  </techHediffsTags>
+	  <biocodeWeaponChance Inherit="False">0.15</biocodeWeaponChance>
+	  <initialWillRange Inherit="False">0.01~0.02</initialWillRange>
+	  <initialResistanceRange Inherit="False">20~40</initialResistanceRange>
+		<titleSelectOne MayRequire="Heis.Edo.Themed.Expansion" Inherit="False">
+			<li MayRequire="Heis.Edo.Themed.Expansion">HSRonin</li>
+		</titleSelectOne>
+		<forcedTraits Inherit="False">
+			<li MayRequire="Heis.Edo.Themed.Expansion">HSRonin</li>
+			<li>Undergrounder</li>
+			<li>DislikesWomen</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Insatiable</li>
+		</forcedTraits>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="WeeabooBase">
+	  <defName>KenshiWeebEmpire</defName>
+	  <label>Kenshi LARP-er</label>
+	  <race>Human</race>
+	  <isFighter>true</isFighter>
+	  <combatPower>100</combatPower>
+	  <apparelMoney>430~2200</apparelMoney>
+	  <apparelTags Inherit="False">
+		<li>WeebKenshiSamurai</li>
+		<li>WeebKenshi</li>
+		<li>WeebElite</li>
+	  </apparelTags>
+	  <gearHealthRange>1.2~2.8</gearHealthRange>
+	  <weaponMoney>430~2200</weaponMoney>
+	  <weaponTags Inherit="False">
+		<li>WeebKenshiSamuraiMelee</li>
+		<li>WeebKenshiMelee</li>
+		<li>AdWeebMelee</li>
+		<li>WeebKenshi</li>
+		<li>WeebRanged</li>
+	  </weaponTags>
+	  <techHediffsChance>0.04</techHediffsChance>
+	  <techHediffsMoney>50~1000</techHediffsMoney>
+	  <techHediffsTags>
+		<li>ImplantEmpireCommon</li>
+	  </techHediffsTags>
+	  <biocodeWeaponChance Inherit="False">0.15</biocodeWeaponChance>
+	  <initialWillRange Inherit="False">0.01~0.02</initialWillRange>
+	  <initialResistanceRange Inherit="False">20~40</initialResistanceRange>
+		<titleSelectOne MayRequire="Heis.Edo.Themed.Expansion" Inherit="False">
+			<li MayRequire="Heis.Edo.Themed.Expansion">HSRonin</li>
+		</titleSelectOne>
+		<forcedTraits Inherit="False">
+			<li MayRequire="Heis.Edo.Themed.Expansion">HSRonin</li>
+			<li>Undergrounder</li>
+			<li>DislikesWomen</li>
+			<li>Brawler</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Insatiable</li>
+		</forcedTraits>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="WeeabooBase">
+	  <defName>KenshiWeebCrabRaider</defName>
+	  <label>crabby weeaboo</label>
+	  <race>Human</race>
+	  <isFighter>true</isFighter>
+	  <combatPower>150</combatPower>
+	  <apparelMoney>430~2200</apparelMoney>
+	  <apparelTags Inherit="False">
+		<li>WeebKenshiCrabRaider</li>
+		<li>WeebKenshi</li>
+		<li>WeebElite</li>
+	  </apparelTags>
+	  <gearHealthRange>1.2~2.8</gearHealthRange>
+	  <weaponMoney>760~2200</weaponMoney>
+	  <weaponTags Inherit="False">
+		<li>WeebKenshiCrabRaiderMelee</li>
+		<li>WeebKenshiMelee</li>
+		<li>AdWeebMelee</li>
+	  </weaponTags>
+	  <techHediffsChance>0.1</techHediffsChance>
+	  <techHediffsMoney>50~2000</techHediffsMoney>
+	  <invFoodDef MayRequire="biomesteam.biomesislands">Meat_BiomesIslands_RimCrab</invFoodDef> <!-- Crab meat. Get it? -->
+	  <invNutrition MayRequire="biomesteam.biomesislands">7</invNutrition>
+			<!-- OH YEAH MISTER KRABS!! -->
+			<specificApparelRequirements MayRequire="biomesteam.biomescore">
+				<li MayRequire="biomesteam.biomescore">
+					<bodyPartGroup MayRequire="biomesteam.biomescore">Torso</bodyPartGroup>
+					<stuff MayRequire="biomesteam.biomescore">BiomesCore_CrabShell</stuff>
+				</li>
+				<li MayRequire="biomesteam.biomescore">
+					<bodyPartGroup MayRequire="biomesteam.biomescore">FullHead</bodyPartGroup>
+					<stuff MayRequire="biomesteam.biomescore">BiomesCore_CrabShell</stuff>
+				</li>
+				<li MayRequire="biomesteam.biomescore">
+					<bodyPartGroup MayRequire="biomesteam.biomescore">Teeth</bodyPartGroup>
+					<stuff MayRequire="biomesteam.biomescore">BiomesCore_CrabShell</stuff>
+				</li>
+				<li MayRequire="biomesteam.biomescore">
+					<bodyPartGroup MayRequire="biomesteam.biomescore">UpperHead</bodyPartGroup>
+					<stuff MayRequire="biomesteam.biomescore">BiomesCore_CrabShell</stuff>
+				</li>
+				<li MayRequire="biomesteam.biomescore">
+					<bodyPartGroup MayRequire="biomesteam.biomescore">Feet</bodyPartGroup>
+					<stuff MayRequire="biomesteam.biomescore">BiomesCore_CrabShell</stuff>
+				</li>
+				<li MayRequire="biomesteam.biomescore">
+					<bodyPartGroup MayRequire="biomesteam.biomescore">Legs</bodyPartGroup>
+					<stuff MayRequire="biomesteam.biomescore">BiomesCore_CrabShell</stuff>
+				</li>
+			</specificApparelRequirements>
+	  <techHediffsTags>
+		<li>ImplantEmpireCommon</li>
+	  </techHediffsTags>
+	  <biocodeWeaponChance Inherit="False">0.15</biocodeWeaponChance>
+	  <initialWillRange Inherit="False">0.01~0.02</initialWillRange>
+	  <initialResistanceRange Inherit="False">20~40</initialResistanceRange>
+		<titleSelectOne MayRequire="Heis.Edo.Themed.Expansion" Inherit="False">
+			<li MayRequire="Heis.Edo.Themed.Expansion">HSRonin</li>
+		</titleSelectOne>
+		<forcedTraits Inherit="False">
+			<li MayRequire="Heis.Edo.Themed.Expansion">HSRonin</li>
+			<li>Undergrounder</li>
+			<li>DislikesWomen</li>
+			<li>Brawler</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Insatiable</li>
+		</forcedTraits>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="WeeabooBase">
+	  <defName>TSP_KenshiWeebCrabRaider_Ranged</defName>
+	  <label>crabby weeaboo</label>
+	  <race>Human</race>
+	  <isFighter>true</isFighter>
+	  <combatPower>200</combatPower>
+	  <apparelMoney>760~2200</apparelMoney>
+	  <apparelTags Inherit="False">
+		<li>WeebKenshiCrabRaider</li>
+		<li>WeebKenshi</li>
+		<li>WeebElite</li>
+	  </apparelTags>
+	  <gearHealthRange>1.2~2.8</gearHealthRange>
+	  <weaponMoney>760~2200</weaponMoney>
+	  <weaponTags Inherit="False">
+		<li>WeebSniper</li>
+		<li>WeebKenshiRanged</li>
+		<li>OniRangedAdvanced</li>
+	  </weaponTags>
+	  <techHediffsChance>0.04</techHediffsChance>
+	  <techHediffsMoney>50~1000</techHediffsMoney>
+	  <invFoodDef MayRequire="biomesteam.biomesislands">Meat_BiomesIslands_RimCrab</invFoodDef> <!-- Crab meat. Get it? -->
+	  <invNutrition MayRequire="biomesteam.biomesislands">7</invNutrition>
+			<!-- OH YEAH MISTER KRABS!! -->
+			<specificApparelRequirements MayRequire="biomesteam.biomescore">
+				<li MayRequire="biomesteam.biomescore">
+					<bodyPartGroup MayRequire="biomesteam.biomescore">Torso</bodyPartGroup>
+					<stuff MayRequire="biomesteam.biomescore">BiomesCore_CrabShell</stuff>
+				</li>
+				<li MayRequire="biomesteam.biomescore">
+					<bodyPartGroup MayRequire="biomesteam.biomescore">FullHead</bodyPartGroup>
+					<stuff MayRequire="biomesteam.biomescore">BiomesCore_CrabShell</stuff>
+				</li>
+				<li MayRequire="biomesteam.biomescore">
+					<bodyPartGroup MayRequire="biomesteam.biomescore">Teeth</bodyPartGroup>
+					<stuff MayRequire="biomesteam.biomescore">BiomesCore_CrabShell</stuff>
+				</li>
+				<li MayRequire="biomesteam.biomescore">
+					<bodyPartGroup MayRequire="biomesteam.biomescore">UpperHead</bodyPartGroup>
+					<stuff MayRequire="biomesteam.biomescore">BiomesCore_CrabShell</stuff>
+				</li>
+				<li MayRequire="biomesteam.biomescore">
+					<bodyPartGroup MayRequire="biomesteam.biomescore">Feet</bodyPartGroup>
+					<stuff MayRequire="biomesteam.biomescore">BiomesCore_CrabShell</stuff>
+				</li>
+				<li MayRequire="biomesteam.biomescore">
+					<bodyPartGroup MayRequire="biomesteam.biomescore">Legs</bodyPartGroup>
+					<stuff MayRequire="biomesteam.biomescore">BiomesCore_CrabShell</stuff>
+				</li>
+			</specificApparelRequirements>
+	  <techHediffsTags>
+		<li>ImplantEmpireCommon</li>
+	  </techHediffsTags>
+	  <biocodeWeaponChance Inherit="False">0.15</biocodeWeaponChance>
+	  <initialWillRange Inherit="False">0.01~0.02</initialWillRange>
+	  <initialResistanceRange Inherit="False">20~40</initialResistanceRange>
+		<titleSelectOne MayRequire="Heis.Edo.Themed.Expansion" Inherit="False">
+			<li MayRequire="Heis.Edo.Themed.Expansion">HSRonin</li>
+		</titleSelectOne>
+		<forcedTraits Inherit="False">
+			<li MayRequire="Heis.Edo.Themed.Expansion">HSRonin</li>
+			<li>Undergrounder</li>
+			<li>DislikesWomen</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Insatiable</li>
+		</forcedTraits>
+	  <disallowedTraits>
+		<li>Brawler</li>
+	  </disallowedTraits>
+	</PawnKindDef>
+</Defs>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationConditional">
+		<!-- Does this exist? -->
+		<xpath>/Defs/PawnKindDef[defName="GerzeeTribal"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="GerzeeRace"]/alienRace/raceRestriction/whiteApparelList</xpath>
+			<value>
+				<li>Apparel_Pants</li>
+				<li>weebbandana</li>
+				<li>weebstrawhat</li>
+				<li>weebwig</li>
+				<li>Apparel_WeebShirt</li>
+				<li>Apparel_WeebShirttwo</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<!-- Does this exist? -->
+		<xpath>/Defs/PawnKindDef[defName="GerzeeTribal"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="GerzeeRace"]/alienRace/raceRestriction/whiteWeaponList</xpath>
+			<value>
+				<li>weeb_bodypillowgun</li>
+				<li>TSP_weeaboo_sniperpillow</li>
+				<li>weeb_bodypillow</li>
+				<li>MeleeWeapon_WeebKatana</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+</Patch>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- Allows the Zori Sandals to be crafted without causing a million erros because the game expects Stuff and the unfinished Zori Sandals does not have any Stuff -->
+<Patch>
+	<Operation Class="PatchOperationConditional">
+		<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="samurai_zori"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="samurai_zori"]/recipeMaker</xpath>
+			<value>
+				<unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="samurai_zori"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="samurai_zori"]/apparel</xpath>
+			<value>
+				<countsAsClothingForNudity>false</countsAsClothingForNudity>
+				<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="samurai_zori"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="samurai_zori"]/tradeability</xpath>
+			<value>
+				<tradeability>All</tradeability>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+</Patch>

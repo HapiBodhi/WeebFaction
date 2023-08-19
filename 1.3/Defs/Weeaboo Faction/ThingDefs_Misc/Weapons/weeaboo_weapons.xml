@@ -1,0 +1,428 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Pillow gun -->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>weeb_bodypillowgun</defName>
+		<label>decorative scoped Waifu throw pillow</label>
+		<description>For thousands of years, women have decorated beds with decorative throw pillows. Usually taking up more than half the width of a double bed, these pillows are relatively flat and usually sit on top of a made bed because... well, honestly, there isn't a reason. Ask any man. \n Beginning at the turn of the second millineum, sexy anime aficionados created a market for these women's pillows by imprinting actual women on them. Or, at least they say it's an actual woman. It totally is. Yes, it's not an anime girl the wielder fantasizes about, not at all. \n \n What makes this pillow special is its use as a gun! Truly, anime is a gateway to things thought impossible! Corrupted by unspeakable and horrifying means, this augmented decorative throw pillow fires beams of pure energy at its target. This energy is CLEARLY harnassed by the IRREFUTABLE FACT that its wielder gets all the girls.</description>
+		<descriptionHyperlinks>
+			<thingDef>HandTailoringBench</thingDef>
+			<thingDef>ElectricTailoringBench</thingDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>weeaboo/scopedbodypillow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<soundInteract>TSP_freedomtoons_waifu2</soundInteract>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>1.5</Mass>
+			<AccuracyTouch>0.75</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.95</AccuracyMedium>
+			<AccuracyLong>0.85</AccuracyLong>
+			<RangedWeapon_Cooldown>1.05</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories Inherit="False">
+			<li>TSP_WeeabooStudyTheBlade</li>
+		</thingCategories>
+		<weaponClasses>
+			<li>Ranged</li>
+			<li>RangedLight</li>
+			<li MayRequire="Trickity.Samurai.Faction">Samurai</li>
+		</weaponClasses>
+		<weaponTags Inherit="False">
+			<li>WeebRanged</li>
+			<li>Hanzo</li>
+		</weaponTags>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<costStuffCount>250</costStuffCount>
+		<costList>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>ComplexFurniture</li>
+				<li>Gunsmithing</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+				<li>HandTailoringBench</li>
+				<li>ElectricTailoringBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_bodypillow</defaultProjectile>
+				<warmupTime>1.7</warmupTime>
+				<range>23</range>
+				<soundCast>TSP_kakegoe_close</soundCast>
+				<!-- <soundCastTail>Shot_SniperRifle</soundCastTail> --><!--Tail sounds need a onCamera value of True to work properly, which Shot_SniperRifle does not have.-->
+				<muzzleFlashScale>19</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>pillow</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power><!-- 9 -->
+				<cooldownTime>2</cooldownTime>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Thump</def>
+							<amount>9</amount>
+						</li>
+						<li>
+							<def>Stun</def>
+							<amount>1</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+		</tools>
+		<comps>
+			<li Class="CompProperties_Biocodable"/>
+		</comps>
+	</ThingDef>
+
+	<!-- Pillow gun -->
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>TSP_weeaboo_sniperpillow</defName>
+		<label>decorative sniper Waifu throw pillow with bayonet</label>
+		<description>For thousands of years, women have decorated beds with decorative throw pillows. Usually taking up more than half the width of a double bed, these pillows are relatively flat and usually sit on top of a made bed because... well, honestly, there isn't a reason. Ask any man. \n Beginning at the turn of the second millineum, sexy anime aficionados created a market for these women's pillows by imprinting actual women on them. Or, at least they say it's an actual woman. It totally is. Yes- it's not an anime girl the wielder fantasizes about, not at all. \n \n What makes this pillow special is its use as a gun! Truly, anime is a gateway to things thought impossible! Corrupted by unspeakable and horrifying means, this augmented decorative throw pillow fires beams of pure energy at its target. This energy is CLEARLY harnassed by the IRREFUTABLE FACT that its wielder gets all the girls. \n This varient of the augmented decorative throw pillow, using the "power of friendship", functions at extremely long range, just like a sniper's rifle. \n\n NOTE: If the Rimworld Westernization Project Mod is installed, the bayonet must first be crafted!</description>
+		<descriptionHyperlinks>
+			<ThingDef MayRequire="Mlie.RimworldWesternizationProject">MeleeWeapon_SpikeBayonet</ThingDef>
+			<ThingDef>HandTailoringBench</ThingDef>
+			<ThingDef>ElectricTailoringBench</ThingDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>weeaboo/TSP_baynonet_throw_pillow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<soundInteract>TSP_freedomtoons_waifu3</soundInteract>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<WorkToMake>14000</WorkToMake>
+			<Mass>2</Mass>
+			<AccuracyTouch>0.1</AccuracyTouch>
+			<AccuracyShort>0.2</AccuracyShort>
+			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyLong>0.8</AccuracyLong>
+			<RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories Inherit="False">
+			<li>TSP_WeeabooStudyTheBlade</li>
+		</thingCategories>
+		<weaponClasses>
+			<li>Ranged</li>
+			<li>RangedHeavy</li>
+			<li>LongShots</li>
+			<li MayRequire="Trickity.Samurai.Faction">Samurai</li>
+		</weaponClasses>
+		<weaponTags Inherit="False">
+			<li>WeebSniper</li>
+			<li>Hanzo</li>
+		</weaponTags>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<costStuffCount>300</costStuffCount>
+		<costList>
+			<Steel>3</Steel>
+			<ComponentIndustrial>8</ComponentIndustrial>
+			<MeleeWeapon_SpikeBayonet MayRequire="Mlie.RimworldWesternizationProject">1</MeleeWeapon_SpikeBayonet>
+		</costList>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>ComplexFurniture</li>
+				<li>PrecisionRifling</li>
+				<li MayRequire="Heis.Edo.Themed.Expansion">HS_EdoProduction</li>
+				<li MayRequire="Trickity.Samurai.Faction">TSF_BlackPowder</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+				<li>HandTailoringBench</li>
+				<li>ElectricTailoringBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_bodypillow</defaultProjectile>
+				<warmupTime>1.8</warmupTime>
+				<range>60</range>
+				<soundCast>TSP_kakegoe_drum</soundCast>
+				<!-- <soundCastTail>Shot_SniperRifle</soundCastTail> --><!--Tail sounds need a onCamera value of True to work properly, which Shot_SniperRifle does not have.-->
+				<muzzleFlashScale>19</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>pillow</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>3</power><!-- 9 -->
+				<cooldownTime>0.2</cooldownTime>
+				<chanceFactor>0.1</chanceFactor>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Thump</def>
+							<amount>5</amount>
+						</li>
+						<li>
+							<def>Stun</def>
+							<amount>2</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>bayonet</label>
+				<capacities>
+					<li>Stab</li>
+					<li>Cut</li>
+				</capacities>
+				<power>14</power><!-- 9 -->
+				<cooldownTime>2.4</cooldownTime>
+				<chanceFactor>2</chanceFactor>
+			</li>
+		</tools>
+		<comps>
+			<li Class="CompProperties_Biocodable"/>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_bodypillow</defName>
+		<label>pillow no jutsu</label>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>14</damageAmountBase>
+			<stoppingPower>5</stoppingPower>
+			<speed>300</speed>
+		</projectile>
+		<graphicData>
+			<texPath>weeaboo/weebgamerdart</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingDef>
+
+	<!-- Pillow melee -->
+	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+		<defName>weeb_bodypillow</defName>
+		<label>decorative Waifu throw pillow</label>
+		<description>For thousands of years, women have decorated beds with decorative throw pillows. Usually taking up more than half the space of a double bed, these pillows are relatively flat and usually sit on top of a made bed because... well, honestly, there isn't a reason. Ask any man. \n Beginning at the turn of the second millineum, sexy anime aficionados created a market for these women's pillows by imprinting actual women on them. Or, at least they say it's an actual woman. It totally is. Yes- it's not an anime girl the wielder fantasizes about, not at all. \n \n What makes this pillow special is its use as a blunt weapon. Corrupted by unspeakable and horrifying means, this augmented, decorative throw pillow is extremely hard because it was infused with the pure energy of a sexy man that CLEARLY gets all the girls.</description>
+		<descriptionHyperlinks>
+			<thingDef>HandTailoringBench</thingDef>
+			<thingDef>ElectricTailoringBench</thingDef>
+		</descriptionHyperlinks>
+		<soundInteract>TSP_freedomtoons_waifu1</soundInteract>
+		<graphicData>
+			<texPath>weeaboo/bodypillow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<uiIconScale>1.2</uiIconScale>
+		<techLevel>Industrial</techLevel>
+		<costStuffCount>50</costStuffCount>
+		<statBases>
+			<MarketValue>20</MarketValue>
+			<WorkToMake>1000</WorkToMake>
+			<Mass>1.25</Mass>
+		</statBases>
+		<thingCategories Inherit="False">
+			<li>TSP_WeeabooStudyTheBlade</li>
+		</thingCategories>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>MeleeBlunt</li>
+			<li MayRequire="Trickity.Samurai.Faction">Samurai</li>
+		</weaponClasses>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>ComplexFurniture</li>
+			</researchPrerequisites>
+			<recipeUsers>
+				<li>HandTailoringBench</li>
+				<li>ElectricTailoringBench</li>
+				<li>CraftingSpot</li>
+			</recipeUsers>
+		</recipeMaker>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<weaponTags Inherit="False">
+			<li>WeebMelee</li>
+			<li>WeebMinorGear</li>
+			<li>OniMelee</li>
+			<li>samuraibasic</li>
+		</weaponTags>
+		<tradeTags>
+			<li>OniWeapons</li>
+		</tradeTags>
+		<tools>
+			<li>
+				<label>pillow</label>
+				<!-- <labelUsedInLogging>false</labelUsedInLogging> -->
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power><!-- 8 -->
+				<cooldownTime>2</cooldownTime>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>10</amount>
+						</li>
+						<li>
+							<def>Thump</def>
+							<amount>8</amount>
+						</li>
+						</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+		</tools>
+    <comps>
+		<li Class="CompProperties_Biocodable"/>
+    </comps>
+	</ThingDef>
+
+	<!-- Toy Katana -->
+	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+		<defName>MeleeWeapon_WeebKatana</defName>
+		<label>toy katana</label>
+		<description>A hollow, fake katana that has been cracked from a lifetime of its wielder's studying of the blade. Light and surprisingly sharp.</description>
+		<soundInteract>TSP_kakegoe_scream_only</soundInteract>
+		<graphicData>
+			<texPath>weeaboo/katana2</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<techLevel>Medieval</techLevel>
+		<weaponTags>
+			<li>AdWeebMelee</li>
+			<li>Mizutori</li>
+			<li>Hanzo</li>
+		</weaponTags>
+			<costStuffCount>200</costStuffCount>
+			<statBases>
+			<WorkToMake>8000</WorkToMake>
+			<Mass>0.1</Mass>
+		</statBases>
+		<thingCategories Inherit="False">
+			<li>TSP_WeeabooStudyTheBlade</li>
+		</thingCategories>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>MeleePiercer</li>
+			<li MayRequire="Trickity.Samurai.Faction">Samurai</li>
+		</weaponClasses>
+		<tradeTags>
+			<li>OniWeapons</li>
+		</tradeTags>
+		<equippedStatOffsets>
+			<MoveSpeed>0.5</MoveSpeed>
+		</equippedStatOffsets>
+		<equippedAngleOffset>-34</equippedAngleOffset>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+
+			<!-- Support for Mod Stuff -->
+			<li MayRequire="TaosChagic.Igloo">Snowy</li>
+			<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+			<li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
+			<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+			<li MayRequire="Dubwise.Rimefeller">Plastic</li>
+			<li MayRequire="Dubwise.Rimefeller">Composite</li>
+		</stuffCategories>
+		<tools>
+			<li>
+				<label>hilt</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>4</power>
+				<cooldownTime>0.5</cooldownTime>
+				<chanceFactor>0.05</chanceFactor>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>17</power><!-- 23 -->
+				<cooldownTime>1.2</cooldownTime>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stab</def>
+							<amount>2</amount>
+						</li>
+						<li>
+							<def>Stun</def>
+							<amount>3</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Poke</li>
+					<li>Scratch</li>
+				</capacities>
+				<power>16</power><!-- 23 -->
+				<cooldownTime>1.33</cooldownTime>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Cut</def>
+							<amount>2</amount>
+						</li>
+						<li>
+							<def>Stun</def>
+							<amount>4</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Smithing</li>
+				<li MayRequire="Heis.Edo.Themed.Expansion">HS_EdoProduction</li>
+				<li MayRequire="Trickity.Samurai.Faction">TSF_Bushido_Code</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<comps>
+			<li Class="CompProperties_Biocodable"/>
+		</comps>
+	</ThingDef>
+</Defs>

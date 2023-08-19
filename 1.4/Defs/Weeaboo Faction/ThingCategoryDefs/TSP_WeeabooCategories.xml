@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8" ?><Defs>	<ThingCategoryDef>		<defName>TSP_WeeabooApparel</defName>		<label>Weeaboo apparel</label>		<parent>Apparel</parent>	</ThingCategoryDef>		<ThingCategoryDef>		<defName>TSP_WeeabooStudyTheBlade</defName>		<label>Weeaboo weaponry</label>		<parent>Weapons</parent>	</ThingCategoryDef></Defs>

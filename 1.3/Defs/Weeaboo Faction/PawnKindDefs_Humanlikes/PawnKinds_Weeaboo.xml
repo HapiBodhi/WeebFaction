@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+<PawnKindDef Name="WeeabooBase" Abstract="True">
+  <race>Human</race>
+  <fixedGender>Male</fixedGender>
+  <defaultFactionType>WeeabooArmy</defaultFactionType>
+  <chemicalAddictionChance>0.25</chemicalAddictionChance>
+  <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+  <invNutrition>4</invNutrition> <!-- Obesity -->
+  <!-- <biocodeWeaponChance>0.05</biocodeWeaponChance> -->
+  <weaponMoney>650~1000</weaponMoney>
+  <techHediffsMoney>50~750</techHediffsMoney>
+  <minGenerationAge>21</minGenerationAge>
+  <maxGenerationAge>39</maxGenerationAge>
+  <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+  <royalTitleChance MayRequire="Heis.Edo.Themed.Expansion">1</royalTitleChance>
+  <titleSelectOne MayRequire="Heis.Edo.Themed.Expansion">
+  <li MayRequire="Heis.Edo.Themed.Expansion">HSAshigaru</li>
+  </titleSelectOne>
+  <!-- <apparelRequired> -->
+  <!-- If you have the Mod -->
+  <!-- <li MayRequire="Trickity.Samurai.Faction">TSFApparel_SashimonoBanner</li> -->
+  <!-- <li MayRequire="Heis.Edo.Themed.Expansion">HSApparel_Hakama</li> -->
+  <!-- </apparelRequired> -->
+  <apparelTags>
+    <!--
+    <li>WeebClothes</li>
+    -->
+    <li>WeebHat</li>
+    <li>WeebPants</li>
+    <li>WeebLastResortTag</li>
+
+    <!-- If you have the Mod -->
+    <li>Apparel_SamuraiUtility</li>
+    <li>Apparel_NinjaSmoke</li>
+    <li>zori</li> <!-- Zori Sandals -->
+    <li>Hakama</li>
+  </apparelTags>
+  <forcedTraits>
+    <li MayRequire="Heis.Edo.Themed.Expansion">HSRonin</li>
+    <li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Insatiable</li>
+    <li>Undergrounder</li>
+    <li>DislikesWomen</li>
+  </forcedTraits>
+  <techHediffsRequired>
+  	<li>DeathAcidifier</li>
+  </techHediffsRequired>
+  <biocodeWeaponChance Inherit="False">0.05</biocodeWeaponChance>
+  <disallowedTraits>
+    <li>BodyPurist</li>
+    <li>Bisexual</li>
+    <li>Asexual</li>
+    <li>Nudist</li>
+    <li>Kind</li>
+    <li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Prude</li>
+  </disallowedTraits>
+  <!-- Weeaboos drop Milk when downed. Insert stupid, not funny "we don't serve that milk" meme here. TS hates that meme. This allows them to both nourish themselves AND have obscene amounts of milk to drink. -->
+  <invFoodDef>Milk</invFoodDef>
+  <initialWillRange>0.001~0.01</initialWillRange>
+</PawnKindDef>
+
+<PawnKindDef ParentName="WeeabooBase">
+<defName>Weeaboo</defName>
+<label>Weeaboo</label>
+<fixedGender>Male</fixedGender>
+<isFighter>true</isFighter>
+<combatPower>20</combatPower>
+<!-- <invNutrition>0</invNutrition> -->
+<gearHealthRange>0.2~0.6</gearHealthRange>
+<itemQuality>Normal</itemQuality>
+<apparelMoney Inherit="False">115~1300</apparelMoney>
+<apparelTags>
+<li>WeebClothes</li>
+<li>WeebHat</li>
+<li>WeebPants</li>
+
+<!-- If you have the Mod -->
+<li>Apparel_SamuraiUtility</li>
+<li>zori</li>
+<li>Hakama</li>
+</apparelTags>
+<weaponTags>
+	<li>WeebMelee</li>
+</weaponTags>
+<techHediffsTags>
+	<li>ImplantEmpireCommon</li>
+</techHediffsTags>
+<techHediffsChance>0.15</techHediffsChance>
+<initialResistanceRange>40~60</initialResistanceRange>
+</PawnKindDef>
+
+<PawnKindDef ParentName="WeeabooBase">
+<defName>AdWeeaboo</defName>
+<label>sexy Weeaboo</label>
+<race>Human</race>
+<fixedGender>Male</fixedGender>
+<isFighter>true</isFighter>
+<combatPower>50</combatPower>
+<gearHealthRange>0.7~2.3</gearHealthRange>
+<apparelMoney Inherit="False">600~2000</apparelMoney>
+<apparelTags>
+<li>WeebClothes</li>
+<li>WeebHat</li>
+<li>WeebPants</li>
+<li>SeinfeldWaifu</li>
+
+<!-- If you have the Mod -->
+<li>zori</li>
+</apparelTags>
+<apparelRequired Inherit="False">
+<li>weebwig</li>
+</apparelRequired>
+<weaponMoney Inherit="False">600~2000</weaponMoney>
+<weaponTags>
+	<li>WeebRanged</li> <!-- Scoped decorative throw pillows -->
+</weaponTags>
+<techHediffsChance>0.04</techHediffsChance>
+<techHediffsMoney>50~1000</techHediffsMoney>
+<techHediffsTags>
+	<li>ImplantEmpireCommon</li>
+</techHediffsTags>
+<biocodeWeaponChance Inherit="False">0.15</biocodeWeaponChance>
+<initialWillRange Inherit="False">0.01~0.02</initialWillRange>
+<initialResistanceRange Inherit="False">20~40</initialResistanceRange>
+</PawnKindDef>
+
+<PawnKindDef ParentName="WeeabooBase">
+<defName>KWeeaboo</defName>
+<label>katana Weeaboo</label>
+<race>Human</race>
+<isFighter>true</isFighter>
+<fixedGender>Male</fixedGender>
+<titleSelectOne MayRequire="Heis.Edo.Themed.Expansion" Inherit="False">
+<li MayRequire="Heis.Edo.Themed.Expansion">HSAshigaru</li>
+<li MayRequire="Heis.Edo.Themed.Expansion">HSRonin</li>
+</titleSelectOne>
+<combatPower>35</combatPower>
+<gearHealthRange>1.2~2.8</gearHealthRange>
+<apparelMoney Inherit="False">300~1000</apparelMoney>
+<apparelRequired>
+<li>weebbandana</li>
+<li>Apparel_ShieldBelt</li>
+</apparelRequired>
+<apparelTags>
+<li>WeebClothes</li>
+<li>WeebElite</li>
+<li>WeebHat</li>
+<li>SeinfeldWaifu</li>
+
+<!-- If you have the Mod -->
+<li>Hakama</li>
+<!-- <li>Apparel_SamuraiStraw</li> --> <!-- Provides clothing for cold weather -->
+</apparelTags>
+<weaponMoney>350~1000</weaponMoney>
+<weaponTags>
+	<li>AdWeebMelee</li>
+</weaponTags>
+<techHediffsChance>0.2</techHediffsChance>
+<techHediffsMoney>100~1000</techHediffsMoney>
+<techHediffsTags>
+	<li>ImplantEmpireCommon</li>
+</techHediffsTags>
+<forcedTraits Inherit="False">
+<li MayRequire="Heis.Edo.Themed.Expansion">HSRonin</li>
+<li>Undergrounder</li>
+<li>Brawler</li>
+<li>DislikesWomen</li>
+</forcedTraits>
+<biocodeWeaponChance Inherit="False">0.5</biocodeWeaponChance>
+<!-- <initialWillRange Inherit="False">0.01~0.02</initialWillRange> -->
+<initialResistanceRange Inherit="False">20~40</initialResistanceRange>
+</PawnKindDef>
+
+<PawnKindDef ParentName="WeeabooBase">
+<defName>TSP_WeeabooSniper</defName>
+<label>Weeaboo sniper</label>
+<race>Human</race>
+<isFighter>true</isFighter>
+<fixedGender>Male</fixedGender>
+<titleSelectOne MayRequire="Heis.Edo.Themed.Expansion" Inherit="False">
+<li MayRequire="Heis.Edo.Themed.Expansion">HSAshigaru</li>
+<li MayRequire="Heis.Edo.Themed.Expansion">HSRonin</li>
+</titleSelectOne>
+<combatPower>85</combatPower>
+<gearHealthRange>1.2~2.8</gearHealthRange>
+<apparelMoney Inherit="False">300~1000</apparelMoney>
+<apparelRequired>
+<li>weebstrawhat</li>
+<li>Apparel_WeebShirt</li>
+</apparelRequired>
+<apparelTags>
+<li>WeebClothes</li>
+<li>WeebElite</li>
+<li>WeebHat</li>
+<li>SeinfeldWaifu</li>
+
+<!-- If you have the Mod -->
+<li>Hakama</li>
+<li>Apparel_SamuraiStraw</li> <!-- Provides clothing for cold weather -->
+</apparelTags>
+<weaponMoney>2000~5000</weaponMoney>
+<weaponTags Inherit="False">
+	<li>WeebSniper</li>
+</weaponTags>
+<techHediffsChance>0.2</techHediffsChance>
+<techHediffsMoney>100~1000</techHediffsMoney>
+<techHediffsTags>
+	<li>ImplantEmpireCommon</li>
+</techHediffsTags>
+<biocodeWeaponChance Inherit="False">0.5</biocodeWeaponChance>
+<!-- <initialWillRange Inherit="False">0.01~0.02</initialWillRange> -->
+<initialResistanceRange Inherit="False">20~40</initialResistanceRange>
+</PawnKindDef>
+
+<PawnKindDef ParentName="WeeabooBase">
+<defName>TSP_weeaboo_tradesman</defName>
+<label>peddler</label>
+<race>Human</race>
+<fixedGender>Male</fixedGender>
+<isFighter>false</isFighter>
+<trader>true</trader>
+<titleSelectOne MayRequire="Heis.Edo.Themed.Expansion" Inherit="False">
+<li MayRequire="Heis.Edo.Themed.Expansion">HSRonin</li>
+</titleSelectOne>
+<combatPower>10</combatPower>
+<gearHealthRange>1.2~2.8</gearHealthRange>
+<apparelMoney Inherit="False">300~1000</apparelMoney>
+<apparelTags>
+<li>WeebClothes</li>
+<li>WeebElite</li>
+<li>WeebHat</li>
+<li>SeinfeldWaifu</li>
+
+<!-- If you have the Mod -->
+<li>RWPGentlemanWear</li>
+<li>Hakama</li>
+<li>Apparel_SamuraiStraw</li> <!-- Provides clothing for cold weather -->
+<li>HSApparel_RoyaltyClothes</li>
+</apparelTags>
+<weaponMoney>350~1000</weaponMoney>
+<weaponTags Inherit="False">
+<li>WeebRanged</li>
+<li>AdWeebMelee</li>
+</weaponTags>
+<techHediffsChance>0.2</techHediffsChance>
+<techHediffsMoney>100~1000</techHediffsMoney>
+<techHediffsTags>
+	<li>ImplantEmpireCommon</li>
+</techHediffsTags>
+<biocodeWeaponChance Inherit="False">0.33</biocodeWeaponChance>
+<initialWillRange Inherit="False">0.01~0.02</initialWillRange>
+<initialResistanceRange Inherit="False">20~40</initialResistanceRange>
+</PawnKindDef>
+
+<PawnKindDef ParentName="WeeabooBase">
+<defName>TSP_weeaboo_gamer_girl</defName>
+<label>gamer grill</label>
+<labelPlural>gamer girls</labelPlural>
+<fixedGender>Female</fixedGender>
+<isFighter>false</isFighter>
+<combatPower>15</combatPower>
+<royalTitleChance MayRequire="Heis.Edo.Themed.Expansion" Inherit="False">0</royalTitleChance>
+<gearHealthRange>0.75~1.05</gearHealthRange>
+<itemQuality>Normal</itemQuality>
+<biocodeWeaponChance Inherit="False">0</biocodeWeaponChance>
+<apparelMoney Inherit="False">200~1750</apparelMoney>
+<apparelTags Inherit="False">
+<li>Skirt</li>
+<li>WeebGirl</li>
+<li>WeebLastResortTag</li>
+
+<!-- If you have the Mod -->
+<li>zori</li>
+</apparelTags>
+<apparelRequired Inherit="False">
+<!-- If you have the Mod -->
+<li MayRequire="VanillaExpanded.VAPPE">VAE_Apparel_Skirt</li>
+<li MayRequire="wool.UselessClothes">woolschoolskirt</li>
+</apparelRequired>
+<weaponTags>
+<li>WeebGirlWeaponry</li>
+<li>MeleePiercer</li>
+<li>Toolagri</li>
+<li>Shuriken</li> <!-- Ninja stars -->
+<li>kunai</li> <!-- Ninja throwing knives -->
+<li>HSBasicShinobiRanged</li> <!-- Ninja stars -->
+</weaponTags>
+<techHediffsChance Inherit="False">0.0</techHediffsChance>
+<forcedTraits Inherit="False">
+<li>AnnoyingVoice</li>
+<li>Undergrounder</li>
+</forcedTraits>
+<invFoodDef Inherit="False">MealLavish</invFoodDef> <!-- SIMPS LOVE HER!! -->
+<initialWillRange Inherit="False">1~3</initialWillRange>
+<initialResistanceRange Inherit="False">1~4</initialResistanceRange>
+</PawnKindDef>
+
+<PawnKindDef ParentName="WeeabooBase">
+<defName>TSP_weeaboo_peasant</defName>
+<label>Weeb-pleb'</label>
+<fixedGender>Male</fixedGender>
+<isFighter>false</isFighter>
+<combatPower>15</combatPower>
+<royalTitleChance MayRequire="Heis.Edo.Themed.Expansion">0</royalTitleChance>
+<gearHealthRange>0.18~0.4</gearHealthRange>
+<itemQuality Inherit="False">Poor</itemQuality>
+<apparelMoney Inherit="False">200~800</apparelMoney>
+<apparelTags>
+<li>WeebSpecialShirt</li> <!-- ONLY the Mod's clothing -->
+<li>WeebSpecialHat</li> <!-- ONLY the Mod's hats -->
+<li>SeinfeldWaifu</li>
+<li>WeebPants</li>
+<li>Hakama</li>
+<li>zori</li>
+</apparelTags>
+<weaponTags>
+<li>WeebMelee</li>
+<li>WeebMinorGear</li>
+<li>MeleePiercer</li>
+<li>Sword</li>
+<li>Toolagri</li>
+<li>Shuriken</li> <!-- Ninja stars -->
+<li>kunai</li> <!-- Ninja throwing knives -->
+<li>HSBasicShinobiRanged</li> <!-- Ninja stars -->
+</weaponTags>
+<techHediffsChance Inherit="False">0.1</techHediffsChance>
+<techHediffsTags>
+<li>ImplantEmpireCommon</li>
+</techHediffsTags>
+<techHediffsRequired Inherit="False"></techHediffsRequired> <!-- Here's hoping that works -->
+<initialResistanceRange>3~7</initialResistanceRange>
+<forcedTraits Inherit="False">
+<li>CreepyBreathing</li>
+<li>Undergrounder</li>
+</forcedTraits>
+<initialWillRange Inherit="False">0.01~0.5</initialWillRange>
+</PawnKindDef>
+
+<PawnKindDef ParentName="WeeabooBase">
+<defName>TSP_alpha_male_weeaboo</defName>
+<label>Anime Protagonist</label>
+<race>Human</race>
+<fixedGender>Male</fixedGender>
+<factionLeader>true</factionLeader>
+<backstoryCryptosleepCommonality Inherit="False">0.12</backstoryCryptosleepCommonality>
+	<backstoryCategories MayRequire="Heis.Edo.Themed.Backstories" Inherit="False">
+<li MayRequire="Heis.Edo.Themed.Backstories">HSEdoBackstories</li>
+	</backstoryCategories>
+<royalTitleChance MayRequire="Heis.Edo.Themed.Expansion" Inherit="False">1</royalTitleChance>
+<titleSelectOne MayRequire="Heis.Edo.Themed.Expansion" Inherit="False">
+<li MayRequire="Heis.Edo.Themed.Expansion" Inherit="False">HSSamurai</li>
+</titleSelectOne>
+<apparelRequired Inherit="False">
+<!-- Sorry kid, nothing personal. -->
+<li>Apparel_WeebShirttwo</li>
+<li>weebwig</li>
+<li>Apparel_Duster</li>
+
+<!-- If you have the Mod, these can also be chosen -->
+<!--
+<li MayRequire="rimofmadness.callofcthulhu.factions">ROM_Apparel_CallOfCthulhuFedora</li>
+<li MayRequire="VanillaExpanded.VAPPE">VAE_Headgear_Fedora</li>
+-->
+<!-- <li MayRequire="Trickity.Samurai.Faction">TSFApparel_SashimonoBanner</li> -->
+<li MayRequire="Heis.Edo.Themed.Expansion">HSApparel_Hakama</li>
+</apparelRequired>
+<combatPower>250</combatPower>
+<maxGenerationAge>24</maxGenerationAge>
+<itemQuality Inherit="False">Legendary</itemQuality>
+<biocodeWeaponChance Inherit="False">1</biocodeWeaponChance>
+<destroyGearOnDrop Inherit="False">true</destroyGearOnDrop>
+<gearHealthRange Inherit="False">3~5</gearHealthRange>
+<apparelMoney Inherit="False">3000~10000</apparelMoney>
+<apparelTags>
+<!-- <li>WeebClothes</li> -->
+<li>AnimeProtagonist</li>
+<li>SeinfeldWaifu</li>
+<li>WeebPants</li>
+<li>WeebHat</li>
+<li>RWPGentlemanWear</li>
+
+<!-- If you have the Mod -->
+<li>HSApparel_SamuraiGeneral</li>
+<li>HSApparel_RoyaltyClothes</li>
+<li>HSApparel_HeavySamurai</li>
+<li>Apparel_SamuraiAdvanced</li>
+<li>Hakama</li>
+<li>samurai</li>
+<li>Apparel_Oni</li>
+</apparelTags>
+<apparelAllowHeadgearChance Inherit="False">1</apparelAllowHeadgearChance>
+<weaponMoney Inherit="False">7000~10000</weaponMoney>
+<weaponTags>
+<li>AdWeebMelee</li>
+<li>HS_Legendary_Edo_Melee</li>
+<li>SamuraiMeleeAdvanced</li>
+<li>HSSamuraiClanforgedMelee</li>
+<li>SpacerBlade</li>
+</weaponTags>
+<techHediffsChance Inherit="False">1</techHediffsChance>
+<techHediffsTags Inherit="False">
+<li>Advanced</li>
+<li>ImplantEmpireRoyal</li>
+<li>TechHediff</li>
+</techHediffsTags>
+<techHediffsMoney Inherit="False">1000~3000</techHediffsMoney>
+<initialWillRange Inherit="False">30~55</initialWillRange>
+<initialResistanceRange Inherit="False">100~150</initialResistanceRange>
+
+<forcedTraits Inherit="False">
+<li MayRequire="Heis.Edo.Themed.Expansion">HSRonin</li>
+<li>Undergrounder</li>
+<li>Brawler</li>
+<li>DislikesWomen</li>
+</forcedTraits>
+</PawnKindDef>
+
+<PawnKindDef ParentName="WeeabooBase">
+  <defName>KenshiWeebPaladin</defName>
+  <label>wannabe paladin</label>
+  <race>Human</race>
+  <isFighter>true</isFighter>
+  <combatPower>50</combatPower>
+  <apparelMoney>430~2200</apparelMoney>
+  <apparelTags Inherit="False">
+    <li>WeebKenshiPaladin</li>
+    <li>WeebKenshi</li>
+    <li>WeebElite</li>
+  </apparelTags>
+  <gearHealthRange>1.2~2.8</gearHealthRange>
+  <weaponMoney>430~2200</weaponMoney>
+  <weaponTags Inherit="False">
+    <li>WeebKenshiPaladinMelee</li>
+    <li>WeebKenshiMelee</li>
+    <li>AdWeebMelee</li>
+  </weaponTags>
+  <techHediffsChance>0.04</techHediffsChance>
+  <techHediffsMoney>50~1000</techHediffsMoney>
+  <techHediffsTags>
+  	<li>ImplantEmpireCommon</li>
+  </techHediffsTags>
+  <biocodeWeaponChance Inherit="False">0.15</biocodeWeaponChance>
+  <initialWillRange Inherit="False">0.01~0.02</initialWillRange>
+  <initialResistanceRange Inherit="False">20~40</initialResistanceRange>
+</PawnKindDef>
+
+<PawnKindDef ParentName="WeeabooBase">
+  <defName>KenshiWeebEmpire</defName>
+  <label>wannabe samurai</label>
+  <race>Human</race>
+  <isFighter>true</isFighter>
+  <combatPower>50</combatPower>
+  <apparelMoney>430~2200</apparelMoney>
+  <apparelTags Inherit="False">
+    <li>WeebKenshiSamurai</li>
+    <li>WeebKenshi</li>
+    <li>WeebElite</li>
+  </apparelTags>
+  <gearHealthRange>1.2~2.8</gearHealthRange>
+  <weaponMoney>430~2200</weaponMoney>
+  <weaponTags Inherit="False">
+    <li>WeebKenshiSamuraiMelee</li>
+    <li>WeebKenshiMelee</li>
+    <li>AdWeebMelee</li>
+  </weaponTags>
+  <techHediffsChance>0.04</techHediffsChance>
+  <techHediffsMoney>50~1000</techHediffsMoney>
+  <techHediffsTags>
+  	<li>ImplantEmpireCommon</li>
+  </techHediffsTags>
+  <biocodeWeaponChance Inherit="False">0.15</biocodeWeaponChance>
+  <initialWillRange Inherit="False">0.01~0.02</initialWillRange>
+  <initialResistanceRange Inherit="False">20~40</initialResistanceRange>
+</PawnKindDef>
+
+<PawnKindDef ParentName="WeeabooBase">
+  <defName>KenshiWeebCrabRaider</defName>
+  <label>wannabe crab raider</label>
+  <race>Human</race>
+  <isFighter>true</isFighter>
+  <combatPower>50</combatPower>
+  <apparelMoney>430~2200</apparelMoney>
+  <apparelTags Inherit="False">
+    <li>WeebKenshiCrabRaider</li>
+    <li>WeebKenshi</li>
+    <li>WeebElite</li>
+  </apparelTags>
+  <gearHealthRange>1.2~2.8</gearHealthRange>
+  <weaponMoney>430~2200</weaponMoney>
+  <weaponTags Inherit="False">
+    <li>WeebKenshiCrabRaiderMelee</li>
+    <li>WeebKenshiMelee</li>
+    <li>AdWeebMelee</li>
+  </weaponTags>
+  <techHediffsChance>0.04</techHediffsChance>
+  <techHediffsMoney>50~1000</techHediffsMoney>
+  <techHediffsTags>
+  	<li>ImplantEmpireCommon</li>
+  </techHediffsTags>
+  <biocodeWeaponChance Inherit="False">0.15</biocodeWeaponChance>
+  <initialWillRange Inherit="False">0.01~0.02</initialWillRange>
+  <initialResistanceRange Inherit="False">20~40</initialResistanceRange>
+</PawnKindDef>
+
+</Defs>

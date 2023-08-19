@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- Code shamelessly lifted from the Oni Mod -->
+<!-- Support for my favorite Race Mod -->
+<!-- https://www.steamcommunity.com/sharedfiles/filedetails/?id=1632244750 -->
+
+<Patch>
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+	<xpath>/Defs/PawnKindDef[defName="Oni_Penitent"]</xpath>
+		<!-- If it does, do this replacement -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs</xpath>
+			<value>
+				<PawnKindDef ParentName="WeeabooBase">
+					<defName>TSP_WeeabooOni</defName>
+					<label>Oni outcast</label>
+					<race Inherit="False">AOni</race>
+					<combatPower>15</combatPower>
+					<royalTitleChance MayRequire="Heis.Edo.Themed.Expansion" Inherit="False">0</royalTitleChance>
+					<techHediffsChance Inherit="False">0</techHediffsChance>
+					<techHediffsRequired Inherit="False"></techHediffsRequired> <!-- Here's hoping that works -->
+					<fixedGender>Male</fixedGender>
+					<apparelMoney Inherit="False">200~700</apparelMoney>
+					<itemQuality Inherit="False">Poor</itemQuality>
+					<apparelTags Inherit="False">
+						<li>WeebSpecialShirt</li> <!-- ONLY the Mod's clothing -->
+						<li>WeebSpecialHat</li> <!-- ONLY the Mod's hats -->
+						<li>SeinfeldWaifu</li>
+						<li>WeebPants</li>
+						
+						<!-- Mod support -->
+						<li>Glasses</li>
+						<li>Hakama</li>
+						<li>zori</li>
+					</apparelTags>
+					<weaponTags>
+						<li>WeebMelee</li>
+						<li>AdWeebMelee</li>
+						<li>WeebRanged</li>
+					</weaponTags>
+					<backstoryCategories Inherit="False">
+						<li>Outsider</li>
+						<li>Madman</li>
+						<li>TribalHunter</li>
+						<li>Tribal</li>
+					</backstoryCategories>
+					<forcedTraits Inherit="False">
+						<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Insatiable</li>
+						<li>Undergrounder</li>
+						<li>DislikesWomen</li>
+					</forcedTraits>
+					<initialResistanceRange Inherit="False">7~21</initialResistanceRange>
+					<initialWillRange Inherit="False">3~5</initialWillRange>
+					<invFoodDef Inherit="False">OniDelicacy</invFoodDef>
+				</PawnKindDef>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<!-- Adds the above Pawn into the Faction -->
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+	<xpath>/Defs/PawnKindDef[defName="Oni_Penitent"]</xpath>
+		<!-- If it does, do this replacement -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/FactionDef[defName="WeeabooArmy"]/pawnGroupMakers/li/options</xpath>
+			<value>
+				<TSP_WeeabooOni>17</TSP_WeeabooOni>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+	<xpath>/Defs/PawnKindDef[defName="Oni_Penitent"]</xpath>
+		<!-- If it does, do this replacement -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/FactionDef[defName="WeeabooArmy"]/pawnGroupMakers/li/guards</xpath>
+			<value>
+				<TSP_WeeabooOni>10</TSP_WeeabooOni>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+</Patch>

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- If someone doesn't have the Nyaron Lite Mod and has the original instead, this Patch removes the MAYREQUIRE code to ensure the Nyaron slave is added. This way, Nyarons will always appear if you have the corresponding Mod. -->
+
+<Patch>
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+	<xpath>/Defs/PawnKindDef[defName="Nyaron_Leader"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/FactionDef[defName="WeeabooArmy"]/pawnGroupMakers/li/options</xpath>
+			<value>
+				<Nyaron_Leader>1</Nyaron_Leader>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+	<xpath>/Defs/PawnKindDef[defName="Nyaron_Leader"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/FactionDef[defName="WeeabooArmy"]/pawnGroupMakers/li/guards</xpath>
+			<value>
+				<Nyaron_Leader>1</Nyaron_Leader>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+	<xpath>/Defs/PawnKindDef[defName="Nyaron_Leader"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/FactionDef[defName="WeeabooArmy"]/permanentEnemyToEveryoneExcept</xpath>
+			<value>
+				<li>NyaronPlayerColony</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+	<xpath>/Defs/PawnKindDef[defName="Nyaron_Leader"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/FactionDef[defName="WeeabooArmy"]/permanentEnemyToEveryoneExcept</xpath>
+			<value>
+				<li>NyaronFaction</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+</Patch>

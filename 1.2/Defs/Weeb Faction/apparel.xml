@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  <!-- Bandana -->
+  <ThingDef ParentName="HatMakeableBase">
+    <defName>weebbandana</defName>
+    <label>Weeaboo Bandana</label>
+    <description>A simple bandana. Makes the wearer more aerodynamic.</description>
+    <graphicData>
+      <texPath>weeaboo/weebbandana</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.25</uiIconScale>
+    <costStuffCount>25</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+    </stuffCategories>
+    <statBases>
+      <MaxHitPoints>20</MaxHitPoints>
+      <WorkToMake>1200</WorkToMake>
+      <Mass>0.07</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.50</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>0.8</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+			<MoveSpeed>0.1</MoveSpeed>
+		</equippedStatOffsets>
+    <generateCommonality>0.5</generateCommonality>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>weeaboo/weebbandana</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>WeebClothes</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>WeebClothes</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(0.33,0.33,0.33,1)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.65,0.65,0.65,1)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>(0.3,0.3,0.3,1)</min>
+          <max>(0.5,0.5,0.5,1)</max>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.9,0.9,0.9,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
+  <!-- Straw hat -->
+ <ThingDef ParentName="HatMakeableBase">
+    <defName>strawhat</defName>
+    <label>Weeaboo Straw Hat</label>
+    <description>An asian-style straw hat.
+
+      Welcome to the rice fields.</description>
+    <graphicData>
+      <texPath>weeaboo/weebstrawhat</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.25</uiIconScale>
+    <costStuffCount>25</costStuffCount>
+    <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+    <statBases>
+      <MaxHitPoints>20</MaxHitPoints>
+      <WorkToMake>1200</WorkToMake>
+      <Mass>0.07</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.50</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>10</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>0.8</EquipDelay>
+    </statBases>
+    <generateCommonality>0.5</generateCommonality>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>weeaboo/weebstrawhat</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>WeebClothes</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>WeebClothes</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(0.33,0.33,0.33,1)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.65,0.65,0.65,1)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>(0.3,0.3,0.3,1)</min>
+          <max>(0.5,0.5,0.5,1)</max>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.9,0.9,0.9,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
+  <!-- Wig -->
+ <ThingDef ParentName="HatMakeableBase">
+    <defName>animewig</defName>
+    <label>Anime wig</label>
+    <description>A colourful wig. Cheap and smells like plastic.</description>
+    <graphicData>
+      <texPath>weeaboo/weebwig</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.25</uiIconScale>
+    <costStuffCount>25</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+    </stuffCategories>
+    <statBases>
+      <MaxHitPoints>20</MaxHitPoints>
+      <WorkToMake>1200</WorkToMake>
+      <Mass>0.07</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.50</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>0.8</EquipDelay>
+    </statBases>
+    <generateCommonality>0.5</generateCommonality>
+    <apparel>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>weeaboo/weebwig</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>WeebClothes</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>WeebClothes</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(0.33,0.33,0.33,1)</only>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.65,0.65,0.65,1)</only>
+        </li>
+        <li>
+          <weight>6</weight>
+          <min>(0.3,0.3,0.3,1)</min>
+          <max>(0.5,0.5,0.5,1)</max>
+        </li>
+        <li>
+          <weight>10</weight>
+          <only>(0.9,0.9,0.9,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+
+  <!-- weebshirt -->
+   <ThingDef ParentName="ApparelMakeableBase">
+    <defName>Apparel_WeebShirt</defName>
+    <label>Weeb Shirt</label>
+    <description>A simple T-shirt with the wearer's waifu printed on it.</description>
+    <graphicData>
+      <texPath>weeaboo/weebshirt/weebshirt</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>40</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>1600</WorkToMake>
+      <Mass>0.25</Mass>
+      <StuffEffectMultiplierArmor>0.4</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.42</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.30</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+      </bodyPartGroups>
+      <wornGraphicPath>weeaboo/weebshirt/weebshirt</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+        <li>WeebClothes</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>WeebClothes</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+
+  <!-- weebshirt2 -->
+   <ThingDef ParentName="ApparelMakeableBase">
+    <defName>Apparel_WeebShirttwo</defName>
+    <label>Weeb Shirt</label>
+    <description>A simple T-shirt with the wearer's waifu printed on it.</description>
+    <graphicData>
+      <texPath>weeaboo/weebshirt2/weebshirt2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>40</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>1600</WorkToMake>
+      <Mass>0.25</Mass>
+      <StuffEffectMultiplierArmor>0.4</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.42</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.30</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.5</EquipDelay>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+      </bodyPartGroups>
+      <wornGraphicPath>weeaboo/weebshirt2/weebshirt2</wornGraphicPath>
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <tags>
+        <li>WeebClothes</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>WeebClothes</li>
+      </defaultOutfitTags>
+    </apparel>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+  </Defs>
