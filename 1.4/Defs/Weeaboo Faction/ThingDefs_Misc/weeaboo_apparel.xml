@@ -460,14 +460,8 @@
 				<li>OnSkin</li>
 			</layers>
 			<tags>
-				<li>WeebClothes</li>
-				<li>WeebElite</li>
-				<li>WeebGirl</li>
-				<li>AnimeProtagonist</li>
-				<li>SeinfeldWaifu</li>
-				<li>Royal</li>
-				<li>RoyalTier1</li>
-				<li>RoyalTier2</li>
+				<!-- <li>WeebClothes</li> -->
+				<li>WeebGirl</li> <!-- Let's make this unique, since I can't tell what it is. -->
 				<li>WeebKenshi</li>
 
 				<!-- Mod Support -->
