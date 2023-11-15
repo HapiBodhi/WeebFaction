@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <!-- Turtle, I don't know if you used some weird text editor or you ran the file through some broken zip program, but I had to manually indent this. Some spelling errors too, although to be fair that's understandable given the file size. -->
 <Patch>
 <Operation Class="PatchOperationConditional">
 <!-- Does this exist? -->
     <xpath>/Defs/ThingDef[defName="TSFApparel_HaoriJacket"]</xpath>
     <match Class="PatchOperationAdd"><!-- If it does, add this. -->
-      <xpath>/Defs/ThingDef[defName="TSFApparel_HaoriJacket"]/apparel/tags</xpath>
+      <xpath>/Defs/ThingDef[defName="TSFApparel_HaoriJacket"]/apparel/tags</xpath>		<success>Always</success>
       <value>
           <li>WeebClothes</li>
           <li>WeebElite</li>
@@ -16,7 +16,7 @@
 <!-- Does this exist? -->
     <xpath>/Defs/ThingDef[defName="HSApparel_Haori"]</xpath>
     <match Class="PatchOperationAdd"><!-- If it does, add this. -->
-      <xpath>/Defs/ThingDef[defName="HSApparel_Haori"]/apparel/tags</xpath>
+      <xpath>/Defs/ThingDef[defName="HSApparel_Haori"]/apparel/tags</xpath>		<success>Always</success>
       <value>
           <li>WeebClothes</li>
           <li>WeebElite</li>
@@ -27,7 +27,7 @@
 <!-- Does this exist? -->
     <xpath>/Defs/ThingDef[defName="TSFApparel_StrawHat"]</xpath>
     <match Class="PatchOperationAdd"><!-- If it does, add this. -->
-      <xpath>/Defs/ThingDef[defName="TSFApparel_StrawHat"]/apparel/tags</xpath>
+      <xpath>/Defs/ThingDef[defName="TSFApparel_StrawHat"]/apparel/tags</xpath>	  <success>Always</success>
       <value>
         <li>WeebClothes</li>
         <li>WeebHat</li>
@@ -44,7 +44,7 @@
 <!-- Does this exist? -->
     <xpath>/Defs/ThingDef[defName="Apparel_ShrimpHelmet"]</xpath>
     <match Class="PatchOperationAdd"><!-- If it does, add this. -->
-      <xpath>/Defs/ThingDef[defName="Apparel_ShrimpHelmet"]/apparel/tags</xpath>
+      <xpath>/Defs/ThingDef[defName="Apparel_ShrimpHelmet"]/apparel/tags</xpath>	  <success>Always</success>
       <value>
         <li>WeebClothes</li>
         <li>WeebHat</li>
@@ -59,7 +59,7 @@
 <!-- Does this exist? -->
   <xpath>/Defs/ThingDef[defName="RWP_Apparel_PaddyHat"]</xpath>
   <match Class="PatchOperationAdd"><!-- If it does, add this. -->
-    <xpath>/Defs/ThingDef[defName="RWP_Apparel_PaddyHat"]/apparel/tags</xpath>
+    <xpath>/Defs/ThingDef[defName="RWP_Apparel_PaddyHat"]/apparel/tags</xpath>	<success>Always</success>
     <value>
       <li>WeebClothes</li>
       <li>WeebHat</li>
@@ -82,7 +82,7 @@
 <!-- Does this exist? -->
   <xpath>/Defs/ThingDef[defName="HSApparel_Hakama"]</xpath>
   <match Class="PatchOperationAdd"><!-- If it does, add this. -->
-   <xpath>/Defs/ThingDef[defName="HSApparel_Hakama"]/apparel/tags</xpath>
+   <xpath>/Defs/ThingDef[defName="HSApparel_Hakama"]/apparel/tags</xpath>   <success>Always</success>
    <value>
       <li>WeebClothes</li>
       <li>WeebElite</li>
@@ -100,7 +100,7 @@
 <!-- Does this exist? -->
   <xpath>/Defs/ThingDef[defName="ROM_Apparel_CallOfCthulhuFedora"]</xpath>
   <match Class="PatchOperationAdd"><!-- If it does, add this. -->
-    <xpath>/Defs/ThingDef[defName="ROM_Apparel_CallOfCthulhuFedora"]/apparel/tags</xpath>
+    <xpath>/Defs/ThingDef[defName="ROM_Apparel_CallOfCthulhuFedora"]/apparel/tags</xpath>	<success>Always</success>
     <value>
       <li>WeebClothes</li>
       <li>WeebHat</li>
@@ -116,7 +116,7 @@
 <!-- Does this exist? -->
   <xpath>/Defs/ThingDef[defName="VAE_Headgear_Fedora"]</xpath>
   <match Class="PatchOperationAdd"><!-- If it does, add this. -->
-    <xpath>/Defs/ThingDef[defName="VAE_Headgear_Fedora"]/apparel/tags</xpath>
+    <xpath>/Defs/ThingDef[defName="VAE_Headgear_Fedora"]/apparel/tags</xpath>	<success>Always</success>
     <value>
       <li>WeebClothes</li>
 <li>WeebHat</li>
@@ -132,7 +132,7 @@
 <!-- Does this exist? -->
   <xpath>/Defs/ThingDef[defName="ROM_Apparel_DetectiveSlacks"]</xpath>
   <match Class="PatchOperationAdd"><!-- If it does, add this. -->
-<xpath>/Defs/ThingDef[defName="ROM_Apparel_DetectiveSlacks"]/apparel/tags</xpath>
+<xpath>/Defs/ThingDef[defName="ROM_Apparel_DetectiveSlacks"]/apparel/tags</xpath><success>Always</success>
     <value>
       <li>WeebClothes</li>
       <li>WeebPants</li>
@@ -145,7 +145,7 @@
 </Operation>
 <Operation Class="PatchOperationAdd">
   <success>Always</success>
-  <xpath>/Defs/ThingDef[defName="Apparel_Pants"]/apparel/tags</xpath>
+  <xpath>/Defs/ThingDef[defName="Apparel_Pants"]/apparel/tags</xpath>  <success>Always</success>  
   <value>
     <li>WeebLastResortTag</li>
   </value>
@@ -155,7 +155,7 @@
   <xpath>/Defs/ThingDef[@Name="ApparelShirtRoyalTier2Base"]/apparel/tags</xpath>
   <match Class="PatchOperationAdd"><!-- If it does, add this. -->
     <success>Always</success>
-    <xpath>/Defs/ThingDef[@Name="ApparelShirtRoyalTier2Base"]/apparel/tags</xpath>
+    <xpath>/Defs/ThingDef[@Name="ApparelShirtRoyalTier2Base"]/apparel/tags</xpath>	<success>Always</success>
     <value><!-- <li>WeebClothes</li> -->
       <li>WeebElite</li>
       <li>Royal</li>
@@ -168,28 +168,7 @@
       <li>King</li>
       <li>ST_GnomeClothing</li>
     </value>
-  </match>
-<!-- If it does NOT exist, add this. -->
-  <nomatch Class="PatchOperationAdd">
-    <success>Always</success>
-    <xpath>/Defs/ThingDef[@Name="ApparelShirtRoyalTier2Base"]/apparel</xpath>
-    <value>
-      <tags>
-        <!-- <li>WeebClothes</li> -->
-        <li>WeebElite</li>
-<li>Royal</li>
-<li>RoyalTier1</li>
-        <li>RoyalTier2</li>
-        <li>Medieval</li>
-<li>MedievalApparel</li>
-        <li>MedievalApparelNoble</li>
-<li>MedievalApparelGnoble</li>
-        <li>King</li>
-        <li>ST_GnomeClothing</li>
-        <li>JeubWear</li>
-      </tags>
-    </value>
-  </nomatch><!-- In the end, something will always get added. -->
+  </match><!-- In the end, something will always get added. -->
 </Operation>
 <Operation Class="PatchOperationConditional">
 <!-- Does this exist? -->
@@ -236,7 +215,7 @@
   <match Class="PatchOperationAdd"><!-- If it does, add this. -->
     <xpath>/Defs/ThingDef[defName="RWP_Apparel_LeatherPants"]/apparel/tags</xpath>
     <value>
-      <li>WeebClothes</li><li>WeebPants</li>
+      <li>WeebClothes</li>	  	  <li>WeebPants</li>
     </value>
   </match><!-- If the first XPATH does not exist, the original code stands. -->
 </Operation>
@@ -253,15 +232,15 @@
       <li>Outlander</li>
       <li>IndustrialBasic</li>
       <li>IndustrialAdvanced</li>
-<li>RWPWesternWear</li>
-<li>RWPGentlemanWear</li>
+	<li>RWPWesternWear</li>
+	<li>RWPGentlemanWear</li>
       <li>Royal</li>
       <li>RoyalTier1</li>
       <li>RoyalTier2</li>
       <li>OniWear</li>
       <li>OniHeadWear</li>
-<li>CallOfCthulhu_Townsfolk</li>
-<li>JeubWear</li>
+	<li>CallOfCthulhu_Townsfolk</li>
+	<li>JeubWear</li>
     </value>
   </match><!-- If the first XPATH does not exist, the original code stands. -->
 </Operation>
@@ -279,14 +258,14 @@
 </Operation>
 <Operation Class="PatchOperationConditional">
 <!-- Does this exist? -->
-  <xpath>/Defs/ThingDef[defName="woolschoolpants"]</xpath>
-  <match Class="PatchOperationAdd"><!-- If it does, add this. -->
+  <xpath>/Defs/ThingDef[defName="woolschoolpants"]/generateCommonality</xpath>
+  <nomatch Class="PatchOperationAdd"><!-- If it DOES NOT, add this. -->
     <success>Always</success>
     <xpath>/Defs/ThingDef[defName="woolschoolpants"]</xpath>
     <value>
       <generateCommonality Inherit="False">0.4</generateCommonality>
     </value>
-  </match><!-- If the first XPATH does not exist, the original code stands. -->
+  </nomatch><!-- If the first XPATH does not exist, the original code stands. -->
 </Operation>
 <Operation Class="PatchOperationConditional">
 <!-- Does this exist? -->
@@ -445,7 +424,7 @@
       <li>WeebElite</li>
       <li>WeebGirl</li>
       <li>AnimeProtagonist</li>
-<li>OniWear</li>
+	<li>OniWear</li>
       <li>JeubWear</li>
       <li>ST_GnomeClothing</li>
       <li>HSApparel_EdoClanPeasant</li>
@@ -536,25 +515,25 @@
 </Operation>
 <Operation Class="PatchOperationConditional">
 <!-- Does this exist? -->
-  <xpath>/Defs/ThingDef[defName="woola"]</xpath>
-<match Class="PatchOperationAdd"><!-- If it does, add this. -->
+  <xpath>/Defs/ThingDef[defName="woola"]/generateCommonality</xpath>
+<nomatch Class="PatchOperationAdd"><!-- If it DOES NOT, add this. -->
 <success>Always</success>
     <xpath>/Defs/ThingDef[defName="woola"]</xpath>
     <value>
       <generateCommonality Inherit="False">0.2</generateCommonality>
     </value>
-  </match><!-- If the first XPATH does not exist, the original code stands. -->
+  </nomatch><!-- If the first XPATH does not exist, the original code stands. -->
 </Operation>
 <Operation Class="PatchOperationConditional">
 <!-- Does this exist? -->
-  <xpath>/Defs/ThingDef[defName="woolsuitpants"]</xpath>
-<match Class="PatchOperationAdd"><!-- If it does, add this. -->
+  <xpath>/Defs/ThingDef[defName="woolsuitpants"]/generateCommonality</xpath>
+<nomatch Class="PatchOperationAdd"><!-- If it DOES NOT, add this. -->
 <success>Always</success>
 <xpath>/Defs/ThingDef[defName="woolsuitpants"]</xpath>
 <value>
       <generateCommonality Inherit="False">0.4</generateCommonality>
     </value>
-  </match><!-- If the first XPATH does not exist, the original code stands. -->
+  </nomatch><!-- If the first XPATH does not exist, the original code stands. -->
 </Operation>
 <Operation Class="PatchOperationConditional">
 <!-- Does this exist? -->
@@ -564,7 +543,7 @@
     <value>
       <li>WeebGirlWeaponry</li>
       <li>WeebMinorGear</li>
-      <li>Toolagri</li>
+      <li>Toolagri</li>	  	  <li>GnomeChef</li>
     </value>
   </match><!-- If the first XPATH does not exist, the original code stands. -->
 </Operation>
@@ -659,8 +638,8 @@
       <li>Royal</li>
       <li>RoyalTier1</li>
       <li>RoyalTier2</li>
-<li>RoyalTier3</li>
-<li>HSApparel_RoyaltyClothes</li>
+	<li>RoyalTier3</li>
+	<li>HSApparel_RoyaltyClothes</li>		<li>BeetnikhWear</li>		<li>JeubWear</li>		<li>King</li>
     </value>
   </match><!-- If the first XPATH does not exist, the original code stands. -->
 </Operation>
@@ -716,8 +695,8 @@
     <value>
       <li>WeebClothes</li>
       <li>WeebElite</li>
-<li>WeebGirl</li>
-<li>OniWear</li>
+		<li>WeebGirl</li>
+		<li>OniWear</li>
       <li>HSApparel_RoyaltyClothes</li>
       <li>HSApparel_EdoClanBase</li>
       <li>Apparel_SamuraiBasic</li>
@@ -908,46 +887,42 @@
 </Operation>
 <Operation Class="PatchOperationConditional">
 <!-- Does this exist? -->
-  <xpath>/Defs/ThingDef[defName="TW_QClothing"]</xpath> <!-- Actually a Chinese robe, but who's counting?  Given the Weeaboos' opinion on women, it's close enough. Right?-->
+  <xpath>/Defs/ThingDef[defName="TW_QClothing"]/apparel/tags</xpath> <!-- Actually a Chinese robe, but who's counting?  Given the Weeaboos' opinion on women, it's close enough. Right?-->
   <match Class="PatchOperationAdd"><!-- If it does, add this. -->
-    <xpath>/Defs/ThingDef[defName="TW_QClothing"]/apparel</xpath>
+    <xpath>/Defs/ThingDef[defName="TW_QClothing"]/apparel/tags</xpath>
     <value>
-      <tags>
         <li>WeebGirl</li>
         <li>Robe</li>
         <li>OniWear</li>
-<li>HSApparel_RoyaltyClothes</li>
-      </tags>
+		<li>HSApparel_RoyaltyClothes</li>
     </value>
   </match><!-- If the first XPATH does not exist, the original code stands. -->
 </Operation>
 <Operation Class="PatchOperationConditional">
-  <xpath>/Defs/ThingDef[defName="TW_Lian_ChainShirt"]</xpath> <!-- Actually a Chinese robe, but who's counting?  Given the Weeaboos' opinion on women, it's close enough. Right?-->
+  <xpath>/Defs/ThingDef[defName="TW_Lian_ChainShirt"]/apparel/tags</xpath> <!-- Actually a Chinese robe, but who's counting?  Given the Weeaboos' opinion on women, it's close enough. Right?-->
   <match Class="PatchOperationAdd"><!-- If it does, add this. -->
-    <xpath>/Defs/ThingDef[defName="TW_Lian_ChainShirt"]/apparel</xpath>
+    <xpath>/Defs/ThingDef[defName="TW_Lian_ChainShirt"]/apparel/tags</xpath>
     <value>
-      <tags>
         <li>WeebGirl</li>
         <li>Robe</li>
-<li>OniWear</li>
-        <li>HSApparel_RoyaltyClothes</li>
-      </tags>
+		<li>OniWear</li>
+        <li>HSApparel_RoyaltyClothes</li>
     </value>
   </match><!-- If the first XPATH does not exist, the original code stands. -->
 </Operation>
 <Operation Class="PatchOperationConditional">
 <!-- Does this exist? -->
-  <xpath>/Defs/ThingDef[defName="VAE_Apparel_Skirt"]</xpath>
-  <match Class="PatchOperationAdd"><!-- If it does, add this. -->
-    <xpath>/Defs/ThingDef[defName="VAE_Apparel_Skirt"]/apparel</xpath>
+  <xpath>/Defs/ThingDef[defName="VAE_Apparel_Skirt"]/apparel/gender</xpath>
+  <nomatch Class="PatchOperationAdd"><!-- If it DOES NOT, add this. -->
+    <xpath>/Defs/ThingDef[defName="VAE_Apparel_Skirt"]/apparel</xpath>	<success>Always</success>
     <value>
       <gender>Female</gender>
     </value>
-  </match>
+  </nomatch>
 </Operation>
 <Operation Class="PatchOperationConditional">
 <!-- Does this exist? -->
-  <xpath>/Defs/ThingDef[defName="VAE_Apparel_Skirt"]</xpath><!-- If it does, do this replacement. -->
+  <xpath>/Defs/ThingDef[defName="VAE_Apparel_Skirt"]/tradeability</xpath><!-- If it does, do this replacement. -->
   <match Class="PatchOperationReplace">
     <success>Always</success>
     <xpath>/Defs/ThingDef[defName="VAE_Apparel_Skirt"]/tradeability</xpath>
@@ -958,29 +933,29 @@
 </Operation>
 <Operation Class="PatchOperationConditional">
 <!-- Does this exist? -->
-  <xpath>/Defs/ThingDef[defName="VAE_Apparel_Skirt"]</xpath>
+  <xpath>/Defs/ThingDef[defName="VAE_Apparel_Skirt"]/generateCommonality</xpath>
   <!-- If it does, do this replacement. -->
   <match Class="PatchOperationReplace">
     <success>Always</success>
     <xpath>/Defs/ThingDef[defName="VAE_Apparel_Skirt"]/generateCommonality</xpath>
     <value>
-      <generateCommonality>0.9</generateCommonality>
+      <generateCommonality>1.2</generateCommonality>
     </value>
   </match><!-- If the first XPATH does not exist, the original code stands. -->
 </Operation>
-<Operation Class="PatchOperationConditional">
-  <xpath>/Defs/ThingDef[defName="VAE_Apparel_Blouse"]</xpath>
-  <match Class="PatchOperationAdd"><!-- If it does, add this. -->
+<Operation Class="PatchOperationConditional"><!-- Does this exist? -->
+  <xpath>/Defs/ThingDef[defName="VAE_Apparel_Blouse"]/apparel/gender</xpath>
+  <nomatch Class="PatchOperationAdd"><!-- If it DOES NOT, add this. -->
     <success>Always</success>
     <xpath>/Defs/ThingDef[defName="VAE_Apparel_Blouse"]/apparel</xpath>
     <value>
     <gender>Female</gender>
     </value>
-  </match>
+  </nomatch>
 </Operation>
 <Operation Class="PatchOperationConditional">
 <!-- Does this exist? -->
-  <xpath>/Defs/ThingDef[defName="VAE_Apparel_Skirt"]</xpath><!-- If it does, do this replacement. -->
+  <xpath>/Defs/ThingDef[defName="VAE_Apparel_Skirt"]/tradeability</xpath><!-- If it does, do this replacement. -->
   <match Class="PatchOperationReplace">
     <success>Always</success>
     <xpath>/Defs/ThingDef[defName="VAE_Apparel_Blouse"]/tradeability</xpath>
