@@ -155,7 +155,7 @@
   <xpath>/Defs/ThingDef[@Name="ApparelShirtRoyalTier2Base"]/apparel/tags</xpath>
   <match Class="PatchOperationAdd"><!-- If it does, add this. -->
     <success>Always</success>
-    <xpath>/Defs/ThingDef[@Name="ApparelShirtRoyalTier2Base"]/apparel/tags</xpath>	<success>Always</success>
+    <xpath>/Defs/ThingDef[@Name="ApparelShirtRoyalTier2Base"]/apparel/tags</xpath>
     <value><!-- <li>WeebClothes</li> -->
       <li>WeebElite</li>
       <li>Royal</li>
