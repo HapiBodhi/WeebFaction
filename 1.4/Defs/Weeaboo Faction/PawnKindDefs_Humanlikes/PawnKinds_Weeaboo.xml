@@ -14,10 +14,13 @@
 		<minGenerationAge>21</minGenerationAge>
 		<maxGenerationAge>30</maxGenerationAge>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<!--
 		<royalTitleChance MayRequire="Heis.Edo.Themed.Expansion">0.2</royalTitleChance>
 		<titleSelectOne MayRequire="Heis.Edo.Themed.Expansion">
 			<li MayRequire="Heis.Edo.Themed.Expansion">HSAshigaru</li>
+			<li MayRequire="Heis.Edo.Themed.Expansion">HSRonin</l>
 		</titleSelectOne>
+		-->
 		<!-- <apparelRequired> -->
 		<!-- If you have the Mod -->
 		<!-- <li MayRequire="Trickity.Samurai.Faction">TSFApparel_SashimonoBanner</li> -->
@@ -44,6 +47,7 @@
 			<li>Undergrounder</li>
 			<li>DislikesWomen</li>
 		</forcedTraits>
+		<royalTitleChance MayRequire="Heis.Edo.Themed.Expansion">0</royalTitleChance>
 		<techHediffsRequired>
 			<li>DeathAcidifier</li>
 		</techHediffsRequired>

@@ -25,11 +25,37 @@
 		<dialogFactionGreetingWary>TSP_WeeabooFlavor_DefaultGreeting</dialogFactionGreetingWary>
 		<dialogFactionGreetingWarm>TSP_WeeabooFlavor_Ally</dialogFactionGreetingWarm>
 		<!--
-		<colorSpectrum>
-		  <li>(0.45, 0.05, 0.05)</li>
-		  <li>(0.80, 0.25, 0.05)</li>
-		</colorSpectrum>
+		<royalTitleInheritanceWorkerClass MayRequire="heis.edo.themed.expansion">RoyalTitleInheritanceWorker</royalTitleInheritanceWorkerClass>
+		<royalTitleInheritanceRelations MayRequire="heis.edo.themed.expansion">
+			<li MayRequire="heis.edo.themed.expansion">Child</li>
+			<li MayRequire="heis.edo.themed.expansion">Grandchild</li>
+			<li MayRequire="heis.edo.themed.expansion">GreatGrandchild</li>
+			<li MayRequire="heis.edo.themed.expansion">NephewOrNiece</li>
+			<li MayRequire="heis.edo.themed.expansion">Spouse</li>
+			<li MayRequire="heis.edo.themed.expansion">Sibling</li>
+			<li MayRequire="heis.edo.themed.expansion">HalfSibling</li>
+			<li MayRequire="heis.edo.themed.expansion">Cousin</li>
+			<li MayRequire="heis.edo.themed.expansion">Parent</li>
+			<li MayRequire="heis.edo.themed.expansion">UncleOrAunt</li>
+		</royalTitleInheritanceRelations>
 		-->
+		<colorSpectrum>
+			<!--
+			<li>(0.45, 0.05, 0.05)</li>
+			<li>(0.80, 0.25, 0.05)</li>
+			-->
+			<li>(255, 255, 255)</li>
+			<li>(255, 255, 255)</li>
+			<li>(255, 0, 0)</li>
+			<li>(0, 255, 0)</li>
+			<li>(0, 0, 255)</li>
+			<li>(255, 0, 255)</li>
+			<li>(0, 255, 255)</li>
+			<li>(255, 255, 0)</li>
+			<li>(128, 0, 255)</li>
+			<li>(128, 64, 64)</li>
+			<li>(36, 209, 255)</li>
+		</colorSpectrum>
 		<permanentEnemyToEveryoneExcept>
 			<li MayRequire="Heis.Edo.Themed.Expansion">HS_PlayerEdoClan</li>
 			<li MayRequire="Heis.Edo.Themed.Expansion">HS_Virtuous_Clan</li>
@@ -51,9 +77,11 @@
 			<li MayRequire="morishep.tarojun.onioftherim">OniTPlayerColony</li>
 			<li MayRequire="morishep.tarojun.onioftherim">AncestralOniPlayerColony</li>
 			<li MayRequire="morishep.tarojun.onioftherim">OniFreeborn</li>
+			<li MayRequire="morishep.tarojun.onioftherim">RevenantTalons</li>
 			<li MayRequire="Inoshishi3.KTTFDE">Kurin_Faction_Player</li>
 			<li MayRequire="Inoshishi3.KTTFDE">Kurin_Faction_Republic</li>
 			<li MayRequire="Inoshishi3.KTTFDE">Kurin_Faction_UFU</li>
+			<li MayRequire="redmattis.yokai">BS_YokaiUnion</li>
 		</permanentEnemyToEveryoneExcept>
 		<factionNameMaker>NamerFactionWeeaboo</factionNameMaker>
 		<!-- <fixedName>Weeaboo Army</fixedName> -->
@@ -84,6 +112,7 @@
 			<li MayRequire="Trickity.Samurai.Faction">Caravan_Samurai_IndenturedMerchant</li>
 			<li MayRequire="Trickity.Samurai.Faction">Caravan_Samurai_JadeMerchant</li>
 			<li MayRequire="Trickity.Samurai.Faction">Caravan_Samurai_SwordMerchant</li>
+			<li MayRequireAnyOf="qux.factionsamurais,TSP.qux.factionsmaster">Caravan_Samurai</li>
 			<li>Caravan_Neolithic_Slaver</li>
 			<li>Caravan_Neolithic_ShamanMerchant</li>
 		</caravanTraderKinds>
@@ -98,6 +127,7 @@
 			<!-- OF COURSE IT DOESN'T WORK, WHY WOULD I EVER THINK IT WOULD -->
 			<li MayRequire="Heis.Edo.Themed.Expansion">HSBase_EdoClan_Standard</li>
 			<li MayRequire="Trickity.Samurai.Faction">Base_Samurai_Standard</li>
+			<li MayRequireAnyOf="qux.factionsamurais,TSP.qux.factionsmaster">Base_Samurai</li>
 
 			<li>Base_Outlander_Standard</li>
 		</baseTraderKinds>
@@ -133,7 +163,7 @@
 			<li MayRequire="Sarg.AlphaMemes">AM_Structure_Atheist</li>
 			<li MayRequire="Sarg.AlphaMemes">AM_Structure_SteampunkRevival</li>
 			<li MayRequire="Sarg.AlphaMemes">AM_Gladiator</li> <!-- I STUDIED THE BLADE!! -->
-			<li MayRequireAnyOf="qux.factionsamurais">Bushido</li>
+			<li MayRequire="qux.factionsamurais,RimWorld.Ideology">Bushido</li>
 			<li MayRequire="VanillaExpanded.VMemesE">VME_Structure_Agnosticism</li>
 			<li MayRequire="VanillaExpanded.VMemesE">VME_Bushido</li>
 			<li MayRequire="VanillaExpanded.VMemesE">VME_Proselytism</li>
@@ -143,6 +173,7 @@
 			<li MayRequire="erdelf.HumanoidAlienRaces,Ludeon.RimWorld.Ideology">HAR_Xenophilia</li> <!-- Clapping some alien cheeks, and then some! -->
 			<li MayRequire="SZ.TW.New.GuoHun,Ludeon.RimWorld.Ideology">SZ_Structure_CultureQiYuan</li>
 			<li MayRequire="mlie.warhammerfimir,Ludeon.RimWorld.Ideology">KTFimirChaosMeme</li>
+			<li MayRequireAnyOf="TSP.qux.factionsmaster,qux.factionsusa,RimWorld.Ideology">klan</li>
 		</allowedMemes>
 		<requiredMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
@@ -199,15 +230,18 @@
 		<!--<hairTags>
 		  <li>Punk</li>
 		</hairTags>-->
-		<allowedArrivalTemperatureRange>-999~999</allowedArrivalTemperatureRange>
+		<allowedArrivalTemperatureRange>
+			<min>-999</min>
+			<max>999</max>
+		</allowedArrivalTemperatureRange>
 		<maxPawnCostPerTotalPointsCurve>
 		  <points>
-			<li>(0,130)</li>
-			<li>(70,175)</li>
-			<li>(400,200)</li>
-			<li>(700,225)</li>
-			<li>(900,300)</li>
-			<li>(1300,500)</li>
+			<li>(0,200)</li>
+			<li>(70,255)</li>
+			<li>(400,300)</li>
+			<li>(700,425)</li>
+			<li>(900,500)</li>
+			<li>(1300,600)</li>
 			<li>(100000,10000)</li>
 		  </points>
 		</maxPawnCostPerTotalPointsCurve>
@@ -220,6 +254,13 @@
 		<xenotypeSet MayRequire="ludeon.rimworld.biotech">
 			<xenotypeChances MayRequire="ludeon.rimworld.biotech">
 				<Neco MayRequire="neco.genes">0.15</Neco>
+				<BS_LesserOni MayRequire="redmattis.yokai">0.0175</BS_LesserOni>
+				<BS_RedOni MayRequire="redmattis.yokai">0.004</BS_RedOni>
+				<BS_BlueOni MayRequire="redmattis.yokai">0.004</BS_BlueOni>
+				<BS_Nekomata MayRequire="redmattis.yokai">0.01</BS_Nekomata>
+				<BS_Kitsune MayRequire="redmattis.yokai">0.005</BS_Kitsune>
+				<BS_GreatRedOni MayRequire="redmattis.yokai">0.001</BS_GreatRedOni>
+				<BS_GreatBlueOni MayRequire="redmattis.yokai">0.001</BS_GreatBlueOni>
 			</xenotypeChances>
 		</xenotypeSet>
 		<!-- DO NOT PUT NON-SAPIENT/HUMAN-LIKE PAWNS IN PEACEFUL DELEGATIONS!! NO ANIMALS ALLOWED! -->
@@ -253,7 +294,7 @@
 		  <!-- Just the Kenshi characters, if you have the Mod. -->
 		  <li MayRequire="Kenshi.Armory.Geminingen">
 			<kindDef MayRequire="Kenshi.Armory.Geminingen">Peaceful</kindDef>
-			<commonality MayRequire="Kenshi.Armory.Geminingen">40</commonality>
+			<commonality MayRequire="Kenshi.Armory.Geminingen">60</commonality>
 			<options MayRequire="Kenshi.Armory.Geminingen">
 				<KenshiWeebPaladin MayRequire="Kenshi.Armory.Geminingen">30</KenshiWeebPaladin>
 				<KenshiWeebEmpire MayRequire="Kenshi.Armory.Geminingen">30</KenshiWeebEmpire>
@@ -442,6 +483,7 @@
 		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
 		<autoFlee>false</autoFlee>
 
+		<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
 		<fixedLeaderKinds>
 			<li>TSP_alpha_male_weeaboo</li>
 		</fixedLeaderKinds>
