@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationConditional">
+		<!-- DO THE GENTILES KNOW? -->
+		<xpath>/Defs/FactionDef[@Name="HSEdoClanFactionBase"]/configurationListOrderPriority</xpath>
+		<!-- If they do, SHUT IT DOWN. -->
+		<nomatch Class="PatchOperationRemove">
+			<success>Always</success>
+			<xpath>/Defs/FactionDef[@Name="HSEdoClanFactionBase"]/configurationListOrderPriority</xpath>
+		</nomatch>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+		<!-- DO THE GENTILES KNOW? -->
+		<xpath>/Defs/FactionDef[defName="HS_Virtuous_Clan"]/configurationListOrderPriority</xpath>
+		<!-- If they do, SHUT IT DOWN. -->
+		<nomatch Class="PatchOperationRemove">
+			<success>Always</success>
+			<xpath>/Defs/FactionDef[defName="HS_Virtuous_Clan"]/configurationListOrderPriority</xpath>
+		</nomatch>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<!-- DO THE GENTILES KNOW? -->
+		<xpath>/Defs/FactionDef[defName="HS_Bandit_Clan"]/configurationListOrderPriority</xpath>
+		<!-- If they do, SHUT IT DOWN. -->
+		<nomatch Class="PatchOperationRemove">
+			<success>Always</success>
+			<xpath>/Defs/FactionDef[defName="HS_Bandit_Clan"]/configurationListOrderPriority</xpath>
+		</nomatch>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<!-- DO THE GENTILES KNOW? -->
+		<xpath>/Defs/FactionDef[defName="HS_Edo_Shogunate"]/configurationListOrderPriority</xpath>
+		<!-- If they do, SHUT IT DOWN. -->
+		<nomatch Class="PatchOperationRemove">
+			<success>Always</success>
+			<xpath>/Defs/FactionDef[defName="HS_Edo_Shogunate"]/configurationListOrderPriority</xpath>
+		</nomatch>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+</Patch>

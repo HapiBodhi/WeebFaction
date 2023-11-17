@@ -7,7 +7,7 @@
 		<description>A group of Otakus and Weeaboos that have been teleported to the fifty-sixth century. They aimlessly roam the lands, solely existing to spread the word of their Waifus- that is, their totally real "girlfriends". However, with no social skills to speak of, they have taken to raiding and pillaging anyone who even remotely disagrees with their faith. Unless they are dealing with other Japanese peoples, they are too antisocial to be allied with.</description>
 		<pawnSingular>weeaboo clansman</pawnSingular>
 		<pawnsPlural>weeabooes</pawnsPlural>
-		<listOrderPriority>10</listOrderPriority>
+		<listOrderPriority>33</listOrderPriority>
 		<settlementGenerationWeight>1.01</settlementGenerationWeight>
 		<requiredCountAtGameStart>1</requiredCountAtGameStart>
 		<maxCountAtGameStart>3</maxCountAtGameStart>
@@ -55,6 +55,7 @@
 			<li>(128, 0, 255)</li>
 			<li>(128, 64, 64)</li>
 			<li>(36, 209, 255)</li>
+			<li>(128, 0, 128)</li>
 		</colorSpectrum>
 		<permanentEnemyToEveryoneExcept>
 			<li MayRequire="Heis.Edo.Themed.Expansion">HS_PlayerEdoClan</li>
@@ -501,6 +502,7 @@
 			</li>
 			-->
 		</modExtensions>
+		<configurationListOrderPriority MayRequire="heis.edo.themed.expansion">9999</configurationListOrderPriority>
 	</FactionDef>
 
 	<RulePackDef>
