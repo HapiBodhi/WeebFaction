@@ -66,9 +66,12 @@
 			<li MayRequire="Trickity.Samurai.Faction">TSF_SamuraiClan</li>
 			<li MayRequire="Trickity.Samurai.Faction">TSF_SamuraiClanSavage</li>
 			<li MayRequire="Trickity.Samurai.Faction">TSF_SamuraiClanShinobi</li>
-			<li MayRequireAnyOf="qux.factionsamurais,TSP.qux.factionsmaster">samurai</li>
-			<li MayRequireAnyOf="qux.factionsamurais,TSP.qux.factionsmaster">samurairough</li>
-			<li MayRequireAnyOf="qux.factionsamurais,TSP.qux.factionsmaster">ninja</li>
+			<li MayRequire="qux.factionsamurais">samurai</li>
+			<li MayRequire="qux.factionsamurais">samurairough</li>
+			<li MayRequire="qux.factionsamurais">ninja</li>
+			<li MayRequire="TSP.qux.factionsmaster">samurai</li>
+			<li MayRequire="TSP.qux.factionsmaster">samurairough</li>
+			<li MayRequire="TSP.qux.factionsmaster">ninja</li>
 			<li MayRequire="TSP.Isengriff.Storytime">NicePirates</li> <!-- "One Piece" joke -->
 			<li MayRequire="OskarPotocki.VFE.Pirates">VFEP_PlayerPirate</li> <!-- "One Piece" joke -->
 			<li MayRequire="Seioch.Kurin.HAR">Kurin_PlayerFaction</li> <!-- BEHOLD, THE WAIFU MANIFESTED! -->
@@ -92,7 +95,8 @@
 			<li MayRequire="Heis.Edo.Themed.Expansion">HSEdoClanCulture</li>
 			<li MayRequire="Heis.Edo.Themed.Expansion">HSKugeCulture</li>
 			<li MayRequire="Trickity.Samurai.Faction">Samurai</li>
-			<li MayRequireAnyOf="qux.factionsamurais,TSP.qux.factionsmaster">Japan</li>
+			<li MayRequireAnyOf="TSP.qux.factionsmaster">Japan</li>
+			<li MayRequireAnyOf="qux.factionsamurais">Japan</li>
 		</allowedCultures>
 		<backstoryFilters>
 		  <li>
@@ -113,7 +117,8 @@
 			<li MayRequire="Trickity.Samurai.Faction">Caravan_Samurai_IndenturedMerchant</li>
 			<li MayRequire="Trickity.Samurai.Faction">Caravan_Samurai_JadeMerchant</li>
 			<li MayRequire="Trickity.Samurai.Faction">Caravan_Samurai_SwordMerchant</li>
-			<li MayRequireAnyOf="qux.factionsamurais,TSP.qux.factionsmaster">Caravan_Samurai</li>
+			<li MayRequire="qux.factionsamurais">Caravan_Samurai</li>
+			<li MayRequire="TSP.qux.factionsmaster">Caravan_Samurai</li>
 			<li>Caravan_Neolithic_Slaver</li>
 			<li>Caravan_Neolithic_ShamanMerchant</li>
 		</caravanTraderKinds>
@@ -128,7 +133,8 @@
 			<!-- OF COURSE IT DOESN'T WORK, WHY WOULD I EVER THINK IT WOULD -->
 			<li MayRequire="Heis.Edo.Themed.Expansion">HSBase_EdoClan_Standard</li>
 			<li MayRequire="Trickity.Samurai.Faction">Base_Samurai_Standard</li>
-			<li MayRequireAnyOf="qux.factionsamurais,TSP.qux.factionsmaster">Base_Samurai</li>
+			<li MayRequire="qux.factionsamurais">Base_Samurai</li>
+			<li MayRequire="TSP.qux.factionsmaster">Base_Samurai</li>
 
 			<li>Base_Outlander_Standard</li>
 		</baseTraderKinds>
@@ -174,7 +180,8 @@
 			<li MayRequire="erdelf.HumanoidAlienRaces,Ludeon.RimWorld.Ideology">HAR_Xenophilia</li> <!-- Clapping some alien cheeks, and then some! -->
 			<li MayRequire="SZ.TW.New.GuoHun,Ludeon.RimWorld.Ideology">SZ_Structure_CultureQiYuan</li>
 			<li MayRequire="mlie.warhammerfimir,Ludeon.RimWorld.Ideology">KTFimirChaosMeme</li>
-			<li MayRequireAnyOf="TSP.qux.factionsmaster,qux.factionsusa,RimWorld.Ideology">klan</li>
+			<li MayRequire="TSP.qux.factionsmaster,RimWorld.Ideology">klan</li>
+			<li MayRequire="qux.factionsusa,RimWorld.Ideology">klan</li>
 		</allowedMemes>
 		<requiredMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
@@ -228,9 +235,6 @@
 			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Approved</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Standard</li>
 		</disallowedPrecepts>
-		<!--<hairTags>
-		  <li>Punk</li>
-		</hairTags>-->
 		<allowedArrivalTemperatureRange>
 			<min>-999</min>
 			<max>999</max>
