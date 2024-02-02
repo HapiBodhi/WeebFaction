@@ -14,6 +14,7 @@
 		<minGenerationAge>21</minGenerationAge>
 		<maxGenerationAge>30</maxGenerationAge>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<!--
 		<royalTitleChance MayRequire="Heis.Edo.Themed.Expansion">0.2</royalTitleChance>
 		<titleSelectOne MayRequire="Heis.Edo.Themed.Expansion">

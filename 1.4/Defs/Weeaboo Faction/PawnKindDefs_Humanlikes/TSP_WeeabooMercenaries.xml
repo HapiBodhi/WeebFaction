@@ -5,6 +5,7 @@
 		<defName>TSP_WeeabooSniperForHire</defName>
 		<label>ranged Ronin LARP-er</label>
 		<race>Human</race>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<apparelRequired Inherit="False">
 			<li>weebbandana</li>
 			<li>Apparel_WeebShirt</li>
@@ -38,6 +39,7 @@
 		<defName>TSP_WeeabooSwordsmanForHire</defName>
 		<label>Ronin LARP-er</label>
 		<race>Human</race>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<apparelRequired Inherit="False">
 			<li>weebbandana</li>
 			<li>Apparel_WeebShirt</li>

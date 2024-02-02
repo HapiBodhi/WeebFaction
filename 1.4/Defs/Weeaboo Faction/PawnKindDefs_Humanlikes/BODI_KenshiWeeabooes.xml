@@ -8,6 +8,7 @@
 	  <isFighter>true</isFighter>
 	  <combatPower>100</combatPower>
 	  <apparelMoney>530~2200</apparelMoney>
+	  <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 	  <apparelTags Inherit="False">
 		<li>WeebKenshiPaladin</li>
 		<li>WeebKenshi</li>
