@@ -1,20 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
+
 <ModMetaData>
-<name>Weeb Faction</name>
-<supportedVersions>
-	<li>1.2</li>
-	<li>1.3</li>
-	<li>1.4</li>
-</supportedVersions>
-<author>happybodi</author>
-<url></url>
-<description>Adds a weeaboo faction with matching apparel and weapons.
+	<name>Weeb Faction</name>
+	<supportedVersions>
+		<li>1.2</li>
+		<li>1.3</li>
+		<li>1.4</li>
+		<li>1.5</li>
+	</supportedVersions>
+	<author>happybodi</author>
+	<url></url>
+	<description>Adds a weeaboo faction with matching apparel and weapons.
 
-"A group of Otakus and Weeaboos that have been isekai'd to the fifty-sixth century. They aimlessly roam the lands, solely existing to spread the word of their Waifus- that is, their totally real "girlfriends". However, with no social skills to speak of, they have taken to raiding and pillaging anyone who even remotely disagrees with their faith. 
+	"A group of Otakus and Weeaboos that have been isekai'd to the fifty-sixth century. They aimlessly roam the lands, solely existing to spread the word of their Waifus- that is, their totally real "girlfriends". However, with no social skills to speak of, they have taken to raiding and pillaging anyone who even remotely disagrees with their faith. 
 
-They are too antisocial to be allied with."
+	They are too antisocial to be allied with."
 
-Created by Robfal2, updated from 1.2 to 1.4 by happybodi and TurtleShroom
-Update 1.4.1</description>
-<packageId>happybodi.WeebFaction</packageId>
+	Created by Robfal2, updated from 1.2 to 1.4 by happybodi and TurtleShroom
+	Update 1.4.1</description>
+	<packageId>happybodi.WeebFaction</packageId>
 </ModMetaData>

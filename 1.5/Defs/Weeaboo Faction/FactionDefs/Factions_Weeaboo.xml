@@ -1,0 +1,524 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<FactionDef ParentName="FactionBase">
+		<defName>WeeabooArmy</defName>
+		<label>Weeaboo Clan</label>
+		<description>A group of Otakus and Weeaboos that have been teleported to the fifty-sixth century. They aimlessly roam the lands, solely existing to spread the word of their Waifus- that is, their totally real "girlfriends". However, with no social skills to speak of, they have taken to raiding and pillaging anyone who even remotely disagrees with their faith. Unless they are dealing with other Japanese peoples, they are too antisocial to be allied with.</description>
+		<pawnSingular>weeaboo clansman</pawnSingular>
+		<pawnsPlural>weeabooes</pawnsPlural>
+		<listOrderPriority>33</listOrderPriority>
+		<settlementGenerationWeight>1.01</settlementGenerationWeight>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<maxCountAtGameStart>3</maxCountAtGameStart>
+		<maxConfigurableAtWorldCreation>999</maxConfigurableAtWorldCreation>
+		<canMakeRandomly>true</canMakeRandomly>
+		<canSiege>false</canSiege>
+		<canStageAttacks>true</canStageAttacks>
+		<leaderTitle>Anime Protagonist</leaderTitle>
+		<factionIconPath>weeaboo/degenerate</factionIconPath>
+		<basicMemberKind>TSP_weeaboo_peasant</basicMemberKind>
+		<!-- Communications Console Dialog flavor, added with special thanks to Sirmashedpotato! -->
+		<dialogFactionGreetingHostile>TSP_WeeabooFlavor_Rejection</dialogFactionGreetingHostile>
+		<!-- <dialogFactionGreetingHostileAppreciative>TSP_WeeabooFlavor_WillingToBefriend</dialogFactionGreetingHostileAppreciative> -->
+		<dialogFactionGreetingHostileAppreciative>TSP_WeeabooFlavor_WillingToBefriend</dialogFactionGreetingHostileAppreciative>
+		<dialogFactionGreetingWary>TSP_WeeabooFlavor_DefaultGreeting</dialogFactionGreetingWary>
+		<dialogFactionGreetingWarm>TSP_WeeabooFlavor_Ally</dialogFactionGreetingWarm>
+		<!--
+		<royalTitleInheritanceWorkerClass MayRequire="heis.edo.themed.expansion">RoyalTitleInheritanceWorker</royalTitleInheritanceWorkerClass>
+		<royalTitleInheritanceRelations MayRequire="heis.edo.themed.expansion">
+			<li MayRequire="heis.edo.themed.expansion">Child</li>
+			<li MayRequire="heis.edo.themed.expansion">Grandchild</li>
+			<li MayRequire="heis.edo.themed.expansion">GreatGrandchild</li>
+			<li MayRequire="heis.edo.themed.expansion">NephewOrNiece</li>
+			<li MayRequire="heis.edo.themed.expansion">Spouse</li>
+			<li MayRequire="heis.edo.themed.expansion">Sibling</li>
+			<li MayRequire="heis.edo.themed.expansion">HalfSibling</li>
+			<li MayRequire="heis.edo.themed.expansion">Cousin</li>
+			<li MayRequire="heis.edo.themed.expansion">Parent</li>
+			<li MayRequire="heis.edo.themed.expansion">UncleOrAunt</li>
+		</royalTitleInheritanceRelations>
+		-->
+		<colorSpectrum>
+			<!--
+			<li>(0.45, 0.05, 0.05)</li>
+			<li>(0.80, 0.25, 0.05)</li>
+			-->
+			<li>(255, 255, 255)</li>
+			<li>(255, 255, 255)</li>
+			<li>(255, 0, 0)</li>
+			<li>(0, 255, 0)</li>
+			<li>(0, 0, 255)</li>
+			<li>(255, 0, 255)</li>
+			<li>(0, 255, 255)</li>
+			<li>(255, 255, 0)</li>
+			<li>(128, 0, 255)</li>
+			<li>(128, 64, 64)</li>
+			<li>(36, 209, 255)</li>
+			<li>(128, 0, 128)</li>
+		</colorSpectrum>
+		<permanentEnemyToEveryoneExcept>
+			<li MayRequire="Heis.Edo.Themed.Expansion">HS_PlayerEdoClan</li>
+			<li MayRequire="Heis.Edo.Themed.Expansion">HS_Virtuous_Clan</li>
+			<li MayRequire="Heis.Edo.Themed.Expansion">HS_Bandit_Clan</li>
+			<li MayRequire="Heis.Edo.Themed.Expansion">HS_Edo_Shogunate</li>
+			<li MayRequire="Trickity.Samurai.Faction">TSF_PlayerRonin</li>
+			<li MayRequire="Trickity.Samurai.Faction">TSF_SamuraiClan</li>
+			<li MayRequire="Trickity.Samurai.Faction">TSF_SamuraiClanSavage</li>
+			<li MayRequire="Trickity.Samurai.Faction">TSF_SamuraiClanShinobi</li>
+			<li MayRequire="qux.factionsamurais">samurai</li>
+			<li MayRequire="qux.factionsamurais">samurairough</li>
+			<li MayRequire="qux.factionsamurais">ninja</li>
+			<li MayRequire="TSP.qux.factionsmaster">samurai</li>
+			<li MayRequire="TSP.qux.factionsmaster">samurairough</li>
+			<li MayRequire="TSP.qux.factionsmaster">ninja</li>
+			<li MayRequire="TSP.Isengriff.Storytime">NicePirates</li> <!-- "One Piece" joke -->
+			<li MayRequire="OskarPotocki.VFE.Pirates">VFEP_PlayerPirate</li> <!-- "One Piece" joke -->
+			<li MayRequire="Seioch.Kurin.HAR">Kurin_PlayerFaction</li> <!-- BEHOLD, THE WAIFU MANIFESTED! -->
+			<li MayRequire="Seioch.Kurin.HAR">Kurin_Faction</li> <!-- BEHOLD, THE WAIFU MANIFESTED! -->
+			<li MayRequire="Seioch.Kurin.HAR">Kurin_Faction_Hostile</li> <!-- BEHOLD, THE WAIFU MANIFESTED! -->
+			<li MayRequire="morishep.tarojun.onioftherim">OniPlayerColony</li>
+			<li MayRequire="morishep.tarojun.onioftherim">OniTPlayerColony</li>
+			<li MayRequire="morishep.tarojun.onioftherim">AncestralOniPlayerColony</li>
+			<li MayRequire="morishep.tarojun.onioftherim">OniFreeborn</li>
+			<li MayRequire="morishep.tarojun.onioftherim">RevenantTalons</li>
+			<li MayRequire="Inoshishi3.KTTFDE">Kurin_Faction_Player</li>
+			<li MayRequire="Inoshishi3.KTTFDE">Kurin_Faction_Republic</li>
+			<li MayRequire="Inoshishi3.KTTFDE">Kurin_Faction_UFU</li>
+			<li MayRequire="redmattis.yokai">BS_YokaiUnion</li>
+		</permanentEnemyToEveryoneExcept>
+		<factionNameMaker>NamerFactionWeeaboo</factionNameMaker>
+		<!-- <fixedName>Weeaboo Army</fixedName> -->
+		<settlementNameMaker>NamerSettlementPirate</settlementNameMaker>
+		<techLevel>Spacer</techLevel>
+		<allowedCultures>
+			<li MayRequire="Heis.Edo.Themed.Expansion">HSEdoClanCulture</li>
+			<li MayRequire="Heis.Edo.Themed.Expansion">HSKugeCulture</li>
+			<li MayRequire="Trickity.Samurai.Faction">Samurai</li>
+			<li MayRequireAnyOf="TSP.qux.factionsmaster">Japan</li>
+			<li MayRequireAnyOf="qux.factionsamurais">Japan</li>
+		</allowedCultures>
+		<backstoryFilters>
+		  <li>
+			<categories>
+			  <li>Outsider</li>
+			  <li>Madman</li>
+			  <li>ImperialFighter</li>
+			  <li MayRequire="Heis.Edo.Themed.Backstories">HSEdoBackstories</li>
+			</categories>
+		  </li>
+		</backstoryFilters>
+		<geneticVariance>0.001</geneticVariance>
+		<caravanTraderKinds>
+			<li MayRequire="Heis.Edo.Themed.Expansion">HSCaravan_EdoClan_BulkGoods</li>
+			<li MayRequire="Heis.Edo.Themed.Expansion">HSCaravan_EdoClan_Mastercrafter</li>
+			<li MayRequire="Trickity.Samurai.Faction">Caravan_Samurai_BulkGoods</li>
+			<li MayRequire="Trickity.Samurai.Faction">Caravan_Samurai_WarMerchant</li>
+			<li MayRequire="Trickity.Samurai.Faction">Caravan_Samurai_IndenturedMerchant</li>
+			<li MayRequire="Trickity.Samurai.Faction">Caravan_Samurai_JadeMerchant</li>
+			<li MayRequire="Trickity.Samurai.Faction">Caravan_Samurai_SwordMerchant</li>
+			<li MayRequire="qux.factionsamurais">Caravan_Samurai</li>
+			<li MayRequire="TSP.qux.factionsmaster">Caravan_Samurai</li>
+			<li>Caravan_Neolithic_Slaver</li>
+			<li>Caravan_Neolithic_ShamanMerchant</li>
+		</caravanTraderKinds>
+		<visitorTraderKinds>
+			<!-- OF COURSE IT DOESN'T WORK, WHY DID I EVER THINK IT WOULD -->
+			<li MayRequire="Heis.Edo.Themed.Expansion">HSVisitor_EdoClan_Standard</li>
+			<li MayRequire="Trickity.Samurai.Faction">Visitor_Samurai_Standard</li>
+
+			<li>Visitor_Outlander_Standard</li>
+		</visitorTraderKinds>
+		<baseTraderKinds>
+			<!-- OF COURSE IT DOESN'T WORK, WHY WOULD I EVER THINK IT WOULD -->
+			<li MayRequire="Heis.Edo.Themed.Expansion">HSBase_EdoClan_Standard</li>
+			<li MayRequire="Trickity.Samurai.Faction">Base_Samurai_Standard</li>
+			<li MayRequire="qux.factionsamurais">Base_Samurai</li>
+			<li MayRequire="TSP.qux.factionsmaster">Base_Samurai</li>
+
+			<li>Base_Outlander_Standard</li>
+		</baseTraderKinds>
+		<!--
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginChristian</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginIslamic</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_OriginHindu</li>
+
+			< If you have the Mod >
+			<li MayRequire="Sarg.AlphaMemes">AM_Structure_Jainism</li>
+			<li MayRequire="Sarg.AlphaMemes">AM_Structure_Sikhism</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_Vegan</li>
+			<li MayRequire="llunak.MorePrecepts">Pacifism</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_Pacifist</li>
+			<li MayRequire="Qux.factionhippie">PeaceLove</li>
+			<li MayRequire="Zezz.Altrumeme">Altruism</li>
+			<li MayRequire="Sarg.AlphaMemes">AM_NonViolence</li>
+			<li MayRequire="erdelf.HumanoidAlienRaces">HAR_Xenophobia</li>
+		</disallowedMemes>
+		-->
+		<allowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Proselytizer</li>
+
+			<!-- If you have the Mod -->
+			<li MayRequire="Sarg.AlphaMemes">AM_Structure_Jewish</li> <!-- OY VEY. -->
+			<li MayRequire="Sarg.AlphaMemes">AM_Structure_Atheist</li>
+			<li MayRequire="Sarg.AlphaMemes">AM_Structure_SteampunkRevival</li>
+			<li MayRequire="Sarg.AlphaMemes">AM_Gladiator</li> <!-- I STUDIED THE BLADE!! -->
+			<li MayRequire="qux.factionsamurais,RimWorld.Ideology">Bushido</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_Structure_Agnosticism</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_Bushido</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_Proselytism</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_Structure_Shintaoism</li>
+			<li MayRequire="VanillaExpanded.VMemesE,vanillaexpanded.vcooke">VME_SweetTeeth</li> <!-- Junk food -->
+			<li MayRequire="VanillaExpanded.VMemesE">VME_Cultured</li> <!-- Mangas -->
+			<li MayRequire="erdelf.HumanoidAlienRaces,Ludeon.RimWorld.Ideology">HAR_Xenophilia</li> <!-- Clapping some alien cheeks, and then some! -->
+			<li MayRequire="SZ.TW.New.GuoHun,Ludeon.RimWorld.Ideology">SZ_Structure_CultureQiYuan</li>
+			<li MayRequire="mlie.warhammerfimir,Ludeon.RimWorld.Ideology">KTFimirChaosMeme</li>
+			<li MayRequire="TSP.qux.factionsmaster,RimWorld.Ideology">klan</li>
+			<li MayRequire="qux.factionsusa,RimWorld.Ideology">klan</li>
+		</allowedMemes>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
+
+			<!-- If you have the Mod -->
+			<!-- <li MayRequire="Sarg.AlphaMemes">AM_Structure_Atheist</li> --> <!-- Covered by Patch instead -->
+			<!-- <li MayRequireAnyOf="qux.factionsamurais,TSP.qux.factionsmaster">Bushido</li> -->
+			<!-- <li MayRequire="VanillaExpanded.VMemesE">VME_Bushido</li> --> <!-- Covered by Patch instead -->
+		</requiredMemes>
+		<disallowedPrecepts>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_Slavery_Forbidden</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Abhorrent</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Horrible</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Disapproved</li>
+
+			<li MayRequire="erdelf.HumanoidAlienRaces,Ludeon.RimWorld.Ideology">HAR_AlienSlavery_Abhorrent</li>
+			<li MayRequire="erdelf.HumanoidAlienRaces,Ludeon.RimWorld.Ideology">HAR_AlienSlavery_Horrible</li>
+			<li MayRequire="erdelf.HumanoidAlienRaces,Ludeon.RimWorld.Ideology">HAR_AlienSlavery_Disapproved</li>
+
+			<li MayRequire="erdelf.HumanoidAlienRaces,Ludeon.RimWorld.Ideology">HAR_AlienDating_Prohibited</li>
+			<li MayRequire="erdelf.HumanoidAlienRaces,Ludeon.RimWorld.Ideology">HAR_AlienDating_Horrible</li>
+
+			<li MayRequire="Ludeon.RimWorld.Ideology">MeatEating_Abhorrent</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">MeatEating_Horrible</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">MeatEating_Disapproved</li>
+
+			<li MayRequire="Ludeon.RimWorld.Ideology">Execution_Abhorrent</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Execution_Horrible</li>
+			<li MayRequire="Ludeon.Rimworld.Ideology">Execution_HorribleIfInnocent</li>
+
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_Mandatory</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_Mandatory</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_CoveringAnythingButGroinDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_CoveringAnythingButGroinDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_NoRules</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_NoRules</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_UncoveredGroinDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_UncoveredGroinChestHairOrFaceDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinChestHairOrFaceDisapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Lovin_Prohibited</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Lovin_Horrible</li>
+
+			<li MayRequire="Ludeon.RimWorld.Ideology">Charity_Essential</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Charity_Important</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Charity_Worthwhile</li>
+
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Exalted</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Respected</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Approved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Standard</li>
+		</disallowedPrecepts>
+		<allowedArrivalTemperatureRange>
+			<min>-999</min>
+			<max>999</max>
+		</allowedArrivalTemperatureRange>
+		<maxPawnCostPerTotalPointsCurve>
+		  <points>
+			<li>(0,200)</li>
+			<li>(70,255)</li>
+			<li>(400,300)</li>
+			<li>(700,425)</li>
+			<li>(900,500)</li>
+			<li>(1300,600)</li>
+			<li>(100000,10000)</li>
+		  </points>
+		</maxPawnCostPerTotalPointsCurve>
+		<raidCommonalityFromPointsCurve>
+		  <points>
+			<li>(0, 1.5)</li>
+			<!--Constant one and one half at all points levels-->
+		  </points>
+		</raidCommonalityFromPointsCurve>
+		<xenotypeSet MayRequire="ludeon.rimworld.biotech">
+			<xenotypeChances MayRequire="ludeon.rimworld.biotech">
+				<Neco MayRequire="neco.genes">0.15</Neco>
+				<BS_LesserOni MayRequire="redmattis.yokai">0.0175</BS_LesserOni>
+				<BS_RedOni MayRequire="redmattis.yokai">0.004</BS_RedOni>
+				<BS_BlueOni MayRequire="redmattis.yokai">0.004</BS_BlueOni>
+				<BS_Nekomata MayRequire="redmattis.yokai">0.01</BS_Nekomata>
+				<BS_Kitsune MayRequire="redmattis.yokai">0.005</BS_Kitsune>
+				<BS_GreatRedOni MayRequire="redmattis.yokai">0.001</BS_GreatRedOni>
+				<BS_GreatBlueOni MayRequire="redmattis.yokai">0.001</BS_GreatBlueOni>
+			</xenotypeChances>
+		</xenotypeSet>
+		<!-- DO NOT PUT NON-SAPIENT/HUMAN-LIKE PAWNS IN PEACEFUL DELEGATIONS!! NO ANIMALS ALLOWED! -->
+		<pawnGroupMakers>
+		  <li>
+			<kindDef>Peaceful</kindDef>
+			<commonality>100</commonality>
+			<options>
+				<TSP_weeaboo_peasant>210</TSP_weeaboo_peasant>
+				<Weeaboo>195</Weeaboo>
+				<AdWeeaboo>100</AdWeeaboo>
+				<KWeeaboo>100</KWeeaboo>
+				<TSP_weeaboo_gamer_girl>50</TSP_weeaboo_gamer_girl>
+				<TSP_WeeabooSniper>50</TSP_WeeabooSniper>
+				<KenshiWeebPaladin MayRequire="Kenshi.Armory.Geminingen">1</KenshiWeebPaladin>
+				<KenshiWeebEmpire MayRequire="Kenshi.Armory.Geminingen">1</KenshiWeebEmpire>
+				<KenshiWeebCrabRaider MayRequire="Kenshi.Armory.Geminingen">31</KenshiWeebCrabRaider>
+				<TSP_KenshiWeebCrabRaider_Ranged MayRequire="Kenshi.Armory.Geminingen">1</TSP_KenshiWeebCrabRaider_Ranged>
+				<!-- <BORPA_Borpa MayRequireAnyOf="Oblivion.BORPA,TSP.Isengriff.Storytime">5</BORPA_Borpa> -->
+				<Kurin_Designermate MayRequire="Seioch.Kurin.HAR">2</Kurin_Designermate> <!-- BEHOLD, THE WAIFU MANIFESTED! -->
+			</options>
+		  </li>
+		  <!-- Looks like some girls sneaked out! Don't tell anyone! -->
+		  <li>
+			<kindDef>Peaceful</kindDef>
+			<commonality>55</commonality>
+			<options>
+				<TSP_weeaboo_gamer_girl>999</TSP_weeaboo_gamer_girl>
+			</options>
+		  </li>
+		  <!-- Just the Kenshi characters, if you have the Mod. -->
+		  <li MayRequire="Kenshi.Armory.Geminingen">
+			<kindDef MayRequire="Kenshi.Armory.Geminingen">Peaceful</kindDef>
+			<commonality MayRequire="Kenshi.Armory.Geminingen">60</commonality>
+			<options MayRequire="Kenshi.Armory.Geminingen">
+				<KenshiWeebPaladin MayRequire="Kenshi.Armory.Geminingen">30</KenshiWeebPaladin>
+				<KenshiWeebEmpire MayRequire="Kenshi.Armory.Geminingen">30</KenshiWeebEmpire>
+				<KenshiWeebCrabRaider MayRequire="Kenshi.Armory.Geminingen">30</KenshiWeebCrabRaider>
+				<TSP_KenshiWeebCrabRaider_Ranged MayRequire="Kenshi.Armory.Geminingen">30</TSP_KenshiWeebCrabRaider_Ranged>
+			</options>
+		  </li>
+		  <li>
+			<!-- What kind of Anime Protagonist doesn't have a harem? -->
+			<kindDef>Peaceful</kindDef>
+			<commonality>50</commonality>
+			<options>
+				<TSP_alpha_male_weeaboo>10</TSP_alpha_male_weeaboo>
+				<TSP_weeaboo_gamer_girl>40</TSP_weeaboo_gamer_girl>
+				<Kurin_Designermate MayRequire="Seioch.Kurin.HAR">15</Kurin_Designermate>
+				<!-- <QiChe_First MayRequire="ChiTeaditional.ExtraPack">1</QiChe_First> -->
+			</options>
+		  </li>
+		  <li>
+			<kindDef>Peaceful</kindDef>
+			<commonality>30</commonality>
+			<options>
+				<TSP_alpha_male_weeaboo>5</TSP_alpha_male_weeaboo>
+				<TSP_weeaboo_gamer_girl>10</TSP_weeaboo_gamer_girl>
+				<TSP_weeaboo_peasant>10</TSP_weeaboo_peasant>
+				<TSP_WeeabooSniper>3</TSP_WeeabooSniper>
+				<KWeeaboo>10</KWeeaboo>
+				<Weeaboo>5</Weeaboo>
+				<Kurin_Designermate MayRequire="Seioch.Kurin.HAR">1</Kurin_Designermate> <!-- BEHOLD, THE WAIFU MANIFESTED! -->
+				<!--
+				<BORPA_AcridBorpa MayRequireAnyOf="Oblivion.BORPA,TSP.Isengriff.Storytime">1</BORPA_AcridBorpa>
+				<BORPA_Snorpa MayRequireAnyOf="Oblivion.BORPA,TSP.Isengriff.Storytime">1</BORPA_Snorpa>
+				-->
+			</options>
+		  </li>
+		  <li>
+			<kindDef>Peaceful</kindDef> <!-- Just staying for the night, his adventure awaits..... -->
+			<commonality>10</commonality>
+			<options>
+				<TSP_alpha_male_weeaboo>999</TSP_alpha_male_weeaboo>
+			</options>
+		  </li>
+		  <li>
+			<!-- Happy Merchants -->
+			<kindDef>Trader</kindDef>
+			<traders>
+				<TSP_weeaboo_tradesman>100</TSP_weeaboo_tradesman>
+			</traders>
+			<carriers>
+				<Muffalo>10</Muffalo>
+				<Alpaca>1</Alpaca>
+				<Dromedary>1</Dromedary>
+				<Elephant>100</Elephant>
+				<QiChe_First MayRequire="ChiTeaditional.ExtraPack">999</QiChe_First> <!-- What animes don't have sick rides? -->
+			</carriers>
+			<guards>
+				<Weeaboo>200</Weeaboo>
+				<AdWeeaboo>200</AdWeeaboo>
+				<KWeeaboo>200</KWeeaboo>
+				<TSP_weeaboo_peasant>100</TSP_weeaboo_peasant>
+				<TSP_weeaboo_gamer_girl>60</TSP_weeaboo_gamer_girl>
+				<TSP_WeeabooSniper>75</TSP_WeeabooSniper>
+				<TSP_alpha_male_weeaboo>1</TSP_alpha_male_weeaboo>
+				<Onibi MayRequire="x3v21.jmc">10</Onibi>
+				<TSP_KenshiWeebCrabRaider_Ranged MayRequire="Kenshi.Armory.Geminingen">20</TSP_KenshiWeebCrabRaider_Ranged>
+				<!--
+				<HSEdo_Member MayRequire="Heis.Edo.Themed.Expansion">1</HSEdo_Member>
+				<TSF_Peasant MayRequire="Trickity.Samurai.Faction">1</TSF_Peasant>
+				<Samuraipaysan MayRequireAnyOf="qux.factionsamurais,TSP.qux.factionsmaster">1</Samuraipaysan>
+				-->
+				<TSF_TownGaurd MayRequire="Trickity.Samurai.Faction">10</TSF_TownGaurd>
+				<TSF_NinjaMatchlock MayRequire="Trickity.Samurai.Faction">12</TSF_NinjaMatchlock>
+				<BORPA_Borpa MayRequireAnyOf="Oblivion.BORPA,TSP.Isengriff.Storytime">15</BORPA_Borpa>
+				<BORPA_AcridBorpa MayRequireAnyOf="Oblivion.BORPA,TSP.Isengriff.Storytime">15</BORPA_AcridBorpa>
+				<BORPA_Snorpa MayRequireAnyOf="Oblivion.BORPA,TSP.Isengriff.Storytime">15</BORPA_Snorpa>
+				<Kurin_Designermate MayRequire="Seioch.Kurin.HAR">20</Kurin_Designermate> <!-- BEHOLD, THE WAIFU MANIFESTED! -->
+				<QiChe_First MayRequire="ChiTeaditional.ExtraPack">33</QiChe_First> <!-- What anime protagonist doesn't have a sick ride? -->
+			</guards>
+		  </li>
+		  <li>
+			<!-- Normal fights, ranged with melee mix-ins -->
+			<kindDef>Combat</kindDef>
+			<commonality>100</commonality>
+			<disallowedStrategies>
+				<li MayRequire="SR.ModRimworld.RaidExtension">SrLogging</li>
+				<li MayRequire="SR.ModRimworld.RaidExtension">SrPoaching</li>
+				<!-- <li>Siege</li> -->
+			</disallowedStrategies>
+			<options>
+				<Weeaboo>210</Weeaboo>
+				<AdWeeaboo>115</AdWeeaboo>
+				<KWeeaboo>110</KWeeaboo>
+				<TSP_weeaboo_peasant>120</TSP_weeaboo_peasant>
+				<TSP_weeaboo_gamer_girl>10</TSP_weeaboo_gamer_girl>
+				<TSP_WeeabooSniper>20</TSP_WeeabooSniper>
+				<KenshiWeebPaladin MayRequire="Kenshi.Armory.Geminingen">57</KenshiWeebPaladin>
+				<KenshiWeebEmpire MayRequire="Kenshi.Armory.Geminingen">57</KenshiWeebEmpire>
+				<KenshiWeebCrabRaider MayRequire="Kenshi.Armory.Geminingen">57</KenshiWeebCrabRaider>
+				<TSP_KenshiWeebCrabRaider_Ranged MayRequire="Kenshi.Armory.Geminingen">60</TSP_KenshiWeebCrabRaider_Ranged>
+				<HSEdo_Member MayRequire="Heis.Edo.Themed.Expansion">10</HSEdo_Member>
+				<TSF_Peasant MayRequire="Trickity.Samurai.Faction">10</TSF_Peasant>
+				<Samuraipaysan MayRequireAnyOf="qux.factionsamurais,TSP.qux.factionsmaster">1</Samuraipaysan>
+				<BORPA_Borpa MayRequireAnyOf="Oblivion.BORPA,TSP.Isengriff.Storytime">2</BORPA_Borpa>
+				<QiChe_First MayRequire="ChiTeaditional.ExtraPack">2</QiChe_First>
+			</options>
+		  </li>
+		  <li>
+			<!-- Just the Kenshi characters -->
+			<kindDef>Combat</kindDef>
+			<commonality>50</commonality>
+			<options>
+				<TSP_weeaboo_gamer_girl>5</TSP_weeaboo_gamer_girl>
+				<TSP_WeeabooSniper>12</TSP_WeeabooSniper>
+				<KenshiWeebPaladin MayRequire="Kenshi.Armory.Geminingen">57</KenshiWeebPaladin>
+				<KenshiWeebEmpire MayRequire="Kenshi.Armory.Geminingen">57</KenshiWeebEmpire>
+				<KenshiWeebCrabRaider MayRequire="Kenshi.Armory.Geminingen">57</KenshiWeebCrabRaider>
+				<TSP_KenshiWeebCrabRaider_Ranged MayRequire="Kenshi.Armory.Geminingen">45</TSP_KenshiWeebCrabRaider_Ranged>
+				<BORPA_Borpa MayRequireAnyOf="Oblivion.BORPA,TSP.Isengriff.Storytime">1</BORPA_Borpa>
+				<QiChe_First MayRequire="ChiTeaditional.ExtraPack">2</QiChe_First>
+			</options>
+		  </li>
+		  <li>
+			<!-- Normal fights -->
+			<kindDef>Combat</kindDef>
+			<commonality>20</commonality>
+			<options>
+				<Weeaboo>86</Weeaboo>
+				<KWeeaboo>68</KWeeaboo>
+				<TSP_weeaboo_gamer_girl>5</TSP_weeaboo_gamer_girl>
+				<TSP_alpha_male_weeaboo>1</TSP_alpha_male_weeaboo>
+				<KenshiWeebPaladin MayRequire="Kenshi.Armory.Geminingen">70</KenshiWeebPaladin>
+				<KenshiWeebEmpire MayRequire="Kenshi.Armory.Geminingen">70</KenshiWeebEmpire>
+				<KenshiWeebCrabRaider MayRequire="Kenshi.Armory.Geminingen">70</KenshiWeebCrabRaider>
+				<HSEdo_Member MayRequire="Heis.Edo.Themed.Expansion">1</HSEdo_Member>
+				<TSF_Peasant MayRequire="Trickity.Samurai.Faction">2</TSF_Peasant>
+				<Samuraipaysan MayRequireAnyOf="qux.factionsamurais,TSP.qux.factionsmaster">1</Samuraipaysan>
+				<BORPA_Snorpa MayRequireAnyOf="Oblivion.BORPA,TSP.Isengriff.Storytime">10</BORPA_Snorpa>
+				<QiChe_First MayRequire="ChiTeaditional.ExtraPack">3</QiChe_First>
+				<TSF_NinjaMatchlock MayRequire="Trickity.Samurai.Faction">11</TSF_NinjaMatchlock>
+			</options>
+		  </li>
+		  <li>
+			<kindDef>Combat</kindDef>
+			<commonality>40</commonality>
+			<options>
+				<AdWeeaboo>40</AdWeeaboo>
+				<TSP_WeeabooSniper>20</TSP_WeeabooSniper>
+				<TSP_weeaboo_gamer_girl>1</TSP_weeaboo_gamer_girl>
+				<TSP_KenshiWeebCrabRaider_Ranged MayRequire="Kenshi.Armory.Geminingen">18</TSP_KenshiWeebCrabRaider_Ranged>
+				<BORPA_AcridBorpa MayRequireAnyOf="Oblivion.BORPA,TSP.Isengriff.Storytime">5</BORPA_AcridBorpa>
+				<TSF_NinjaMatchlock MayRequire="Trickity.Samurai.Faction">1</TSF_NinjaMatchlock>
+				<TSF_TownGaurd MayRequire="Trickity.Samurai.Faction">1</TSF_TownGaurd>
+				<QiChe_First MayRequire="ChiTeaditional.ExtraPack">1</QiChe_First>
+				<Onibi MayRequire="x3v21.jmc">1</Onibi>
+			</options>
+		  </li>
+		  <li>
+			<!-- Base defense -->
+			<kindDef>Settlement</kindDef>
+			<options>
+				<Weeaboo>105</Weeaboo>
+				<AdWeeaboo>100</AdWeeaboo>
+				<KWeeaboo>100</KWeeaboo>
+				<TSP_weeaboo_peasant>200</TSP_weeaboo_peasant>
+				<TSP_weeaboo_gamer_girl>100</TSP_weeaboo_gamer_girl>
+				<TSP_WeeabooSniper>65</TSP_WeeabooSniper>
+				<TSP_alpha_male_weeaboo>100</TSP_alpha_male_weeaboo>
+				<KenshiWeebPaladin MayRequire="Kenshi.Armory.Geminingen">40</KenshiWeebPaladin>
+				<KenshiWeebEmpire MayRequire="Kenshi.Armory.Geminingen">40</KenshiWeebEmpire>
+				<KenshiWeebCrabRaider MayRequire="Kenshi.Armory.Geminingen">40</KenshiWeebCrabRaider>
+				<TSP_KenshiWeebCrabRaider_Ranged MayRequire="Kenshi.Armory.Geminingen">40</TSP_KenshiWeebCrabRaider_Ranged>
+				<Onibi MayRequire="x3v21.jmc">10</Onibi>
+				<HSEdo_Member MayRequire="Heis.Edo.Themed.Expansion">1</HSEdo_Member>
+				<TSF_Peasant MayRequire="Trickity.Samurai.Faction">1</TSF_Peasant>
+				<Samuraipaysan MayRequireAnyOf="qux.factionsamurais,TSP.qux.factionsmaster">1</Samuraipaysan>
+				<TSF_TownGaurd MayRequire="Trickity.Samurai.Faction">1</TSF_TownGaurd>
+				<TSF_NinjaMatchlock MayRequire="Trickity.Samurai.Faction">3</TSF_NinjaMatchlock>
+				<BORPA_Borpa MayRequireAnyOf="Oblivion.BORPA,TSP.Isengriff.Storytime">5</BORPA_Borpa>
+				<BORPA_AcridBorpa MayRequireAnyOf="Oblivion.BORPA,TSP.Isengriff.Storytime">2</BORPA_AcridBorpa>
+				<BORPA_Snorpa MayRequireAnyOf="Oblivion.BORPA,TSP.Isengriff.Storytime">2</BORPA_Snorpa>
+				<Kurin_Designermate MayRequire="Seioch.Kurin.HAR">10</Kurin_Designermate> <!-- BEHOLD, THE WAIFU MANIFESTED! -->
+				<QiChe_First MayRequire="ChiTeaditional.ExtraPack">10</QiChe_First> <!-- What anime protagonist doesn't have a sick ride? -->
+			</options>
+		  </li>
+		</pawnGroupMakers>
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<autoFlee>false</autoFlee>
+
+		<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
+		<fixedLeaderKinds>
+			<li>TSP_alpha_male_weeaboo</li>
+		</fixedLeaderKinds>
+
+		<modExtensions>
+			<!-- If you don't have these Mods, nothing happens. -->
+			<li Class="KCSG.CustomGenOption">
+				<chooseFromlayouts>
+					<li MayRequire="Heis.Edo.Themed.Expansion,OskarPotocki.VanillaFactionsExpanded.Core">HSRuined_Village</li>
+				</chooseFromlayouts>
+			</li>
+			<!--
+			<li Class="JecsTools.FactionSettings">
+			<entrySoundDef>TSP_kakegoe_scream_full</entrySoundDef>
+			</li>
+			-->
+		</modExtensions>
+		<configurationListOrderPriority MayRequire="heis.edo.themed.expansion">9999</configurationListOrderPriority>
+	</FactionDef>
+
+	<RulePackDef>
+		<defName>NamerFactionWeeaboo</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name-&gt; [Color] Weeaboo Army</li>
+				<li>name-&gt; [ColorBadass] Weeaboo Army</li> <!-- Not a fan of having to type this, but it's called what it's called -->
+				<li>name-&gt; Students of the [ColorBadass] Blade</li>
+				<li>name-&gt; [Color] Super Otaku Union</li>
+				<li>name-&gt; [ColorBadass] Hikikomoris</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>
