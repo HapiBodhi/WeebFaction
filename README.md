@@ -30,7 +30,7 @@ If you have any of the aforementioned Samurai Faction Mods, Weeaboos will spawn 
 Some Japonic/Waifu Race Mods will cause those species to spawn alongside Weeaboos! Don't ask how they got there! There are other Mods with compatibility, such as the Gerzee Mod, which allows them to wear Weeaboo clothing.
 
 
-Created by Robfal2, updated from 1.2 to 1.4 by Happybodi
+Created by Robfal2, updated from 1.2 to 1.5 by Happybodi
 
 Original mod: https://www.steamcommunity.com/sharedfiles/filedetails/?id=2182292067
 
