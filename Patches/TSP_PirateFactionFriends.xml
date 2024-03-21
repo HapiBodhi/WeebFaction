@@ -3,7 +3,7 @@
 <Patch>
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-	<xpath>/Defs/FactionDef[defName="HS_Bandit_Clan"]</xpath>
+	<xpath>/Defs/FactionDef[defName="HS_Bandit_Clan"]/permanentEnemy</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
 			<success>Always</success>
@@ -19,7 +19,7 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-	<xpath>/Defs/FactionDef[defName="TSF_SamuraiClanSavage"]</xpath>
+	<xpath>/Defs/FactionDef[defName="TSF_SamuraiClanSavage"]/permanentEnemy</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
 			<success>Always</success>
@@ -35,7 +35,23 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-	<xpath>/Defs/FactionDef[defName="ninja"]</xpath>
+	<xpath>/Defs/FactionDef[defName="samurairough"]/permanentEnemy</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/FactionDef[defName="samurairough"]/permanentEnemy</xpath>
+			<value>
+				<permanentEnemyToEveryoneExcept>
+					<li>WeeabooArmy</li>
+				</permanentEnemyToEveryoneExcept>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+	<xpath>/Defs/FactionDef[defName="ninja"]/permanentEnemy</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
 			<success>Always</success>

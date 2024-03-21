@@ -4,7 +4,7 @@
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>weeb_bodypillowgun</defName>
 		<label>decorative scoped Waifu throw pillow</label>
-		<description>For thousands of years, women have decorated beds with decorative throw pillows. Usually taking up more than half the width of a double bed, these pillows are relatively flat and usually sit on top of a made bed because... well, honestly, there isn't a reason. Ask any man. \n Beginning at the turn of the second millineum, sexy anime aficionados created a market for these women's pillows by imprinting actual women on them. Or, at least they say it's an actual woman. It totally is. Yes. It's not an anime girl the wielder fantasizes about, not at all. \n \n What makes this pillow special is its use as a gun! Truly, anime is a gateway to things thought imposible! Corrupted by unspeakable and horrifying means, this augmented decorative throw pillow fires beams of pure energy at its target. This energy is CLEARLY harnassed by the IRREFUTABLE FACT that its wielder gets all the girls.</description>
+		<description>For thousands of years, women have decorated beds with decorative throw pillows. Usually taking up more than half the width of a double bed, these pillows are relatively flat and usually sit on top of a made bed because... well, honestly, there isn't a reason. Ask any man. \n Beginning at the turn of the second millineum, sexy anime aficionados created a market for these women's pillows by imprinting actual women on them. Or, at least they say it's an actual woman. It totally is. Yes. It's not an anime girl the wielder fantasizes about, not at all. \n \n What makes this pillow special is its use as a gun! Truly, anime is a gateway to things thought impossible! Corrupted by unspeakable and horrifying means, this augmented decorative throw pillow fires beams of pure energy at its target. This energy is CLEARLY harnassed by the IRREFUTABLE FACT that its wielder gets all the girls.</description>
 		<descriptionHyperlinks>
 			<thingDef>HandTailoringBench</thingDef>
 			<thingDef>ElectricTailoringBench</thingDef>
@@ -65,7 +65,7 @@
 				<warmupTime>1.7</warmupTime>
 				<range>23</range>
 				<soundCast>TSP_kakegoe_close</soundCast>
-				<soundCastTail>Shot_SniperRifle</soundCastTail>
+				<!-- <soundCastTail>Shot_SniperRifle</soundCastTail> --><!--Tail sounds need a onCamera value of True to work properly, which Shot_SniperRifle does not have.-->
 				<muzzleFlashScale>19</muzzleFlashScale>
 			</li>
 		</verbs>
@@ -100,7 +100,7 @@
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>TSP_weeaboo_sniperpillow</defName>
 		<label>decorative sniper Waifu throw pillow with bayonet</label>
-		<description>For thousands of years, women have decorated beds with decorative throw pillows. Usually taking up more than half the width of a double bed, these pillows are relatively flat and usually sit on top of a made bed because... well, honestly, there isn't a reason. Ask any man. \n Beginning at the turn of the second millineum, sexy anime aficionados created a market for these women's pillows by imprinting actual women on them. Or, at least they say it's an actual woman. It totally is. Yes. It's not an anime girl the wielder fantasizes about, not at all. \n \n What makes this pillow special is its use as a gun! Truly, anime is a gateway to things thought imposible! Corrupted by unspeakable and horrifying means, this augmented decorative throw pillow fires beams of pure energy at its target. This energy is CLEARLY harnassed by the IRREFUTABLE FACT that its wielder gets all the girls. \n This varient of the augmented decorative throw pillow, using the "power of friendship", functions at extremely long range, just like a sniper's rifle. \n\n NOTE: If the Rimworld Westernization Project Mod is installed, the bayonet must first be crafted!</description>
+		<description>For thousands of years, women have decorated beds with decorative throw pillows. Usually taking up more than half the width of a double bed, these pillows are relatively flat and usually sit on top of a made bed because... well, honestly, there isn't a reason. Ask any man. \n Beginning at the turn of the second millineum, sexy anime aficionados created a market for these women's pillows by imprinting actual women on them. Or, at least they say it's an actual woman. It totally is. Yes. It's not an anime girl the wielder fantasizes about, not at all. \n \n What makes this pillow special is its use as a gun! Truly, anime is a gateway to things thought impossible! Corrupted by unspeakable and horrifying means, this augmented decorative throw pillow fires beams of pure energy at its target. This energy is CLEARLY harnassed by the IRREFUTABLE FACT that its wielder gets all the girls. \n This varient of the augmented decorative throw pillow, using the "power of friendship", functions at extremely long range, just like a sniper's rifle. \n\n NOTE: If the Rimworld Westernization Project Mod is installed, the bayonet must first be crafted!</description>
 		<descriptionHyperlinks>
 			<ThingDef MayRequire="Mlie.RimworldWesternizationProject">MeleeWeapon_SpikeBayonet</ThingDef>
 			<ThingDef>HandTailoringBench</ThingDef>
@@ -170,7 +170,7 @@
 				<warmupTime>1.8</warmupTime>
 				<range>60</range>
 				<soundCast>TSP_kakegoe_drum</soundCast>
-				<soundCastTail>Shot_SniperRifle</soundCastTail>
+				<!-- <soundCastTail>Shot_SniperRifle</soundCastTail> --><!--Tail sounds need a onCamera value of True to work properly, which Shot_SniperRifle does not have.-->
 				<muzzleFlashScale>19</muzzleFlashScale>
 			</li>
 		</verbs>
@@ -223,6 +223,7 @@
 		</projectile>
 		<graphicData>
 			<texPath>weeaboo/1496548721430_2</texPath>
+<!-- <texPath>weeaboo/weebgamerdart</texPath> -->
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>0.5</drawSize>
 		</graphicData>
@@ -278,6 +279,8 @@
 			<li>WeebMinorGear</li>
 			<li>OniMelee</li>
 			<li>samuraibasic</li>
+			<li>HSEdoClanPeasant</li>
+			<li>Samuraihead</li>
 		</weaponTags>
 		<tradeTags>
 			<li>OniWeapons</li>

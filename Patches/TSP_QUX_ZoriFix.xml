@@ -1,39 +1,52 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 
-<!-- Allows the Zori Sandals to be crafted without causing a million erros because the game expects Stuff and the unfinished Zori Sandals does not have any Stuff -->
+<!-- Allows the Zori Sandals to be crafted without causing a million errors because the game expects Stuff and the unfinished Zori Sandals does not have any Stuff -->
 <Patch>
 	<Operation Class="PatchOperationConditional">
 		<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="samurai_zori"]</xpath>
-		<!-- If it does, add this. -->
-		<match Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="samurai_zori"]/recipeMaker/unfinishedThingDef</xpath>
+		<!-- If it DOES NOT, add this. -->
+		<nomatch Class="PatchOperationAdd">
 			<success>Always</success>
 			<xpath>/Defs/ThingDef[defName="samurai_zori"]/recipeMaker</xpath>
 			<value>
 				<unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
 			</value>
-		</match>
+		</nomatch>
 		<!-- If the first XPATH does not exist, the original code stands. -->
 	</Operation>
 	
 	<Operation Class="PatchOperationConditional">
 		<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="samurai_zori"]</xpath>
-		<!-- If it does, add this. -->
-		<match Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName="samurai_zori"]/apparel/countsAsClothingForNudity</xpath>
+		<!-- If it DOES NOT, add this. -->
+		<nomatch Class="PatchOperationAdd">
 			<success>Always</success>
 			<xpath>/Defs/ThingDef[defName="samurai_zori"]/apparel</xpath>
 			<value>
 				<countsAsClothingForNudity>false</countsAsClothingForNudity>
-				<developmentalStageFilter>Child, Adult</developmentalStageFilter>
 			</value>
-		</match>
+		</nomatch>
 		<!-- If the first XPATH does not exist, the original code stands. -->
 	</Operation>
 	
 	<Operation Class="PatchOperationConditional">
 		<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="samurai_zori"]</xpath>
+		<xpath>/Defs/ThingDef[defName="samurai_zori"]/apparel/developmentalStageFilter</xpath>
+		<!-- If it DOES NOT, add this. -->
+		<nomatch Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="samurai_zori"]/apparel</xpath>
+			<value>
+				<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+			</value>
+		</nomatch>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="samurai_zori"]/tradeability</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
 			<success>Always</success>

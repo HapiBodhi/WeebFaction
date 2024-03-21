@@ -8,9 +8,10 @@
     <operations>
       <li Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName="Kenshi_Cap"]/apparel</xpath><!-- I don't see a tag node in the mod- I'll assume no faction was ever set to use it, and will add my own.-->
+		<success>Always</success>
         <value>
           <tags>
-            <li>WeebClothes</li>
+            <li>WeebKenshi</li>
             <li>WeebLastResortTag</li>
             <li>WeebHat</li>
             <li>WeebGirl</li>
@@ -21,7 +22,7 @@
         <xpath>Defs/ThingDef[defName="Kenshi_StrawHat"]/apparel</xpath>
         <value>
           <tags>
-            <li>WeebClothes</li>
+            <li>WeebKenshi</li>
             <li>WeebLastResortTag</li>
             <li>WeebHat</li>
             <li>WeebGirl</li>
@@ -30,9 +31,10 @@
       </li>
       <li Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName="Kenshi_BasketHat"]/apparel</xpath>
+		<success>Always</success>
         <value>
           <tags>
-            <li>WeebClothes</li>
+            <li>WeebKenshi</li>
             <li>WeebLastResortTag</li>
             <li>WeebHat</li>
             <li>WeebGirl</li>
@@ -41,8 +43,9 @@
       </li>
       <li Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName="Kenshi_GogglesAsh"]/apparel/tags</xpath>
+		<success>Always</success>
         <value>
-          <li>WeebClothes</li>
+          <li>WeebKenshi</li>
           <li>WeebLastResortTag</li>
           <li>WeebHat</li>
           <li>WeebGirl</li>
@@ -50,8 +53,9 @@
       </li>
       <li Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName="Kenshi_GogglesSquare"]/apparel/tags</xpath>
+		<success>Always</success>
         <value>
-          <li>WeebClothes</li>
+          <li>WeebKenshi</li>
           <li>WeebLastResortTag</li>
           <li>WeebHat</li>
           <li>WeebGirl</li>
@@ -59,8 +63,9 @@
       </li>
       <li Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName="Kenshi_WoolHat"]/apparel/tags</xpath>
+		<success>Always</success>
         <value>
-          <li>WeebClothes</li>
+          <li>WeebKenshi</li>
           <li>WeebLastResortTag</li>
           <li>WeebHat</li>
           <li>WeebGirl</li>
@@ -68,40 +73,43 @@
       </li>
       <li Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName="Kenshi_Bandana"]/apparel/tags</xpath>
+		<success>Always</success>
         <value>
-          <li>WeebClothes</li>
-          <li>WeebLastResortTag</li>
+          <li>WeebKenshi</li>
           <li>WeebHat</li>
           <li>WeebGirl</li>
         </value>
       </li>
       <li Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName="Kenshi_FogMask"]/apparel/tags</xpath>
+		<success>Always</success>
         <value>
-          <li>WeebClothes</li>
-          <li>WeebLastResortTag</li>
+          <li>WeebKenshi</li>
           <li>WeebHat</li>
           <li>WeebGirl</li>
         </value>
       </li>
       <li Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName="Kenshi_Hachigane"]/apparel/tags</xpath>
+		<success>Always</success>
         <value>
             <li>WeebKenshiPaladin</li>
         </value>
       </li>
       <li Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName="Kenshi_NinjaMask"]/apparel/tags</xpath>
+		<success>Always</success>
         <value>
-          <li>WeebClothes</li>
+          <li>WeebKenshi</li>
           <li>WeebHat</li>
           <li>WeebGirl</li>
+		  <li>ninja</li>
         </value>
       </li>
       <li Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName="Kenshi_Rattan"]/apparel/tags</xpath>
         <value>
-          <li>WeebClothes</li>
+          <li>WeebKenshi</li>
           <li>WeebHat</li>
           <li>WeebGirl</li>
           <li>WeebElite</li>
@@ -111,7 +119,7 @@
       <li Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName="Kenshi_IronHat"]/apparel/tags</xpath>
         <value>
-          <li>WeebClothes</li>
+          <li>WeebKenshi</li>
           <li>WeebHat</li>
           <li>WeebGirl</li>
           <li>WeebElite</li>
@@ -127,7 +135,7 @@
       <li Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName="Kenshi_Tagelmust"]/apparel/tags</xpath>
         <value>
-            <li>WeebClothes</li>
+            <li>WeebKenshi</li>
             <li>WeebHat</li>
             <li>WeebGirl</li>
             <li>WeebElite</li>
@@ -137,7 +145,7 @@
       <li Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName="Kenshi_Tricorn"]/apparel/tags</xpath>
         <value>
-            <li>WeebClothes</li>
+            <li>WeebKenshi</li>
             <li>WeebHat</li>
             <li>WeebGirl</li>
             <li>WeebElite</li>
@@ -147,9 +155,7 @@
       <li Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName="Kenshi_Turban"]/apparel/tags</xpath>
         <value>
-            <li>WeebClothes</li>
-            <li>WeebHat</li>
-            <li>WeebGirl</li>
+            <li>WeebKenshi</li>
             <li>WeebElite</li>
             <li>WeebSpecialHat</li>
         </value>
@@ -302,7 +308,7 @@
       <li Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName="Kenshi_Sandogasa"]/apparel/tags</xpath>
         <value>
-              <li>WeebClothes</li>
+              <li>WeebKenshi</li>
               <li>WeebHat</li>
               <li>WeebGirl</li>
               <li>WeebElite</li>
@@ -313,8 +319,10 @@
         <xpath>Defs/ThingDef[defName="Kenshi_Gi"]/apparel</xpath>
         <value>
           <tags>
-            <li>WeebClothes</li>
+            <li>WeebKenshi</li>
             <li>WeebGirl</li>
+			<li>HSApparel_Shinobi</li>
+			<li>WeebClothes</li>
           </tags>
         </value>
       </li>
@@ -322,8 +330,10 @@
         <xpath>Defs/ThingDef[defName="Kenshi_GiNinja"]/apparel</xpath>
         <value>
           <tags>
-            <li>WeebClothes</li>
+            <li>WeebKenshi</li>
             <li>WeebGirl</li>
+			<li>HSApparel_Shinobi</li>
+			<li>ninja</li>
           </tags>
         </value>
       </li>
@@ -331,8 +341,17 @@
         <xpath>Defs/ThingDef[defName="Kenshi_Robe"]/apparel</xpath>
         <value>
           <tags>
-            <li>WeebClothes</li>
-            <li>WeebGirl</li>
+			<li>WeebKenshi</li>
+			<li>WeebGirl</li>
+			<li>WeebClothes</li>
+			<li>Hakama</li>
+			<li>samuraibasic</li>
+			<li>samurai</li>
+			<li>samurai</li>
+			<li>HSApparel_EdoClanBase</li>
+			<li>Apparel_SamuraiBasic</li>
+			<li>TW_Tang_PingMin</li>
+			<li>Robe</li>		
           </tags>
         </value>
       </li>
@@ -340,8 +359,8 @@
         <xpath>Defs/ThingDef[defName="Kenshi_RagShirt"]/apparel</xpath>
         <value>
           <tags>
-            <li>WeebClothes</li>
-            <li>WeebGirl</li>
+            <li>HSApparel_EdoClanPeasant</li>
+			<li>WeebGirl</li>
           </tags>
         </value>
       </li>
@@ -349,7 +368,7 @@
         <xpath>Defs/ThingDef[defName="Kenshi_RagShirtBlack"]/apparel</xpath>
         <value>
           <tags>
-            <li>WeebClothes</li>
+            <li>WeebKenshi</li>
             <li>WeebGirl</li>
           </tags>
         </value>
@@ -358,9 +377,13 @@
         <xpath>Defs/ThingDef[defName="Kenshi_AssassinsRags"]/apparel</xpath>
         <value>
           <tags>
-              <li>WeebClothes</li>
-              <li>WeebGirl</li>
+              <li>WeebKenshi</li>
               <li>WeebElite</li>
+			  <li>ninja</li>
+			  <li>HSApparel_Shinobi</li>
+			  <li>WoodBeatWear</li>
+			  <li>SlaveRatWear</li>
+			  <li>HarrierWear</li>
           </tags>
         </value>
       </li>
@@ -368,8 +391,15 @@
         <xpath>Defs/ThingDef[defName="Kenshi_DrifterLeatherJacket"]/apparel</xpath>
         <value>
           <tags>
-            <li>WeebClothes</li>
-            <li>WeebGirl</li>
+            <li>WeebKenshi</li>
+			<li>WeebClothes</li>
+			<li>HarrierWear</li>
+			<li>SlaveRatWear</li>
+			<li>SurvivalistWear</li>
+			<li>CaravaneerWear</li>
+			<li>Usa</li>
+			<li>WoodBeetWear</li>
+			<li>JeubWear</li>
           </tags>
         </value>
       </li>
@@ -399,9 +429,12 @@
         <xpath>Defs/ThingDef[defName="Kenshi_Longcoat"]/apparel</xpath>
         <value>
           <tags>
-              <li>WeebClothes</li>
+              <li>WeebKenshi</li>
               <li>WeebGirl</li>
               <li>WeebElite</li>
+			  <li>AnimaProtagonist</li>
+			  <li>WeebClothes</li>
+			  <li>RWPGentlemanWear</li>
           </tags>
         </value>
       </li>
@@ -409,7 +442,8 @@
         <xpath>Defs/ThingDef[defName="Kenshi_Dustcoat"]/apparel</xpath>
         <value>
           <tags>
-              <li>WeebClothes</li>
+              <li>WeebKenshi</li>
+			  <li>WeebClothes</li>
               <li>WeebGirl</li>
               <li>WeebElite</li>
           </tags>
@@ -419,8 +453,11 @@
         <xpath>Defs/ThingDef[defName="Kenshi_MartialArtistBindings"]/apparel</xpath>
         <value>
           <tags>
-              <li>WeebClothes</li>
+              <li>WeebKenshi</li>
               <li>WeebGirl</li>
+			  <li>ninja</li>
+			  <li>HSApparel_Shinobi</li>
+			  <li>samuraibasic</li>
           </tags>
         </value>
       </li>

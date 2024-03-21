@@ -7,7 +7,8 @@
 	  <race>Human</race>
 	  <isFighter>true</isFighter>
 	  <combatPower>100</combatPower>
-	  <apparelMoney>430~2200</apparelMoney>
+	  <apparelMoney>530~2200</apparelMoney>
+	  <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 	  <apparelTags Inherit="False">
 		<li>WeebKenshiPaladin</li>
 		<li>WeebKenshi</li>
@@ -15,7 +16,7 @@
 		<!-- <li>WeebClothes</li> -->
 	  </apparelTags>
 	  <gearHealthRange>1.2~2.8</gearHealthRange>
-	  <weaponMoney>430~2200</weaponMoney>
+	  <weaponMoney>530~2200</weaponMoney>
 	  <weaponTags Inherit="False">
 		<li>WeebKenshiPaladinMelee</li>
 		<!-- <li>WeebKenshiMelee</li> -->
@@ -46,14 +47,14 @@
 	  <race>Human</race>
 	  <isFighter>true</isFighter>
 	  <combatPower>100</combatPower>
-	  <apparelMoney>430~2200</apparelMoney>
+	  <apparelMoney>530~2200</apparelMoney>
 	  <apparelTags Inherit="False">
 		<li>WeebKenshiSamurai</li>
 		<li>WeebKenshi</li>
 		<li>WeebElite</li>
 	  </apparelTags>
 	  <gearHealthRange>1.2~2.8</gearHealthRange>
-	  <weaponMoney>430~2200</weaponMoney>
+	  <weaponMoney>530~2200</weaponMoney>
 	  <weaponTags Inherit="False">
 		<li>WeebKenshiSamuraiMelee</li>
 		<li>WeebKenshiMelee</li>
@@ -87,14 +88,14 @@
 	  <race>Human</race>
 	  <isFighter>true</isFighter>
 	  <combatPower>150</combatPower>
-	  <apparelMoney>430~2200</apparelMoney>
+	  <apparelMoney>550~2200</apparelMoney>
 	  <apparelTags Inherit="False">
 		<li>WeebKenshiCrabRaider</li>
 		<li>WeebKenshi</li>
 		<li>WeebElite</li>
 	  </apparelTags>
 	  <gearHealthRange>1.2~2.8</gearHealthRange>
-	  <weaponMoney>760~2200</weaponMoney>
+	  <weaponMoney>430~2200</weaponMoney>
 	  <weaponTags Inherit="False">
 		<li>WeebKenshiCrabRaiderMelee</li>
 		<li>WeebKenshiMelee</li>
@@ -155,14 +156,14 @@
 	  <race>Human</race>
 	  <isFighter>true</isFighter>
 	  <combatPower>200</combatPower>
-	  <apparelMoney>760~2200</apparelMoney>
+	  <apparelMoney>530~2200</apparelMoney>
 	  <apparelTags Inherit="False">
 		<li>WeebKenshiCrabRaider</li>
 		<li>WeebKenshi</li>
 		<li>WeebElite</li>
 	  </apparelTags>
 	  <gearHealthRange>1.2~2.8</gearHealthRange>
-	  <weaponMoney>760~2200</weaponMoney>
+	  <weaponMoney>530~2200</weaponMoney>
 	  <weaponTags Inherit="False">
 		<li>WeebSniper</li>
 		<li>WeebKenshiRanged</li>
