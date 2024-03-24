@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 
 <Defs>
-	<PawnKindDef ParentName="WeeabooBase">
+	<PawnKindDef ParentName="WeeabooBase" MayRequire="Kenshi.Armory.Geminingen">
 	  <defName>KenshiWeebPaladin</defName>
 	  <label>paladin LARP-er</label>
 	  <race>Human</race>
@@ -41,7 +41,7 @@
 		</forcedTraits>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="WeeabooBase">
+	<PawnKindDef ParentName="WeeabooBase" MayRequire="Kenshi.Armory.Geminingen">
 	  <defName>KenshiWeebEmpire</defName>
 	  <label>Kenshi LARP-er</label>
 	  <race>Human</race>
@@ -82,7 +82,7 @@
 		</forcedTraits>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="WeeabooBase">
+	<PawnKindDef ParentName="WeeabooBase" MayRequire="Kenshi.Armory.Geminingen">
 	  <defName>KenshiWeebCrabRaider</defName>
 	  <label>crabby weeaboo</label>
 	  <race>Human</race>
@@ -150,7 +150,7 @@
 		</forcedTraits>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="WeeabooBase">
+	<PawnKindDef ParentName="WeeabooBase" MayRequire="Kenshi.Armory.Geminingen">
 	  <defName>TSP_KenshiWeebCrabRaider_Ranged</defName>
 	  <label>crabby weeaboo</label>
 	  <race>Human</race>

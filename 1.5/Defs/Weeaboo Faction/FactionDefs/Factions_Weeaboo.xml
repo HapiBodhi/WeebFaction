@@ -259,7 +259,7 @@
 		<xenotypeSet MayRequire="ludeon.rimworld.biotech">
 			<xenotypeChances MayRequire="ludeon.rimworld.biotech">
 				<Neco MayRequire="neco.genes">0.15</Neco>
-				<BS_LesserOni MayRequire="redmattis.yokai">0.0175</BS_LesserOni>
+				<BS_LesserOni MayRequire="redmattis.yokai">0.0375</BS_LesserOni>
 				<BS_RedOni MayRequire="redmattis.yokai">0.004</BS_RedOni>
 				<BS_BlueOni MayRequire="redmattis.yokai">0.004</BS_BlueOni>
 				<BS_Nekomata MayRequire="redmattis.yokai">0.01</BS_Nekomata>
@@ -495,7 +495,7 @@
 
 		<modExtensions>
 			<!-- If you don't have these Mods, nothing happens. -->
-			<li Class="KCSG.CustomGenOption">
+			<li Class="KCSG.CustomGenOption" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
 				<chooseFromlayouts>
 					<li MayRequire="Heis.Edo.Themed.Expansion,OskarPotocki.VanillaFactionsExpanded.Core">HSRuined_Village</li>
 				</chooseFromlayouts>
