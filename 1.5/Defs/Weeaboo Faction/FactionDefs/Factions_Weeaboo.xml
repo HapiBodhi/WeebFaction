@@ -108,7 +108,7 @@
 			</categories>
 		  </li>
 		</backstoryFilters>
-		<geneticVariance>0.001</geneticVariance>
+		<!-- I have no idea what this is but it throws up a red error.<geneticVariance MayRequire="Ludeon.RimWorld.Biotech">0.001</geneticVariance> -->
 		<caravanTraderKinds>
 			<li MayRequire="Heis.Edo.Themed.Expansion">HSCaravan_EdoClan_BulkGoods</li>
 			<li MayRequire="Heis.Edo.Themed.Expansion">HSCaravan_EdoClan_Mastercrafter</li>
