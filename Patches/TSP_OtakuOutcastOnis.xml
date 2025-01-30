@@ -7,7 +7,7 @@
 <Patch>
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-	<xpath>/Defs/PawnKindDef[defName="Oni_Penitent"]</xpath>
+	<xpath>/Defs/PawnKindDef[defName="OotR_Oni_Penitent"]</xpath>
 		<!-- If it does, do this replacement -->
 		<match Class="PatchOperationAdd">
 			<success>Always</success>
@@ -16,7 +16,7 @@
 				<PawnKindDef ParentName="WeeabooBase">
 					<defName>TSP_WeeabooOni</defName>
 					<label>Oni outcast</label>
-					<race Inherit="False">AOni</race>
+					<race Inherit="False">OotR_Alien_Oni</race>
 					<combatPower>15</combatPower>
 					<royalTitleChance MayRequire="Heis.Edo.Themed.Expansion" Inherit="False">0</royalTitleChance>
 					<techHediffsChance Inherit="False">0</techHediffsChance>
@@ -64,7 +64,7 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-	<xpath>/Defs/PawnKindDef[defName="Oni_Penitent"]</xpath>
+	<xpath>/Defs/PawnKindDef[defName="OotR_Oni_Penitent"]</xpath>
 		<!-- If it does, do this replacement -->
 		<match Class="PatchOperationAdd">
 			<success>Always</success>
@@ -78,7 +78,7 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-	<xpath>/Defs/PawnKindDef[defName="Oni_Penitent"]</xpath>
+	<xpath>/Defs/PawnKindDef[defName="OotR_Oni_Penitent"]</xpath>
 		<!-- If it does, do this replacement -->
 		<match Class="PatchOperationAdd">
 			<success>Always</success>

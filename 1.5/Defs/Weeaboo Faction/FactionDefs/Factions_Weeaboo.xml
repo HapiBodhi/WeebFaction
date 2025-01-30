@@ -77,11 +77,12 @@
 			<li MayRequire="Seioch.Kurin.HAR">Kurin_PlayerFaction</li> <!-- BEHOLD, THE WAIFU MANIFESTED! -->
 			<li MayRequire="Seioch.Kurin.HAR">Kurin_Faction</li> <!-- BEHOLD, THE WAIFU MANIFESTED! -->
 			<li MayRequire="Seioch.Kurin.HAR">Kurin_Faction_Hostile</li> <!-- BEHOLD, THE WAIFU MANIFESTED! -->
-			<li MayRequire="morishep.tarojun.onioftherim">OniPlayerColony</li>
-			<li MayRequire="morishep.tarojun.onioftherim">OniTPlayerColony</li>
-			<li MayRequire="morishep.tarojun.onioftherim">AncestralOniPlayerColony</li>
-			<li MayRequire="morishep.tarojun.onioftherim">OniFreeborn</li>
-			<li MayRequire="morishep.tarojun.onioftherim">RevenantTalons</li>
+			<li MayRequire="morishep.tarojun.onioftherim">OotR_OniPlayerColony</li>
+			<li MayRequire="morishep.tarojun.onioftherim">OotR_AncestralOniPlayerTribe</li>
+			<li MayRequire="morishep.tarojun.onioftherim">OotR_OniPlayerTribe</li>
+			<li MayRequire="morishep.tarojun.onioftherim">OotR_OniFreeborn</li>
+			<li MayRequire="morishep.tarojun.onioftherim">OotR_RevenantTalons</li>
+			<li MayRequire="morishep.tarojun.onioftherim">OotR_BlackTalons</li>
 			<li MayRequire="Inoshishi3.KTTFDE">Kurin_Faction_Player</li>
 			<li MayRequire="Inoshishi3.KTTFDE">Kurin_Faction_Republic</li>
 			<li MayRequire="Inoshishi3.KTTFDE">Kurin_Faction_UFU</li>
