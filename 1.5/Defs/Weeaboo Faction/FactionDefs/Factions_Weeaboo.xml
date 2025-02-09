@@ -77,11 +77,12 @@
 			<li MayRequire="Seioch.Kurin.HAR">Kurin_PlayerFaction</li> <!-- BEHOLD, THE WAIFU MANIFESTED! -->
 			<li MayRequire="Seioch.Kurin.HAR">Kurin_Faction</li> <!-- BEHOLD, THE WAIFU MANIFESTED! -->
 			<li MayRequire="Seioch.Kurin.HAR">Kurin_Faction_Hostile</li> <!-- BEHOLD, THE WAIFU MANIFESTED! -->
-			<li MayRequire="morishep.tarojun.onioftherim">OniPlayerColony</li>
-			<li MayRequire="morishep.tarojun.onioftherim">OniTPlayerColony</li>
-			<li MayRequire="morishep.tarojun.onioftherim">AncestralOniPlayerColony</li>
-			<li MayRequire="morishep.tarojun.onioftherim">OniFreeborn</li>
-			<li MayRequire="morishep.tarojun.onioftherim">RevenantTalons</li>
+			<li MayRequire="morishep.tarojun.onioftherim">OotR_OniPlayerColony</li>
+			<li MayRequire="morishep.tarojun.onioftherim">OotR_AncestralOniPlayerTribe</li>
+			<li MayRequire="morishep.tarojun.onioftherim">OotR_OniPlayerTribe</li>
+			<li MayRequire="morishep.tarojun.onioftherim">OotR_OniFreeborn</li>
+			<li MayRequire="morishep.tarojun.onioftherim">OotR_RevenantTalons</li>
+			<li MayRequire="morishep.tarojun.onioftherim">OotR_BlackTalons</li>
 			<li MayRequire="Inoshishi3.KTTFDE">Kurin_Faction_Player</li>
 			<li MayRequire="Inoshishi3.KTTFDE">Kurin_Faction_Republic</li>
 			<li MayRequire="Inoshishi3.KTTFDE">Kurin_Faction_UFU</li>
@@ -108,7 +109,7 @@
 			</categories>
 		  </li>
 		</backstoryFilters>
-		<geneticVariance>0.001</geneticVariance>
+		<!-- I have no idea what this is but it throws up a red error.<geneticVariance MayRequire="Ludeon.RimWorld.Biotech">0.001</geneticVariance> -->
 		<caravanTraderKinds>
 			<li MayRequire="Heis.Edo.Themed.Expansion">HSCaravan_EdoClan_BulkGoods</li>
 			<li MayRequire="Heis.Edo.Themed.Expansion">HSCaravan_EdoClan_Mastercrafter</li>
