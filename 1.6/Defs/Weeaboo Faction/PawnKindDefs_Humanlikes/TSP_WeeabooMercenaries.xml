@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<PawnKindDef ParentName="MercenarySniperBase">
+		<defName>TSP_WeeabooSniperForHire</defName>
+		<label>ranged Ronin LARP-er</label>
+		<race>Human</race>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<apparelRequired Inherit="False">
+			<li>weebbandana</li>
+			<li>Apparel_WeebShirt</li>
+		</apparelRequired>
+		<apparelTags Inherit="False">
+			<li>WeebPants</li>
+			<li>Glasses</li>
+			<li>WeebLastResortTag</li>
+			<li>zori</li>
+
+			<!-- If you have the Mod -->
+			<li>Hakama</li>
+			<li>Apparel_SamuraiStraw</li> <!-- Provides clothing for cold weather -->
+		</apparelTags>
+		<weaponMoney Inherit="False">960~1230</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>WeebSniper</li>
+		</weaponTags>
+		<forcedTraits Inherit="False">
+			<li MayRequire="Heis.Edo.Themed.Expansion">HSRonin</li>
+			<li>Undergrounder</li>
+			<li>DislikesWomen</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Insatiable</li>
+		</forcedTraits>
+		<initialResistanceRange>2~4</initialResistanceRange>
+		<initialWillRange Inherit="False">0.01~0.02</initialWillRange>
+		<royalTitleChance MayRequire="Heis.Edo.Themed.Expansion">0</royalTitleChance>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="MercenarySlasherBase">
+		<defName>TSP_WeeabooSwordsmanForHire</defName>
+		<label>Ronin LARP-er</label>
+		<race>Human</race>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<apparelRequired Inherit="False">
+			<li>weebbandana</li>
+			<li>Apparel_WeebShirt</li>
+		</apparelRequired>
+		<apparelTags>
+			<li>WeebHat</li>
+			<li>WeebPants</li>
+			<li>Glasses</li>
+			<li>WeebLastResortTag</li>
+
+			<!-- If you have the Mod -->
+			<li>Hakama</li>
+			<li>Apparel_SamuraiStraw</li> <!-- Provides clothing for cold weather -->
+		</apparelTags>
+		<weaponMoney Inherit="False">350~1000</weaponMoney>
+		<weaponTags Inherit="False">
+			<li>AdWeebMelee</li>
+		</weaponTags>
+		<forcedTraits Inherit="False">
+			<li MayRequire="Heis.Edo.Themed.Expansion">HSRonin</li>
+			<li>Undergrounder</li>
+			<li>DislikesWomen</li>
+			<li MayRequire="VanillaExpanded.VanillaTraitsExpanded">VTE_Insatiable</li>
+		</forcedTraits>
+		<initialResistanceRange>2~4</initialResistanceRange>
+		<initialWillRange Inherit="False">0.01~0.02</initialWillRange>
+		<royalTitleChance MayRequire="Heis.Edo.Themed.Expansion">0</royalTitleChance>
+	</PawnKindDef>
+</Defs>
