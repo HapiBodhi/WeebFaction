@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>	<!-- These sound effects are hundreds of years old and are in the Public Domain. -->	<!-- https://www.youtube.com/watch?v=VKMw2it8dQY -->
+	<SoundDef>
+		<defName>TSP_kakegoe_scream_full</defName>		<eventNames />		<maxSimultaneous>1</maxSimultaneous>		<subSounds>			<li>				<onCamera>True</onCamera>				<grains>
+					<li Class="AudioGrain_Clip">						<clipPath>TSP_YEEEAAHHHHHOOOOOOH_kakegoe</clipPath>
+					</li>
+				</grains>				<volumeRange>					<min>6</min>					<max>8</max>
+				</volumeRange>
+				<pitchRange>					<min>1</min>					<max>1</max>				</pitchRange>			</li>		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>TSP_kakegoe_scream_quiet</defName>
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<onCamera>True</onCamera>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>TSP_YEEEAAHHHHHOOOOOOH_kakegoe</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>2</min>
+					<max>3</max>
+				</volumeRange>
+				<pitchRange>
+					<min>1</min>
+					<max>1</max>
+				</pitchRange>
+			</li>
+		</subSounds>	</SoundDef>
+	<SoundDef>
+		<defName>TSP_kakegoe_scream_only</defName>
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<onCamera>True</onCamera>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>TSP_just_YEEEAAHHHHHOOOOOOH</clipPath>					</li>
+				</grains>
+				<volumeRange>
+					<min>10</min>
+					<max>12</max>				</volumeRange>				<pitchRange>
+					<min>1</min>					<max>1</max>				</pitchRange>			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>TSP_kakegoe_rhythm_sticks</defName>
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>			<li>
+				<onCamera>True</onCamera>
+				<grains>
+					<li Class="AudioGrain_Clip">						<clipPath>TSP_YEEEAAHHHHHOOOOOOH_rhythm_sticks</clipPath>					</li>				</grains>				<volumeRange>					<min>10</min>
+					<max>10</max>				</volumeRange>				<pitchRange>					<min>1</min>					<max>1</max>				</pitchRange>
+			</li>
+		</subSounds>	</SoundDef>
+	<SoundDef>		<defName>TSP_kakegoe_drum</defName>		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>		<subSounds>			<li>
+				<onCamera>True</onCamera>				<grains>					<li Class="AudioGrain_Clip">						<clipPath>TSP_YEEEAAHHHHHOOOOOOH_drum</clipPath>					</li>				</grains>				<volumeRange>
+					<min>5</min>					<max>6</max>
+				</volumeRange>				<pitchRange>					<min>1</min>					<max>1</max>				</pitchRange>			</li>		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>TSP_kakegoe_close</defName>		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>		<subSounds>			<li>
+				<onCamera>True</onCamera>				<grains>					<li Class="AudioGrain_Clip">						<clipPath>TSP_YEEEAAHHHHHOOOOOOH_sign_off</clipPath>					</li>
+				</grains>
+				<volumeRange>
+					<min>5</min>					<max>6</max>				</volumeRange>				<pitchRange>					<min>0.4</min>
+					<max>1.3</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+</Defs>
